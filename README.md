@@ -281,7 +281,6 @@ bind - testchamber_reset
 
 <details>
   <summary>📋Usage📋</summary>
-  
 Angles:
 - Pitch: **30.0 - 40.0**
 - Yaw: **125.05 - 125.09**
