@@ -397,6 +397,13 @@ Example: `bind y +bpjb3`
 alias bp_nade2 "cl_pitchdown 30;cl_pitchup -30;+duck;+jump;wait;-attack;w 15;-jump;-duck;cl_pitchup 89;cl_pitchdown 89;force_centerview; say fps_90"
 ```
 Example: `bind tab "bp_nade2"`
+#### Maxam's Nade Route(From The Slop Version)
+```
+alias bp_nade3 "cl_pitchdown 89; cl_pitchup -89; -attack; w; cl_pitchup 89; force_centerview"
+```
+Example: `bind tab "bp_nade3"`
+
+
 
 #### Tentacle Room Boost 
 ```
