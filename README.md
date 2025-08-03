@@ -256,7 +256,7 @@ alias	"w800"		"w400;w400"
 **📝You need to execute the config with the script (`bind key "exec tc.cfg`, for example) or press the `testchamber_reset` bind (`-` by default) before doing _any_ attempt📝**
 
 
-#### Test Chamber B
+#### 🟢 Test Chamber B
 *The most consistent version, but it's slower by 0.7s. Only do this one if you can't get anything else to work*
 <details>
   <summary>📜Click here to view the script📜</summary>
@@ -298,7 +298,7 @@ bind - testchamber_reset
 
 
 
-#### Test Chamber D
+#### 🟠 Test Chamber D
 *Made by [Parklez](https://github.com/parklez). Might be inconsistent sometimes because of fps drops*
 <details>
   <summary>📜Click here to view the script📜</summary>
@@ -327,6 +327,7 @@ bind - testchamber_reset
 
 <details>
   <summary>📋Usage📋</summary>
+  
 - Angles:
   - Pitch: **30.0 - 40.0**
   - Yaw: **136.45 - 136.51** (I personally recommend .50-.51, but doesn't really matter)
@@ -340,7 +341,7 @@ bind - testchamber_reset
 
 
 
-#### Test Chamber D v2
+#### 🔴 Test Chamber D v2
 *The fastest one. The original version was created by [Parklez](https://github.com/parklez), this one (modified by javac_) also 4fpses the trigger. Thanks to Razzie for the idea*
 <details>
   <summary>📜Click here to view the script📜</summary>
@@ -371,6 +372,7 @@ bind - testchamber_reset
 
 <details>
   <summary>📋Usage📋</summary>
+  
 - Angles:
   - Pitch: **30.0 - 40.0**
   - Yaw: **136.45 - 136.51** (I personally recommend .50-.51, but doesn't really matter)
@@ -384,7 +386,7 @@ bind - testchamber_reset
 
 
 
-#### Test Chamber N
+#### 🟡 Test Chamber N
 *Made by N4Rk0t1k. The best one in terms of speed/consistency ratio. Try this one if you have any fps issues and can't do the TC_D vesion. Slower by 0.2-0.3s*
 <details>
   <summary>📜Click here to view the script📜</summary>
@@ -413,6 +415,7 @@ bind - testchamber_reset
 
 <details>
   <summary>📋Usage📋</summary>
+  
 - Angles:
   - Pitch: **30.0 - 40.0**
   - Yaw: **73.00 - 73.10** (I personally recommend .05 - 0.7, but doesn't really matter)
