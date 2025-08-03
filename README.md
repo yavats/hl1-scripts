@@ -275,7 +275,7 @@ bind - testchamber_reset
 ```
 </details>
 
-[Video link](https://youtu.be/-R4quekIkF4)\
+[Video link](https://youtu.be/-R4quekIkF4)
 Usage: 
 - Angles:
   - Pitch: **30.0 - 40.0**
@@ -318,7 +318,7 @@ bind - testchamber_reset
 ```
 </details>
 
-[Video link](https://youtu.be/7QxRBDo6F8E)\
+[Video link](https://youtu.be/7QxRBDo6F8E)
 Usage: 
 - Angles:
   - Pitch: **30.0 - 40.0**
@@ -360,7 +360,7 @@ bind - testchamber_reset
 ```
 </details>
 
-[Video link](https://youtu.be/mnLNYTiTWYs)\
+[Video link](https://youtu.be/mnLNYTiTWYs)
 Usage: 
 - Angles:
   - Pitch: **30.0 - 40.0**
@@ -400,7 +400,7 @@ bind - testchamber_reset
 ```
 </details>
 
-[Video link](https://youtu.be/DnRJmZiLDFM)\
+[Video link](https://youtu.be/DnRJmZiLDFM)
 Usage: 
 - Angles:
   - Pitch: **30.0 - 40.0**
