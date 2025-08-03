@@ -119,18 +119,6 @@ alias obbo800 "+use;w 7;-use;+jump;w;-jump"
 ```
 Example: `bind key obbo800`
 
-#### 600 UPS
-```
-alias obbo600 "+use;w 6;-use;+jump;w;-jump"
-```
-Example: `bind key obbo600`
-
-#### 500 UPS
-```
-alias obbo500 "+use;w 5;-use;+jump;w;-jump"
-```
-Example: `bind key obbo500`
-
 #### Forward Object Boost (~1300-1400 UPS)
 ```
 alias obboshoot "+use;w 10;-use;+attack2;+jump;w;-attack2;-jump"
