@@ -342,15 +342,9 @@ Usage:
 **Before doing the script or after failing it you need to reexecute the config with the script or press the testchamber_reset bind (`-` by default)**
 
 
-#### TC Skip (N)
+#### Test Chamber N
+*Made by N4Rk0t1k. The best one in terms of speed/consistency ratio. Try this one if you have any fps issues and can't do the TC_D vesion.*
 ```
-// Pitch 30.0 - 40.0
-// Yaw 73.00 - 73.10
-// press 0 9+0 9+0 9+0 9+0 9+0 9+0, when you hear a scream press 9+0 once, then hold w+ctrl
-
-// if you failed the script, you can either press the testchamber_reset key or re-execute the config
-
-
 alias cart preboost1
 alias pausespam "w; unpause; w; setpause"
 alias longpausespam "pausespam; pausespam; pausespam; pausespam; pausespam; pausespam; pausespam"
@@ -370,6 +364,21 @@ bind 0 cart
 bind 9 mcart
 bind - testchamber_reset
 ```
+
+[Video link](https://youtu.be/DnRJmZiLDFM)\
+Usage: 
+- Angles:
+  - Pitch: **30.0 - 40.0**
+  - Yaw: **73.00 - 73.10** (I personally recommend .05 - 0.7, but doesn't really matter)
+- Activation timing:
+  - right after the cage starts going down
+- Keypresses:
+  - (first option) **0 90 90 90 90 90 90** (**0** and **9+0** six times), wait until you hear the scientist screaming, then press **9+0** again and hold **W+CTRL**
+  - (second option) **0 90 90 90 90 90 90 90** (**0** and **9+0** seven times), start holding **W+CTRL** before landing
+- Tips:
+  - Tapping **D** after the level changes helps with landing a lot
+
+**Before doing the script or after failing it you need to reexecute the config with the script or press the testchamber_reset bind (`-` by default)**
 </details>
 
 ## **C. Blast Pit**
