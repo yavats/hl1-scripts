@@ -336,7 +336,7 @@ Usage:
 - Activation timing:
   - right after the cage starts going down
 - Keypresses:
-  - **0 9+0 9+0 9+0 9+0 9+0 9+0 9+0**, wait until you start turning mid-air (after you hit the trigger), then press **9+0 9+0 9+0**
+  - **0 90 90 90 90 90 90 90** (**0** and **9+0** seven times), wait until you start turning mid-air (after you hit the trigger), then press **90 90 90**
 
 **Before doing the script or after failing it you need to reexecute the config with the script or press the testchamber_reset bind (`-` by default)**
 
