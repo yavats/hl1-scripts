@@ -328,13 +328,13 @@ bind - testchamber_reset
 <details>
   <summary>📋Usage📋</summary>
   
-- Angles:
-  - Pitch: **30.0 - 40.0**
-  - Yaw: **136.45 - 136.51** (I personally recommend .50-.51, but doesn't really matter)
-- Activation timing:
+- **Angles:**
+  - Pitch: `30.0 - 40.0`
+  - Yaw: `136.45 - 136.51` (I personally recommend `.50` or `.51`, but doesn't really matter)
+- **Activation timing:**
   - right after the cage starts going down
-- Keypresses:
-  - **0 90 90 90 90 90 90 90** (0 and 9+0 seven times), wait until you start turning mid-air (after you hit the trigger), then press **90** again and hold **A+CTRL**
+- **Keypresses:**
+  - `0 90 90 90 90 90 90 90` (`0` and then `90` seven times), wait until you start turning mid-air (after you hit the trigger), then press `90` again and hold `a + ctrl`**
 </details>
 
 [Video link](https://youtu.be/7QxRBDo6F8E)
@@ -373,13 +373,13 @@ bind - testchamber_reset
 <details>
   <summary>📋Usage📋</summary>
   
-- Angles:
+- **Angles:**
   - Pitch: **30.0 - 40.0**
   - Yaw: **136.45 - 136.51** (I personally recommend .50-.51, but doesn't really matter)
-- Activation timing:
+- **Activation timing:**
   - right after the cage starts going down
-- Keypresses:
-  - **0 90 90 90 90 90 90 90** (**0** and **9+0** seven times), wait until you start turning mid-air (after you hit the trigger), then press **90 90 90**
+- **Keypresses:**
+  - `0 90 90 90 90 90 90 90` (`0` and then `90` seven times), wait until you start turning mid-air (after you hit the trigger), then press `90 90 90`
 </details>
 
 [Video link](https://youtu.be/mnLNYTiTWYs)
@@ -416,16 +416,16 @@ bind - testchamber_reset
 <details>
   <summary>📋Usage📋</summary>
   
-- Angles:
-  - Pitch: **30.0 - 40.0**
-  - Yaw: **73.00 - 73.10** (I personally recommend .05 - 0.7, but doesn't really matter)
-- Activation timing:
+- **Angles:**
+  - Pitch: `30.0 - 40.0`
+  - Yaw: `73.00 - 73.10` (I personally recommend .05 - 0.7, but doesn't really matter)
+- **Activation timing:**
   - right after the cage starts going down
-- Keypresses:
-  - (first option) **0 90 90 90 90 90 90** (**0** and **9+0** six times), wait until you hear the scientist screaming, then press **9+0** again and hold **W+CTRL**
-  - (second option) **0 90 90 90 90 90 90 90** (**0** and **9+0** seven times), start holding **W+CTRL** before landing
-- Tips:
-  - Tapping **D** after the level changes helps with landing a lot
+- **Keypresses:**
+  - (first option) `0 90 90 90 90 90 90` (`0` and then `90` six times), wait until you hear the scientist screaming, then press `90` again and hold `w + ctrl`
+  - (second option) `0 90 90 90 90 90 90 90` (`0` and `90` seven times), start holding `w + ctrl` before landing
+- **Tips:**
+  - Tapping `d` after the level changes helps with landing a lot
 </details>
 
 [Video link](https://youtu.be/DnRJmZiLDFM)
