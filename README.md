@@ -266,6 +266,7 @@ Usage:
 
 **Before doing the script or after failing it you need to reexecute the config with the script or press the testchamber_reset bind (`-` by default)**
 
+
 #### Test Chamber D
 *Made by [Parklez](https://github.com/parklez). Might be inconsistent sometimes because of fps drops*
 ```
