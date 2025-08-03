@@ -492,6 +492,8 @@ Example: `bind g puskip`
 alias puskip "weapon_shotgun;-jump;-moveright;-moveleft;w 350;+use;w 12;-use;+jump;wait;-jump;+attack2;wait;-attack2;+duck;w 28;-duck"
 ```
 Example: `bind g puskip`
+
+Video guide: [link](https://clips.twitch.tv/PuzzledTangentialClipsdadRickroll)
 </details>
 
 
