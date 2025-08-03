@@ -30,6 +30,7 @@ alias @use4 "w;alias @use @use1;bxt_append _zspecial"
 ```
 Example: `bind key +usespam`
 
+
 ### 2. Duckroll (aka Duckspam) Script
 *Only use this one for waterboosts, `+bxt_tas_ducktap` is much better for movement purposes*
 ```
