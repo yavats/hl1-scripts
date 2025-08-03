@@ -398,6 +398,7 @@ alias bp_nade2 "cl_pitchdown 30;cl_pitchup -30;+duck;+jump;wait;-attack;w 15;-ju
 ```
 Example: `bind tab "bp_nade2"`
 #### Maxam's Nade Route(From The Slop Version)
+(This one is pretty much harder, its recommended to use it only if you have low hp)
 ```
 alias bp_nade3 "cl_pitchdown 89; cl_pitchup -89; -attack; w; cl_pitchup 89; force_centerview"
 ```
