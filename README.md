@@ -231,16 +231,9 @@ alias	"w800"		"w400;w400"
 <details>
   <summary>Click Here To View Scripts</summary>
   
-#### TC Skip (B)
-  
+#### Test Chamber B
+*The most consistent version*
 ```
-// Pitch 30.0 - 40.0
-// Yaw 125.05 - 125.09
-// press 0 9+0 9+0 9+0 9+0 9+0
-
-// if you failed the script, you can either press the testchamber_reset key or re-execute the config
-
-
 alias testchamber "tc1"
 alias tmove 
 
@@ -257,8 +250,19 @@ alias tc6 "w 13;-back;alias testchamber; alias tmove" //0
 bind 0 testchamber
 bind 9 tmove
 bind - testchamber_reset
-
 ```
+
+[Video link](https://youtu.be/-R4quekIkF4)\
+Usage: 
+- Angles:
+  - Pitch: **30.0 - 40.0**
+  - Yaw: **125.05 - 125.09**
+- Activation timing:
+  - right after the cage starts going down
+- Keypresses:
+  - **0 9+0 9+0 9+0 9+0 9+0** (0 and 9+0 five times)
+
+**Before doing the script or after failing it you need to reexecute the config which contains the script or press the testchamber_reset bind (`-` by default)**
 
 #### TC Skip (D)
 ```
