@@ -6,7 +6,12 @@
     - [Hold script](#hold-script)
     - [Toggle script](#toggle-script)
     - [4 fps script](#4-fps-script)
-  - [
+  - [Gauss scripts](#4-gauss-scripts)
+    - [180° Gauss boost](#180-gauss-boost)
+    - [Slowgauss script](#slowgauss-script)
+    - [Gauss script switcher](#gauss-script-switcher)
+  - [Object boost scripts](#5-object-boost-scripts)
+  
 - [Anomalous Materials](#b-anomalous-materials)
 - [Blast Pit](#c-blast-pit)
 - [Power Up](#d-power-up)
