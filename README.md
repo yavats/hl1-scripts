@@ -1,13 +1,14 @@
 # hl1-scripts
-- [Basic Scripts](#a-basic-scripts)
+- [Basic scripts](#a-basic-scripts)
+  - [Usespam script](#1-usespam-script)
 - [Anomalous Materials](#b-anomalous-materials)
 - [Blast Pit](#c-blast-pit)
 - [Power Up](#d-power-up)
 
 
-## A. **Basic Scripts**
+## A. **Basic scripts**
 
-### 1. Usespam Script
+### 1. Usespam script
 ```
 alias +usespam "alias _zspecial @use;@use1"
 alias -usespam "alias _zspecial;-use"
