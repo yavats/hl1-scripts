@@ -8,7 +8,6 @@
 ## A. **Basic Scripts**
 
 ### 1. Usespam Script
-
 ```
 alias +usespam "alias _zspecial @use;@use1"
 alias -usespam "alias _zspecial;-use"
@@ -17,21 +16,23 @@ alias @use2 "w;alias @use @use3;bxt_append _zspecial"
 alias @use3 "-use;alias @use @use4;bxt_append _zspecial"
 alias @use4 "w;alias @use @use1;bxt_append _zspecial"
 ```
-Example: `bind e +usespam`
+Example: `bind key +usespam`
 
-### 2. Duckspam Script
+### 2. Duckroll (aka Duckspam) Script
+*Only use this one for waterboosts, `+bxt_tas_ducktap` is much better for movement purposes*
 ```
-alias ds1 "+duck; alias ds ds2; bxt_append ds"
-alias ds2 "wait; alias ds ds3; bxt_append ds"
-alias ds3 "-duck; alias ds ds4; bxt_append ds"
-alias ds4 "wait; alias ds ds1; bxt_append ds"
-alias +ds "ds1"
-alias -ds "alias ds; -duck"
+alias +duckroll "alias _zspecial @duck;@dr1"
+alias -duckroll "alias _zspecial;-duck"
+alias @dr1 "+duck;alias @duck @dr2;bxt_append _zspecial"
+alias @dr2 "w;alias @duck @dr3;bxt_append _zspecial"
+alias @dr3 "-duck;alias @duck @dr4;bxt_append _zspecial"
+alias @dr4 "w;alias @duck @dr1;bxt_append _zspecial"
 ```
-Example `bind t +ds`
+Example: `bind key +duckroll`
 
-### 3. Fps Hold Script/ 4 Fps Script
-> If you want other value, just change the first fps value (20 fps on here) and change the name of the alias 
+### 3. Fps Scripts: hold, toggle, 4 fps for one frame
+#### Hold script
+*If you want other value, just change the first fps value (20 fps on here) and replace `20` with something else in all the aliases (`fps_20`, `+/-fps_20_hold`, `fps_20_reset`)*
 ```
 alias fps_20 "fps_max 20"
 alias fps_default "fps_max 100"
@@ -39,72 +40,79 @@ alias fps_default "fps_max 100"
 alias +fps_20_hold "fps_20; alias -fps_20_hold fps_20_reset"
 alias fps_20_reset "fps_default; alias -fps_20_hold"
 ```
-Example: `bind e +fps_20_hold`
-> 4 Fps Script
+Example: `bind key +fps_20_hold`
+#### Toggle script
 ```
-alias 4fpsbind "fps_max 4; wait; fps_max 100"
+alias fps_20_toggle fps_20_toggle1
+alias fps_20_toggle1 "fps_max 20; alias fps_20_toggle fps_20_toggle2"
+alias fps_20_toggle2 "fps_max 100; alias fps_20_toggle fps_20_toggle1" 
 ```
-Example: `bind e 4fpsbind`
-### 4. Tau Gauss Script (180° Gauss Boosting)
+Example: `bind key fps_20_toggle`
+#### 4 fps script
+```
+alias 4fpsbind "fps_max 4; w; fps_max 100"
+```
+Example: `bind key 4fpsbind`
+### 4. 180° Gauss Boost Script
 ```
 alias _taubo
 alias _taubofunc "cl_pitchup 180;cl_pitchdown -180;-attack2;wait;cl_pitchup -12;cl_pitchdown 12;wait;cl_pitchup 89;cl_pitchdown 89"
 alias +tau "+attack2; alias _taubo _taubofunc"
 alias -tau "_taubo; alias _taubo"
 ```
-Example: `bind mouse2 +tau`
+Example: `bind key +tau`
 
 ### 5. Object Boost Scripts
 <details>
-  <summary>Click Here To View Scripts</summary>
+  <summary>Expand the list of scripts</summary>
   
 #### 2000 UPS
 ```
 alias obbo2000 "+use;w 11;-use;+jump;w;-jump"
 ```
-Example: `bind e obbo200`
+Example: `bind key obbo200`
 
 #### 1600 UPS
 ```
 alias obbo1600 "+use;w 10;-use;+jump;w;-jump"
 ```
-Example: `bind e obbo1600`
+Example: `bind key obbo1600`
 
 #### 1300 UPS
 ```
 alias obbo1300 "+use;w 9;-use;+jump;w;-jump"
 ```
-Example: `bind e obbo1300`
+Example: `bind key obbo1300`
 
 #### 1000 UPS
 ```
 alias obbo1000 "+use;w 8;-use;+jump;w;-jump"
 ```
-Example: `bind e obbo1000`
+Example: `bind key obbo1000`
 
 #### 800 UPS
 ```
 alias obbo800 "+use;w 7;-use;+jump;w;-jump"
 ```
-Example: `bind e obbo800`
+Example: `bind key obbo800`
 
 #### 600 UPS
 ```
 alias obbo600 "+use;w 6;-use;+jump;w;-jump"
 ```
-Example: `bind e obbo600`
+Example: `bind key obbo600`
 
 #### 500 UPS
 ```
 alias obbo500 "+use;w 5;-use;+jump;w;-jump"
 ```
-Example: `bind e obbo500`
+Example: `bind key obbo500`
 
 #### Forward Object Boost (~1300-1400 UPS)
 ```
 alias obboshoot "+use;w 10;-use;+attack2;+jump;w;-attack2;-jump"
 ```
-Example: `bind e obboshoot`
+Example: `bind key obboshoot`
 
 </details>
 
@@ -112,7 +120,7 @@ Example: `bind e obboshoot`
 
 ### 6. Wait Table (BunnyModXT has its own wait table built on it, but some old scripts uses this wait table so you might need them. Just put this at the very bottom of your config.)
 <details>
-  <summary>Click Here To View Script</summary>
+  <summary>Expand</summary>
   
   ```
 alias	"w"			  "wait"
@@ -230,11 +238,10 @@ alias	"w800"		"w400;w400"
 ## **B. Anomalous Materials**
 
 ### 7. Testchamber Scripts
-<details>
-  <summary>Click Here To View Scripts</summary>
-  
 #### Test Chamber B
 *The most consistent version, but it's slower by 0.7s. Only do this one if you can't get anything else to work*
+<details>
+  <summary>Click here to view the script</summary>
 ```
 alias testchamber "tc1"
 alias tmove 
@@ -251,7 +258,7 @@ bind 0 testchamber
 bind 9 tmove
 bind - testchamber_reset
 ```
-
+</details>
 [Video link](https://youtu.be/-R4quekIkF4)\
 Usage: 
 - Angles:
@@ -379,7 +386,6 @@ Usage:
   - Tapping **D** after the level changes helps with landing a lot
 
 **Before doing the script or after failing it you need to reexecute the config with the script or press the testchamber_reset bind (`-` by default)**
-</details>
 
 ## **C. Blast Pit**
 
