@@ -44,7 +44,7 @@ Example: `bind e 4fpsbind`
 ### 4. Tau Gauss Script (180° Gauss Boosting)
 ```
 alias _taubo
-alias _taubofunc "cl_pitchup 180;cl_pitchdown -180;-attack2;wait;cl_pitchup -12;cl_pitchdown 12;wait;cl_pitchup 89.999;cl_pitchdown 89.999"
+alias _taubofunc "cl_pitchup 180;cl_pitchdown -180;-attack2;wait;cl_pitchup -12;cl_pitchdown 12;wait;cl_pitchup 89;cl_pitchdown 89"
 alias +tau "+attack2; alias _taubo _taubofunc"
 alias -tau "_taubo; alias _taubo"
 ```
@@ -56,43 +56,43 @@ Example: `bind mouse2 +tau`
   
 > 2000 Speed Object Boost
 ```
-alias obbo2000 "+use;w11;-use;+jump;w;-jump"
+alias obbo2000 "+use;w 11;-use;+jump;w;-jump"
 ```
 Example: `bind e obbo200`
 
 > 1500 Speed Object Boost
 ```
-alias obbo1500 "+use;w10;-use;+jump;w;-jump"
+alias obbo1500 "+use;w 10;-use;+jump;w;-jump"
 ```
 Example: `bind e obbo1500`
 
 > 1300 Speed Object Boost
 ```
-alias obbo1300 "+use;w9;-use;+jump;w;-jump"
+alias obbo1300 "+use;w 9;-use;+jump;w;-jump"
 ```
 Example: `bind e obbo1300`
 
 > 1000 Speed Object Boost
 ```
-alias obbo1000 "+use;w8;-use;+jump;w;-jump"
+alias obbo1000 "+use;w 8;-use;+jump;w;-jump"
 ```
 Example: `bind e obbo1000`
 
 > 800 Speed Object Boost
 ```
-alias obbo800 "+use;w7;-use;+jump;w;-jump"
+alias obbo800 "+use;w 7;-use;+jump;w;-jump"
 ```
 Example: `bind e obbo800`
 
 > 600 Speed Object Boost
 ```
-alias obbo600 "+use;w6;-use;+jump;w;-jump"
+alias obbo600 "+use;w 6;-use;+jump;w;-jump"
 ```
 Example: `bind e obbo600`
 
 > 500 Speed Object Boost
 ```
-alias obbo500 "+use;w5;-use;+jump;w;-jump"
+alias obbo500 "+use;w 5;-use;+jump;w;-jump"
 ```
 Example: `bind e obbo500`
 </details>
