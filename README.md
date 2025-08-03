@@ -281,24 +281,17 @@ bind - testchamber_reset
 
 <details>
   <summary>📋Usage📋</summary>
-<p><strong>Angles:</strong></p>
-<ul>
-<li>Pitch: **30.0 - 40.0</li>
-<li>Yaw: **125.05 - 125.09**</li>
-</ul>
-<p><strong>Activation timing:</strong></p>
-<ul>
-<li>right after the cage starts going down</li>
-</ul>
-<p><strong>Keypresses:</strong></p>
-<ul>
-<li>**0 90 90 90 90 90** (0 and 9+0 five times)</li>
-</ul>
-<p><strong>Additional actions:</strong></p>
-<ul>
-<li>turn to the left after the script is done (after you hit the wall), so you hit the trigger and land on the reactor</li>
-<li>(optional, but very recommended) do the jumpbug at `23` or `30.3` fps. Use the bxt_tas_jumpbug bind for this: `bind key +bxt_tas_jumpbug`</li>
-</ul>
+
+- **Angles:**
+  - Pitch: `30.0 - 40.0`
+  - Yaw: `125.05 - 125.09`
+- **Activation timing:**
+  - right after the cage starts going down
+- **Keypresses**:
+  - `0 90 90 90 90 90` (`0` and then `90` five times)
+- **Additional actions:**
+  - turn to the left after the script is done (after you hit the wall), so you hit the trigger and land on the reactor
+  - (optional, but very recommended) do the jumpbug at `23` or `30.3` fps
 </details>
 
 [Video link](https://youtu.be/-R4quekIkF4)
