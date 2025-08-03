@@ -272,7 +272,6 @@ Usage:
 ```
 alias testchamber "tc1"
 alias move "+moveright"
-
 alias testchamber_reset "alias testchamber tc1; alias move; say tc_script_reset"
 
 alias tc1 "w 160;alias testchamber tc2;alias move +moveright" //0+9
@@ -303,19 +302,12 @@ Usage:
 
 **Before doing the script or after failing it you need to reexecute the config with the script or press the testchamber_reset bind (`-` by default)**
 
-#### TC Skip (D-2)
+
+#### Test Chamber D v2
+*The fastest one. The original version was created by [Parklez](https://github.com/parklez), this one (modified by javac_) also 4fpses the trigger. Thanks to Razzie for the idea*
 ```
-// Pitch 30.0 - 40.0
-// Yaw 136.45 - 136.51
-// press 0 9+0 9+0 9+0 9+0 9+0 9+0 9+0, wait until you start turning midair (after you hit the trigger), then press 9+0 9+0 9+0
-// the script will 4 fps the trigger for you
-
-// if you failed the script, you can either press the testchamber_reset key or re-execute the config
-
-
 alias testchamber "tc1"
 alias move "+moveright"
-
 alias testchamber_reset "alias testchamber tc1; alias move; say tc_script_reset"
 
 alias tc1 "w 160;alias testchamber tc2;alias move +moveright" //0+9
@@ -335,6 +327,20 @@ bind 9 move
 bind 0 testchamber 
 bind - testchamber_reset
 ```
+
+[Video link](https://youtu.be/mnLNYTiTWYs)\
+Usage: 
+- Angles:
+  - Pitch: **30.0 - 40.0**
+  - Yaw: **136.45 - 136.51** (I personally recommend .50-.51, but doesn't really matter)
+- Activation timing:
+  - right after the cage starts going down
+- Keypresses:
+  - **0 9+0 9+0 9+0 9+0 9+0 9+0 9+0**, wait until you start turning mid-air (after you hit the trigger), then press **9+0 9+0 9+0**
+
+**Before doing the script or after failing it you need to reexecute the config with the script or press the testchamber_reset bind (`-` by default)**
+
+
 #### TC Skip (N)
 ```
 // Pitch 30.0 - 40.0
