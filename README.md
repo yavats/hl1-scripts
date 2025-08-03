@@ -216,13 +216,13 @@ alias	"w600"		"w300;w300"
 alias	"w700"		"w600;w100"
 alias	"w800"		"w400;w400"
 ```
+</details>
 
+## **B. Anomalous Materials**
 
-
-
-## B. Anomalous Materials
-
-### 1. Testchamber Scripts
+### 7. Testchamber Scripts
+<details>
+  <summary>Click Here To View Scripts</summary>
 > TC Skip (B)
 ```
 // Pitch 30.0 - 40.0
@@ -338,4 +338,5 @@ bind 0 cart
 bind 9 mcart
 bind - testchamber_reset
 ```
+</details>
 
