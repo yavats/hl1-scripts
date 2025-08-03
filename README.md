@@ -1,5 +1,5 @@
 # hl1-scripts
-- [Basic scripts](#a-basic-scripts)\
+- [Basic scripts](#a-basic-scripts)
   - [Usespam script](#1-usespam-script)
   - [Duckroll/Duckspam](#2-duckroll-aka-duckspam-script)
   - [Fps scripts](#3-fps-scripts)
@@ -11,7 +11,6 @@
     - [Slowgauss script](#slowgauss-script)
     - [Gauss script switcher](#gauss-script-switcher)
   - [Object boost scripts](#5-object-boost-scripts)
-  
 - [Anomalous Materials](#b-anomalous-materials)
 - [Blast Pit](#c-blast-pit)
 - [Power Up](#d-power-up)
