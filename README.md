@@ -14,6 +14,7 @@
     - [Slowgauss script](#slowgauss-script)
     - [Gauss script switcher](#gauss-script-switcher)
   - [Object boost scripts](#5-object-boost-scripts)
+
 - [Anomalous Materials](#b-anomalous-materials)
 - [Blast Pit](#c-blast-pit)
 - [Power Up](#d-power-up)
