@@ -293,6 +293,7 @@ bind - testchamber_reset
   - turn to the left after the script is done (after you hit the wall), so you hit the trigger and land on the reactor
   - (optional, but very recommended) do the jumpbug at `23` or `30.3` fps. Use the bxt_tas_jumpbug bind for this: `bind key +bxt_tas_jumpbug`
 </details>
+
 [Video link](https://youtu.be/-R4quekIkF4)
 
 
@@ -334,6 +335,7 @@ bind - testchamber_reset
 - Keypresses:
   - **0 90 90 90 90 90 90 90** (0 and 9+0 seven times), wait until you start turning mid-air (after you hit the trigger), then press **90** again and hold **A+CTRL**
 </details>
+
 [Video link](https://youtu.be/7QxRBDo6F8E)
 
 
@@ -377,6 +379,7 @@ bind - testchamber_reset
 - Keypresses:
   - **0 90 90 90 90 90 90 90** (**0** and **9+0** seven times), wait until you start turning mid-air (after you hit the trigger), then press **90 90 90**
 </details>
+
 [Video link](https://youtu.be/mnLNYTiTWYs)
 
 
@@ -421,6 +424,7 @@ bind - testchamber_reset
 - Tips:
   - Tapping **D** after the level changes helps with landing a lot
 </details>
+
 [Video link](https://youtu.be/DnRJmZiLDFM)
 
 
