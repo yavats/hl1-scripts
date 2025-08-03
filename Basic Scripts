@@ -1,1 +1,13 @@
+Usespam script:
+
+``` alias +usespam "alias _zspecial @use;@use1"
+alias -usespam "alias _zspecial;-use"
+alias @use1 "+use;alias @use @use2;bxt_append _zspecial"
+alias @use2 "w;alias @use @use3;bxt_append _zspecial"
+alias @use3 "-use;alias @use @use4;bxt_append _zspecial"
+alias @use4 "w;alias @use @use1;bxt_append _zspecial" ```
+
+Example: == bind e +usespam ==
+
+
 
