@@ -1,6 +1,9 @@
 # hl1-scripts
 - [Basic scripts](#a-basic-scripts)
   - [Usespam script](#1-usespam-script)
+  - [Duckroll/Duckspam](#2-duckroll-aka-duckspam-script)
+  - [Fps scripts](#3-fps-scripts-hold-toggle-4-fps-for-one-frame)
+    - [Hold script](#hold-script)
 - [Anomalous Materials](#b-anomalous-materials)
 - [Blast Pit](#c-blast-pit)
 - [Power Up](#d-power-up)
@@ -31,7 +34,7 @@ alias @dr4 "w;alias @duck @dr1;bxt_append _zspecial"
 ```
 Example: `bind key +duckroll`
 
-### 3. Fps Scripts: hold, toggle, 4 fps for one frame
+### 3. Fps scripts: hold, toggle, 4 fps for one frame
 #### Hold script
 *If you want other value, just change the first fps value (20 fps on here) and replace `20` with something else in all the aliases (`fps_20`, `+/-fps_20_hold`, `fps_20_reset`)*
 ```
