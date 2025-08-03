@@ -29,10 +29,13 @@ Example `bind t +ds`
 ### 3. Fps Hold Script/ 4 Fps Script
 > If you want other value, just change the first fps value (20 fps on here) and change the name of the alias 
 ```
-alias +20fpshold "fps_max 20"
-alias -20fpshold "fps_max 100"
+alias fps_20 "fps_max 20"
+alias fps_default "fps_max 100"
+
+alias +fps_20_hold "fps_20; alias -fps_20_hold fps_20_reset"
+alias fps_20_reset "fps_default; alias -fps_20_hold"
 ```
-Example: `bind e +20fpshold`
+Example: `bind e +fps_20_hold`
 > 4 Fps Script
 ```
 alias 4fpsbind "fps_max 4; wait; fps_max 100"
