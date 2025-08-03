@@ -62,9 +62,9 @@ alias obbo2000 "+use;w 11;-use;+jump;w;-jump"
 ```
 Example: `bind e obbo200`
 
-> 1500 Speed Object Boost
+> 1600 Speed Object Boost
 ```
-alias obbo1500 "+use;w 10;-use;+jump;w;-jump"
+alias obbo1600 "+use;w 10;-use;+jump;w;-jump"
 ```
 Example: `bind e obbo1500`
 
@@ -97,6 +97,13 @@ Example: `bind e obbo600`
 alias obbo500 "+use;w 5;-use;+jump;w;-jump"
 ```
 Example: `bind e obbo500`
+
+> Forward Object Boost
+```
+alias obboshoot "+use;w 10;-use;+attack2;+jump;w;-attack2;-jump"
+```
+Example: `bind e obboshoot`
+
 </details>
 
 
