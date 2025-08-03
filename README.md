@@ -1,8 +1,9 @@
 # hl1-scripts
-* [Basic Scripts](#basic-scripts)
+* [Basic Scripts](#a-basic-scripts)
+* [Anomalous Materials](#b-anomalous-materials)
 
 
-## **Basic Scripts**
+## A. **Basic Scripts**
 
 ### 1. Usespam Script
 
@@ -214,3 +215,127 @@ alias "w500"		"w400;w100"
 alias	"w600"		"w300;w300"
 alias	"w700"		"w600;w100"
 alias	"w800"		"w400;w400"
+```
+
+
+
+
+## B. Anomalous Materials
+
+### 1. Testchamber Scripts
+> TC Skip (B)
+```
+// Pitch 30.0 - 40.0
+// Yaw 125.05 - 125.09
+// press 0 9+0 9+0 9+0 9+0 9+0
+
+// if you failed the script, you can either press the testchamber_reset key or re-execute the config
+
+
+alias testchamber "tc1"
+alias tmove 
+
+alias testchamber_reset "alias testchamber tc1; alias tmove; say tc_script_reset"
+
+alias tc1 "w 160;alias testchamber tc2; alias tmove +back" //0+9
+alias tc2 "alias testchamber tc3; alias tmove +moveright" //0+9
+alias tc3 "w 30;+use;w 4;-use;w 40;-moveright;-back;w 100;alias testchamber tc4; alias tmove +left" //0+9
+alias tc4 "w 6;-left;w;alias testchamber tc5; alias tmove +moveright" //0+9
+alias tc5 "w 22;+use;w 11;-use;+duck;w;-duck;-moveright;w 40;alias testchamber tc6; alias tmove +back" //0+9
+alias tc6 "w 13;-back;alias testchamber; alias tmove" //0
+
+
+bind 0 testchamber
+bind 9 tmove
+bind - testchamber_reset
+```
+> TC Skip (D)
+```
+// Pitch 30.0 - 40.0
+// Yaw 136.45 - 136.51 
+// press 0 9+0 9+0 9+0 9+0 9+0 9+0 9+0, wait until you start turning midair (after you hit the trigger), then press 9+0 again and hold a+ctrl 
+
+// if you failed the script, you can either press the testchamber_reset key or re-execute the config
+
+
+alias testchamber "tc1"
+alias move "+moveright"
+
+alias testchamber_reset "alias testchamber tc1; alias move; say tc_script_reset"
+
+alias tc1 "w 160;alias testchamber tc2;alias move +moveright" //0+9
+alias tc2 "alias testchamber tc3;alias move +back" //0+9
+alias tc3 "w 30;+use;wait;-moveright;wait;wait;wait;-use;alias testchamber tc4;alias move +moveright" //0+9
+alias tc4 "w 70;cl_pitchup -89;+use;w 10;wait;wait;wait;wait;-use;cl_pitchup 89;-moveright;-back;cl_pitchdown 30;w 50;+use;alias testchamber tc5" //0+9
+alias tc5 "w 10;wait;wait;wait;wait;-use;w 10;-moveright;w 30;cl_pitchdown 89;alias testchamber tc6;alias move +forward" //0+9
+alias tc6 "cl_pitchdown 180;cl_pitchup -170;w 9;cl_pitchup 89;cl_pitchdown 40;wait;cl_pitchdown 89;-forward;w 63;alias testchamber tc7;alias move +moveleft" //0+9
+alias tc7 "alias testchamber tc8;alias move +left" //0+9
+alias tc8 "w 50;-moveleft;w 100;-left;fps_max 40;w 11;fps_max 100;alias testchamber tc9;alias move +forward" //0+9
+alias tc9 "w 40; -forward; alias testchamber; alias move" //0
+
+
+bind 9 move
+bind 0 testchamber 
+bind - testchamber_reset
+```
+> TC Skip (D-2)
+```
+// Pitch 30.0 - 40.0
+// Yaw 136.45 - 136.51
+// press 0 9+0 9+0 9+0 9+0 9+0 9+0 9+0, wait until you start turning midair (after you hit the trigger), then press 9+0 9+0 9+0
+// the script will 4 fps the trigger for you
+
+// if you failed the script, you can either press the testchamber_reset key or re-execute the config
+
+
+alias testchamber "tc1"
+alias move "+moveright"
+
+alias testchamber_reset "alias testchamber tc1; alias move; say tc_script_reset"
+
+alias tc1 "w 160;alias testchamber tc2;alias move +moveright" //0+9
+alias tc2 "alias testchamber tc3;alias move +back" //0+9
+alias tc3 "w 30;+use;wait;-moveright;wait;wait;wait;-use;alias testchamber tc4;alias move +moveright" //0+9
+alias tc4 "w 70;cl_pitchup -89;+use;w 10;wait;wait;wait;wait;-use;cl_pitchup 89;-moveright;-back;cl_pitchdown 30;w 50;+use;alias testchamber tc5" //0+9
+alias tc5 "w 10;wait;wait;wait;wait;-use;w 10;-moveright;w 30;cl_pitchdown 89;alias testchamber tc6;alias move +forward" //0+9
+alias tc6 "cl_pitchdown 180;cl_pitchup -170;w 9;cl_pitchup 89;cl_pitchdown 40;wait;cl_pitchdown 89;-forward;w 63;alias testchamber tc7;alias move +moveleft" //0+9
+alias tc7 "alias testchamber tc8;alias move +left" //0+9
+alias tc8 "w 50;-moveleft;w 100;-left;fps_max 40;w 11;fps_max 100;alias testchamber tc9;alias move +forward" //0+9
+alias tc9 "w 40; -forward; alias move +moveleft; alias testchamber tc10" //0+9
+alias tc10 "+duck; w 85; -duck; alias move +left; alias testchamber tc11" //0+9
+alias tc11 "w 30; fps_max 4; w; fps_max 100; w 5; -moveleft; -left; alias testchamber; alias move" //0
+
+
+bind 9 move
+bind 0 testchamber 
+bind - testchamber_reset
+```
+> TC Skip (N)
+```
+// Pitch 30.0 - 40.0
+// Yaw 73.00 - 73.10
+// press 0 9+0 9+0 9+0 9+0 9+0 9+0, when you hear a scream press 9+0 once, then hold w+ctrl
+
+// if you failed the script, you can either press the testchamber_reset key or re-execute the config
+
+
+alias cart preboost1
+alias pausespam "w; unpause; w; setpause"
+alias longpausespam "pausespam; pausespam; pausespam; pausespam; pausespam; pausespam; pausespam"
+alias testchamber_reset "alias cart preboost1; alias mcart; say tc_script_reset"
+
+alias preboost1             "pausable 1; w 5; fps_max 18; w 34; alias cart preboost2; alias mcart +moveright" //0+9
+alias preboost2             "+use; w 2; -use; w 12; -moveright; alias cart preboost3; alias mcart +left" //0+9
+alias preboost3             "w 5; +use; w 1; -left; w 1; -use; -left; fps_max 99; w 2; alias cart cartboost; alias mcart +moveright" //0+9
+alias cartboost             "w 33; +use; w 3; setpause; longpausespam; unpause; -use; w 13; fps_max 30; w 9; alias cart cartfly; alias mcart +right" //0+9
+alias cartfly               "w 5; -moveright; -right; alias cart cartlanding1; alias mcart +moveleft" //0+9
+alias cartlanding1          "alias mcart +left; alias cart cartlanding2" //0+9
+alias cartlanding2          "speak scientist/scream20; fps_max 28.7; w 16; -moveleft; w 44; -left; +bxt_tas_jumpbug; fps_max 10; w 4; -bxt_tas_jumpbug; fps_max 100; alias cart cartwindow; alias mcart +moveright" //0+9
+alias cartwindow            "w 30; -moveright; alias cart; alias mcart" //0
+
+
+bind 0 cart
+bind 9 mcart
+bind - testchamber_reset
+```
+
