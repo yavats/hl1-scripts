@@ -1,5 +1,5 @@
 # hl1-scripts
-* [Basic Scripts](##Basic-Scripts)
+* [Basic Scripts](#basic-scripts)
 
 
 ## **Basic Scripts**
