@@ -49,7 +49,7 @@ alias @dr4 "w;alias @duck @dr1;bxt_append _zspecial"
 ```
 Example: `bind key +duckroll`
 
-### 3. Fps scripts
+### 3. Fps scripts \
 #### Hold script
 *If you want other value, just change the first fps value (20 fps on here) and replace `20` with something else in all the aliases (`fps_20`, `+/-fps_20_hold`, `fps_20_reset`)*
 ```
