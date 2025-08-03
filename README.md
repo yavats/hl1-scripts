@@ -49,7 +49,7 @@ alias @dr4 "w;alias @duck @dr1;bxt_append _zspecial"
 ```
 Example: `bind key +duckroll`
 
-### 3. Fps scripts \
+### 3. Fps scripts
 #### Hold script
 *If you want other value, just change the first fps value (20 fps on here) and replace `20` with something else in all the aliases (`fps_20`, `+/-fps_20_hold`, `fps_20_reset`)*
 ```
@@ -278,6 +278,7 @@ bind - testchamber_reset
 [Video link](https://youtu.be/-R4quekIkF4)
 <details>
   <summary>📋Usage📋</summary>
+  
 - Angles:
   - Pitch: **30.0 - 40.0**
   - Yaw: **125.05 - 125.09**
@@ -289,6 +290,7 @@ bind - testchamber_reset
   - turn to the left after the script is done (after you hit the wall), so you hit the trigger and land on the reactor
   - (optional, but very recommended) do the jumpbug at `23` or `30.3` fps. Use the bxt_tas_jumpbug bind for this: `bind key +bxt_tas_jumpbug`
 </details>
+
 **Before doing the script or after failing it you need to reexecute the config with the script or press the testchamber_reset bind (`-` by default)**
 
 
