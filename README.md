@@ -252,6 +252,10 @@ alias	"w800"		"w400;w400"
 ## **B. Anomalous Materials**
 
 ### 7. Testchamber Scripts
+\*troubleshooting, some common info\*
+**📝You need to execute the config with the script (`bind key "exec tc.cfg`, for example) or press the `testchamber_reset` bind (`-` by default) before doing _any_ attempt📝**
+
+
 #### Test Chamber B
 *The most consistent version, but it's slower by 0.7s. Only do this one if you can't get anything else to work*
 <details>
@@ -275,7 +279,6 @@ bind - testchamber_reset
 ```
 </details>
 
-[Video link](https://youtu.be/-R4quekIkF4)
 <details>
   <summary>📋Usage📋</summary>
   
@@ -290,9 +293,7 @@ bind - testchamber_reset
   - turn to the left after the script is done (after you hit the wall), so you hit the trigger and land on the reactor
   - (optional, but very recommended) do the jumpbug at `23` or `30.3` fps. Use the bxt_tas_jumpbug bind for this: `bind key +bxt_tas_jumpbug`
 </details>
-
-**Before doing the script or after failing it you need to reexecute the config with the script or press the testchamber_reset bind (`-` by default)**
-
+[Video link](https://youtu.be/-R4quekIkF4)
 
 #### Test Chamber D
 *Made by [Parklez](https://github.com/parklez). Might be inconsistent sometimes because of fps drops*
@@ -320,7 +321,7 @@ bind 0 testchamber
 bind - testchamber_reset
 ```
 </details>
-[Video link](https://youtu.be/7QxRBDo6F8E)
+
 <details>
   <summary>📋Usage📋</summary>
 - Angles:
@@ -331,8 +332,7 @@ bind - testchamber_reset
 - Keypresses:
   - **0 90 90 90 90 90 90 90** (0 and 9+0 seven times), wait until you start turning mid-air (after you hit the trigger), then press **90** again and hold **A+CTRL**
 </details>
-**Before doing the script or after failing it you need to reexecute the config with the script or press the testchamber_reset bind (`-` by default)**
-
+[Video link](https://youtu.be/7QxRBDo6F8E)
 
 #### Test Chamber D v2
 *The fastest one. The original version was created by [Parklez](https://github.com/parklez), this one (modified by javac_) also 4fpses the trigger. Thanks to Razzie for the idea*
@@ -363,7 +363,6 @@ bind - testchamber_reset
 ```
 </details>
 
-[Video link](https://youtu.be/mnLNYTiTWYs)
 <details>
   <summary>📋Usage📋</summary>
 - Angles:
@@ -374,8 +373,7 @@ bind - testchamber_reset
 - Keypresses:
   - **0 90 90 90 90 90 90 90** (**0** and **9+0** seven times), wait until you start turning mid-air (after you hit the trigger), then press **90 90 90**
 </details>
-**Before doing the script or after failing it you need to reexecute the config with the script or press the testchamber_reset bind (`-` by default)**
-
+[Video link](https://youtu.be/mnLNYTiTWYs)
 
 #### Test Chamber N
 *Made by N4Rk0t1k. The best one in terms of speed/consistency ratio. Try this one if you have any fps issues and can't do the TC_D vesion. Slower by 0.2-0.3s*
@@ -404,7 +402,6 @@ bind - testchamber_reset
 ```
 </details>
 
-[Video link](https://youtu.be/DnRJmZiLDFM)
 <details>
   <summary>📋Usage📋</summary>
 - Angles:
@@ -418,7 +415,7 @@ bind - testchamber_reset
 - Tips:
   - Tapping **D** after the level changes helps with landing a lot
 </details>
-**Before doing the script or after failing it you need to reexecute the config with the script or press the testchamber_reset bind (`-` by default)**
+[Video link](https://youtu.be/DnRJmZiLDFM)
 
 ## **C. Blast Pit**
 
