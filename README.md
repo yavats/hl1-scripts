@@ -233,11 +233,10 @@ alias	"w800"		"w400;w400"
   <summary>Click Here To View Scripts</summary>
   
 #### Test Chamber B
-*The most consistent version*
+*The most consistent version, but it's slower by 0.7s. Only do this one if you can't get anything else to work*
 ```
 alias testchamber "tc1"
 alias tmove 
-
 alias testchamber_reset "alias testchamber tc1; alias tmove; say tc_script_reset"
 
 alias tc1 "w 160;alias testchamber tc2; alias tmove +back" //0+9
@@ -246,7 +245,6 @@ alias tc3 "w 30;+use;w 4;-use;w 40;-moveright;-back;w 100;alias testchamber tc4;
 alias tc4 "w 6;-left;w;alias testchamber tc5; alias tmove +moveright" //0+9
 alias tc5 "w 22;+use;w 11;-use;+duck;w;-duck;-moveright;w 40;alias testchamber tc6; alias tmove +back" //0+9
 alias tc6 "w 13;-back;alias testchamber; alias tmove" //0
-
 
 bind 0 testchamber
 bind 9 tmove
@@ -262,6 +260,9 @@ Usage:
   - right after the cage starts going down
 - Keypresses:
   - **0 9+0 9+0 9+0 9+0 9+0** (0 and 9+0 five times)
+- Additional actions:
+  - turn to the left after the script is done (after you hit the wall), so you hit the trigger and land on the reactor
+  - (optional, but very recommended) do the jumpbug at `23` or `30.3` fps. Use the bxt_tas_jumpbug bind for this: `bind key +bxt_tas_jumpbug`
 
 **Before doing the script or after failing it you need to reexecute the config which contains the script or press the testchamber_reset bind (`-` by default)**
 
