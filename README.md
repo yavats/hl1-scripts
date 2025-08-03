@@ -420,8 +420,7 @@ alias box11 "w 4; -right; -moveright; -forward; weapon_shotgun; alias move; alia
 alias box box1
 alias move
 ```
-Usage:
-`
+#### Usage:
 bind "k" box
 bind "l" move
 You need to re-execute the config with the script after each attempt
@@ -432,7 +431,7 @@ Press K LK LK LK LK LK LK LK LK LK LK (K once and LK 10 times).
 Hold space and make a strafe to the right after changelevel.
 You have to press the buttons fast enough. You can press more than 10 times as well it will still work.
 You can change the number of waits in alias box1 (every 100 waits = 1 second) if you don't have enough time to press the buttons. 
-`
+
 
 
 
