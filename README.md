@@ -343,7 +343,7 @@ Usage:
 
 
 #### Test Chamber N
-*Made by N4Rk0t1k. The best one in terms of speed/consistency ratio. Try this one if you have any fps issues and can't do the TC_D vesion.*
+*Made by N4Rk0t1k. The best one in terms of speed/consistency ratio. Try this one if you have any fps issues and can't do the TC_D vesion. Slower by 0.2-0.3s*
 ```
 alias cart preboost1
 alias pausespam "w; unpause; w; setpause"
