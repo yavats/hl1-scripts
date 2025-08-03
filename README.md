@@ -58,49 +58,49 @@ Example: `bind mouse2 +tau`
 <details>
   <summary>Click Here To View Scripts</summary>
   
-> 2000 Speed Object Boost
+#### 2000 Speed Object Boost
 ```
 alias obbo2000 "+use;w 11;-use;+jump;w;-jump"
 ```
 Example: `bind e obbo200`
 
-> 1600 Speed Object Boost
+#### 1600 Speed Object Boost
 ```
 alias obbo1600 "+use;w 10;-use;+jump;w;-jump"
 ```
 Example: `bind e obbo1600`
 
-> 1300 Speed Object Boost
+#### 1300 Speed Object Boost
 ```
 alias obbo1300 "+use;w 9;-use;+jump;w;-jump"
 ```
 Example: `bind e obbo1300`
 
-> 1000 Speed Object Boost
+#### 1000 Speed Object Boost
 ```
 alias obbo1000 "+use;w 8;-use;+jump;w;-jump"
 ```
 Example: `bind e obbo1000`
 
-> 800 Speed Object Boost
+#### 800 Speed Object Boost
 ```
 alias obbo800 "+use;w 7;-use;+jump;w;-jump"
 ```
 Example: `bind e obbo800`
 
-> 600 Speed Object Boost
+#### 600 Speed Object Boost
 ```
 alias obbo600 "+use;w 6;-use;+jump;w;-jump"
 ```
 Example: `bind e obbo600`
 
-> 500 Speed Object Boost
+#### 500 Speed Object Boost
 ```
 alias obbo500 "+use;w 5;-use;+jump;w;-jump"
 ```
 Example: `bind e obbo500`
 
-> Forward Object Boost
+#### Forward Object Boost
 ```
 alias obboshoot "+use;w 10;-use;+attack2;+jump;w;-attack2;-jump"
 ```
