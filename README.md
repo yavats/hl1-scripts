@@ -87,9 +87,6 @@ alias tauswitch2 "bind mouse2 +attack2; say gaussboost_OFF; alias tauswitch taus
 ```
 Example: `bind key tauswitch`
 ### 5. Object Boost Scripts
-<details>
-  <summary>Expand the list of scripts</summary>
-  
 #### 2000 UPS
 ```
 alias obbo2000 "+use;w 11;-use;+jump;w;-jump"
@@ -137,8 +134,6 @@ Example: `bind key obbo500`
 alias obboshoot "+use;w 10;-use;+attack2;+jump;w;-attack2;-jump"
 ```
 Example: `bind key obboshoot`
-
-</details>
 
 
 
