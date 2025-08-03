@@ -252,7 +252,7 @@ alias	"w800"		"w400;w400"
 ## **B. Anomalous Materials**
 
 ### 7. Testchamber Scripts
-\*troubleshooting, some common info\*
+\*troubleshooting, some common info\*\
 **📝You need to execute the config with the script (`bind key "exec tc.cfg`, for example) or press the `testchamber_reset` bind (`-` by default) before doing _any_ attempt📝**
 
 
