@@ -242,6 +242,7 @@ alias	"w800"		"w400;w400"
 *The most consistent version, but it's slower by 0.7s. Only do this one if you can't get anything else to work*
 <details>
   <summary>Click here to view the script</summary>
+  
 ```
 alias testchamber "tc1"
 alias tmove 
@@ -259,6 +260,7 @@ bind 9 tmove
 bind - testchamber_reset
 ```
 </details>
+
 [Video link](https://youtu.be/-R4quekIkF4)\
 Usage: 
 - Angles:
@@ -277,6 +279,9 @@ Usage:
 
 #### Test Chamber D
 *Made by [Parklez](https://github.com/parklez). Might be inconsistent sometimes because of fps drops*
+<details>
+  <summary>Click here to view the script</summary>
+  
 ```
 alias testchamber "tc1"
 alias move "+moveright"
@@ -297,6 +302,7 @@ bind 9 move
 bind 0 testchamber 
 bind - testchamber_reset
 ```
+</details>
 
 [Video link](https://youtu.be/7QxRBDo6F8E)\
 Usage: 
@@ -313,6 +319,9 @@ Usage:
 
 #### Test Chamber D v2
 *The fastest one. The original version was created by [Parklez](https://github.com/parklez), this one (modified by javac_) also 4fpses the trigger. Thanks to Razzie for the idea*
+<details>
+  <summary>Click here to view the script</summary>
+  
 ```
 alias testchamber "tc1"
 alias move "+moveright"
@@ -335,6 +344,7 @@ bind 9 move
 bind 0 testchamber 
 bind - testchamber_reset
 ```
+</details>
 
 [Video link](https://youtu.be/mnLNYTiTWYs)\
 Usage: 
@@ -351,6 +361,9 @@ Usage:
 
 #### Test Chamber N
 *Made by N4Rk0t1k. The best one in terms of speed/consistency ratio. Try this one if you have any fps issues and can't do the TC_D vesion. Slower by 0.2-0.3s*
+<details>
+  <summary>Click here to view the script</summary>
+  
 ```
 alias cart preboost1
 alias pausespam "w; unpause; w; setpause"
@@ -371,6 +384,7 @@ bind 0 cart
 bind 9 mcart
 bind - testchamber_reset
 ```
+</details>
 
 [Video link](https://youtu.be/DnRJmZiLDFM)\
 Usage: 
