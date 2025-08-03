@@ -224,6 +224,7 @@ alias	"w800"		"w400;w400"
 <details>
   <summary>Click Here To View Scripts</summary>
 > TC Skip (B)
+  
 ```
 // Pitch 30.0 - 40.0
 // Yaw 125.05 - 125.09
@@ -248,7 +249,9 @@ alias tc6 "w 13;-back;alias testchamber; alias tmove" //0
 bind 0 testchamber
 bind 9 tmove
 bind - testchamber_reset
+
 ```
+
 > TC Skip (D)
 ```
 // Pitch 30.0 - 40.0
