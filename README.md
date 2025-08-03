@@ -38,7 +38,7 @@ Example: `bind e +20fpshold`
 alias 4fpsbind "fps_max 4; wait; fps_max 100"
 ```
 Example: `bind e 4fpsbind`
-### 4. Tau Gauss Script
+### 4. Tau Gauss Script (180° Gauss Boosting)
 ```
 alias _taubo
 alias _taubofunc "cl_pitchup 180;cl_pitchdown -180;-attack2;wait;cl_pitchup -12;cl_pitchdown 12;wait;cl_pitchup 89.999;cl_pitchdown 89.999"
