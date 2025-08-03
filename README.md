@@ -276,7 +276,8 @@ bind - testchamber_reset
 </details>
 
 [Video link](https://youtu.be/-R4quekIkF4)
-Usage: 
+<details>
+  <summary>📋Usage📋</summary>
 - Angles:
   - Pitch: **30.0 - 40.0**
   - Yaw: **125.05 - 125.09**
@@ -287,7 +288,7 @@ Usage:
 - Additional actions:
   - turn to the left after the script is done (after you hit the wall), so you hit the trigger and land on the reactor
   - (optional, but very recommended) do the jumpbug at `23` or `30.3` fps. Use the bxt_tas_jumpbug bind for this: `bind key +bxt_tas_jumpbug`
-
+</details>
 **Before doing the script or after failing it you need to reexecute the config with the script or press the testchamber_reset bind (`-` by default)**
 
 
@@ -317,9 +318,9 @@ bind 0 testchamber
 bind - testchamber_reset
 ```
 </details>
-
 [Video link](https://youtu.be/7QxRBDo6F8E)
-Usage: 
+<details>
+  <summary>📋Usage📋</summary>
 - Angles:
   - Pitch: **30.0 - 40.0**
   - Yaw: **136.45 - 136.51** (I personally recommend .50-.51, but doesn't really matter)
@@ -327,7 +328,7 @@ Usage:
   - right after the cage starts going down
 - Keypresses:
   - **0 90 90 90 90 90 90 90** (0 and 9+0 seven times), wait until you start turning mid-air (after you hit the trigger), then press **90** again and hold **A+CTRL**
-
+</details>
 **Before doing the script or after failing it you need to reexecute the config with the script or press the testchamber_reset bind (`-` by default)**
 
 
@@ -361,7 +362,8 @@ bind - testchamber_reset
 </details>
 
 [Video link](https://youtu.be/mnLNYTiTWYs)
-Usage: 
+<details>
+  <summary>📋Usage📋</summary>
 - Angles:
   - Pitch: **30.0 - 40.0**
   - Yaw: **136.45 - 136.51** (I personally recommend .50-.51, but doesn't really matter)
@@ -369,7 +371,7 @@ Usage:
   - right after the cage starts going down
 - Keypresses:
   - **0 90 90 90 90 90 90 90** (**0** and **9+0** seven times), wait until you start turning mid-air (after you hit the trigger), then press **90 90 90**
-
+</details>
 **Before doing the script or after failing it you need to reexecute the config with the script or press the testchamber_reset bind (`-` by default)**
 
 
@@ -401,7 +403,8 @@ bind - testchamber_reset
 </details>
 
 [Video link](https://youtu.be/DnRJmZiLDFM)
-Usage: 
+<details>
+  <summary>📋Usage📋</summary>
 - Angles:
   - Pitch: **30.0 - 40.0**
   - Yaw: **73.00 - 73.10** (I personally recommend .05 - 0.7, but doesn't really matter)
@@ -412,7 +415,7 @@ Usage:
   - (second option) **0 90 90 90 90 90 90 90** (**0** and **9+0** seven times), start holding **W+CTRL** before landing
 - Tips:
   - Tapping **D** after the level changes helps with landing a lot
-
+</details>
 **Before doing the script or after failing it you need to reexecute the config with the script or press the testchamber_reset bind (`-` by default)**
 
 ## **C. Blast Pit**
