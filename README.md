@@ -456,7 +456,7 @@ alias move
 * You have to press the buttons fast enough. You can press more than 10 times as well it will still work.
 * You can change the number of waits in alias box1 (every 100 waits = 1 second) if you don't have enough time to press the buttons.
 
-  ## **D. Power Up**
+## **D. Power Up**
   
 ### 11. Changelevel Delay Scripts
 <details>
