@@ -266,15 +266,9 @@ Usage:
 
 **Before doing the script or after failing it you need to reexecute the config with the script or press the testchamber_reset bind (`-` by default)**
 
-#### TC Skip (D)
+#### Test Chamber D
+*Made by [Parklez](https://github.com/parklez). Might be inconsistent sometimes because of fps drops*
 ```
-// Pitch 30.0 - 40.0
-// Yaw 136.45 - 136.51 
-// press 0 9+0 9+0 9+0 9+0 9+0 9+0 9+0, wait until you start turning midair (after you hit the trigger), then press 9+0 again and hold a+ctrl 
-
-// if you failed the script, you can either press the testchamber_reset key or re-execute the config
-
-
 alias testchamber "tc1"
 alias move "+moveright"
 
@@ -295,6 +289,19 @@ bind 9 move
 bind 0 testchamber 
 bind - testchamber_reset
 ```
+
+[Video link](https://youtu.be/7QxRBDo6F8E)\
+Usage: 
+- Angles:
+  - Pitch: **30.0 - 40.0**
+  - Yaw: **136.45 - 136.51** (I personally recommend .50-.51, but doesn't really matter)
+- Activation timing:
+  - right after the cage starts going down
+- Keypresses:
+  - **0 9+0 9+0 9+0 9+0 9+0 9+0 9+0** (0 and 9+0 seven times), wait until you start turning mid-air (after you hit the trigger), then press **9+0** again and hold **A+CTRL**
+
+**Before doing the script or after failing it you need to reexecute the config with the script or press the testchamber_reset bind (`-` by default)**
+
 #### TC Skip (D-2)
 ```
 // Pitch 30.0 - 40.0
