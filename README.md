@@ -454,7 +454,44 @@ alias move
 * Press K LK LK LK LK LK LK LK LK LK LK (K once and LK 10 times).
 * Hold space and make a strafe to the right after changelevel.
 * You have to press the buttons fast enough. You can press more than 10 times as well it will still work.
-* You can change the number of waits in alias box1 (every 100 waits = 1 second) if you don't have enough time to press the buttons. 
+* You can change the number of waits in alias box1 (every 100 waits = 1 second) if you don't have enough time to press the buttons.
+
+  ## **D. Power Up**
+  
+### 11. Changelevel Delay Scripts
+<details>
+  <summary>Click Here To View Scripts</summary>
+
+#### PU CLD (A)
+```
+alias puskip "-jump;-moveright;-moveleft;speak fvox/power_level_is;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;cl_pitchdown 180;cl_pitchup -179;w 30;cl_pitchup -30;cl_pitchdown 31;wait;cl_pitchup 89;cl_pitchdown 89;w 10;+use;w 11;-use;+jump;wait;-jump"
+```
+Video guide: [link](https://www.youtube.com/watch?v=IkZ4wWKrLVg)\
+Example: `bind g puskip`
+
+#### Power Up B
+*Facing forward, no object boost.*
+```
+alias puskip "speak fvox/power_level_is;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 50"
+```
+Example: `bind g puskip`
+How to use: Walk forward and activate the script as you walk across the level change trigger, grab the tripmines and wait against the wall.
+
+
+#### PU CLD (C) [Faster One, has less delay)
+*Facing forward, with object boost!*
+```
+alias puskip "weapon_shotgun;-jump;-moveright;-moveleft;w 280;+use;w 8;-use;+jump;wait;-jump;+attack2;wait;-attack2;+duck;w 27;-duck"
+```
+Example: `bind g puskip`
+
+#### PU CLD (C) [Slower One, has more delay]
+*Facing forward, with object boost!*
+```
+alias puskip "weapon_shotgun;-jump;-moveright;-moveleft;w 350;+use;w 12;-use;+jump;wait;-jump;+attack2;wait;-attack2;+duck;w 28;-duck"
+```
+Example: `bind g puskip`
+</details>
 
 
 
