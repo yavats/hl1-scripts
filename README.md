@@ -357,6 +357,82 @@ bind - testchamber_reset
 
 ## **C. Blast Pit**
 
+### 8. Jumpbugs
+<details>
+  <summary>Click Here To View Scripts</summary>
+  
+#### jb1 (First Elevator)
+```
+alias fps_90 "fps_max 90.90909"
+alias fps_100 "fps_max 100"
+alias +bpjb1 "fps_90; w5; +bxt_tas_jumpbug" 
+alias -bpjb1 "-bxt_tas_jumpbug; fps_100"
+```
+Example: `bind y +bpjb1`
+
+#### jb2 (Second Elevator)
+```
+alias fps_55 "fps_max 55.55555"
+alias fps_100 "fps_max 100"
+alias +bpjb2 "fps_55; w20; +bxt_tas_jumpbug" 
+alias -bpjb2 "-bxt_tas_jumpbug; fps_100"
+```
+Example: `bind y +bpjb2`
+
+#### jb3 (Pipe Before Power Up)
+```
+alias fps_33 "fps_max 58.82353"
+alias +bpjb3 "fps_33; w 5; +bxt_tas_jumpbug" 
+alias -bpjb3 "-bxt_tas_jumpbug; fps_100"
+```
+Example: `bind y +bpjb3`
+</details>
+
+### 9. Nade Boost Scripts
+
+#### Maxam's Nade Route
+```
+alias bp_nade2 "cl_pitchdown 30;cl_pitchup -30;+duck;+jump;wait;-attack;w 15;-jump;-duck;cl_pitchup 89;cl_pitchdown 89;force_centerview; say fps_90"
+```
+Example: `bind tab "bp_nade2"`
+
+#### Tentacle Room Boost 
+```
+alias bpbutton2 "+attack2; -jump; w; weapon_handgrenade;-attack2; -moveleft; -moveright; weapon_handgrenade; w 20; cl_pitchdown 45; cl_pitchup -45; w 40; -duck; w 30; +use; w 20; -use; w 15; +jump; w; +duck; cl_pitchdown 89; cl_pitchup 89; fps_max 7.5; w 2; -jump; fps_max 100; w 50; -duck"
+```
+Example: `bind g "bpbutton2"`
+
+### 10. Hl21 Box Script
+```
+alias box1 "fps_max 100; w 100; alias move +left; alias box box2" //k
+alias box2 "w 3; -left; alias move +moveright; alias box box3" //l + k
+alias box3 "w 22; +use; w 9; -use; w 20; +use; w 6; -use; +duck; w; -duck; w; +duck; +use; w 21; -use; -duck; w 15; +use; w 8; -use; w; +duck; w 25; -duck; w 25; +use; w 6; -use; alias move +forward; alias box box4" //l + k
+alias box4 "w 23; +use; w 10; -use; w 5; +use; w 8; -use; w 25; -moveright; w 10; +use; w 4; -use; w 42; -forward; w 30; alias move +moveleft; alias box box5" //l + k
+alias box5 "w 10; +use; w 9; -use; -moveleft; alias move +right; alias box box6" //l + k
+alias box6 "w 12; -right; w 53; record bp1; alias move +moveleft; alias box box7" //l + k
+alias box7 "w 5; alias move +forward; alias box box8" //l + k
+alias box8 "w 7; -forward; w 25; -moveleft; w 5; alias move +forward; alias box box9" //l + k
+alias box9 "w 2; +use; w 11; +duck; w; -duck; w; -use; alias move +moveright; alias box box10" //l + k
+alias box10 "alias move +right; alias box box11" //l + k
+alias box11 "w 4; -right; -moveright; -forward; weapon_shotgun; alias move; alias box" //l + k
+
+alias box box1
+alias move
+```
+Usage:
+`
+bind "k" box
+bind "l" move
+You need to re-execute the config with the script after each attempt
+Push the box into the corner and stand close to it and the wall.
+Pitch doesn't matter much, just aim at the corner of the box (make sure you don't aim too high tho otherwise it might not push the box in middle of script).
+yaw: 262.41 - 262.70
+Press K LK LK LK LK LK LK LK LK LK LK (K once and LK 10 times).
+Hold space and make a strafe to the right after changelevel.
+You have to press the buttons fast enough. You can press more than 10 times as well it will still work.
+You can change the number of waits in alias box1 (every 100 waits = 1 second) if you don't have enough time to press the buttons. 
+`
+
 
 
 
