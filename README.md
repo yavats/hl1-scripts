@@ -1,6 +1,7 @@
 # hl1-scripts
 * [Basic Scripts](#a-basic-scripts)
 * [Anomalous Materials](#b-anomalous-materials)
+* [Blast Pit](#c-blast-pit)
 
 
 ## A. **Basic Scripts**
