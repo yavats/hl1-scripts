@@ -18,7 +18,6 @@
 
 
 ## A. **Basic scripts**
-
 ### 1. Usespam script
 ```
 alias +usespam "alias _zspecial @use;@use1"
