@@ -264,7 +264,7 @@ Usage:
   - turn to the left after the script is done (after you hit the wall), so you hit the trigger and land on the reactor
   - (optional, but very recommended) do the jumpbug at `23` or `30.3` fps. Use the bxt_tas_jumpbug bind for this: `bind key +bxt_tas_jumpbug`
 
-**Before doing the script or after failing it you need to reexecute the config which contains the script or press the testchamber_reset bind (`-` by default)**
+**Before doing the script or after failing it you need to reexecute the config with the script or press the testchamber_reset bind (`-` by default)**
 
 #### TC Skip (D)
 ```
