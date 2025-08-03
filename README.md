@@ -4,6 +4,9 @@
   - [Duckroll/Duckspam](#2-duckroll-aka-duckspam-script)
   - [Fps scripts](#3-fps-scripts-hold-toggle-4-fps-for-one-frame)
     - [Hold script](#hold-script)
+    - [Toggle script](#toggle-script)
+    - [4 fps script](#4-fps-script)
+  - [
 - [Anomalous Materials](#b-anomalous-materials)
 - [Blast Pit](#c-blast-pit)
 - [Power Up](#d-power-up)
@@ -57,7 +60,8 @@ Example: `bind key fps_20_toggle`
 alias 4fpsbind "fps_max 4; w; fps_max 100"
 ```
 Example: `bind key 4fpsbind`
-### 4. 180° Gauss Boost Script
+### 4. Gauss scripts
+#### 180° Gauss boost
 ```
 alias _taubo
 alias _taubofunc "cl_pitchup 180;cl_pitchdown -180;-attack2;wait;cl_pitchup -12;cl_pitchdown 12;wait;cl_pitchup 89;cl_pitchdown 89"
@@ -65,7 +69,18 @@ alias +tau "+attack2; alias _taubo _taubofunc"
 alias -tau "_taubo; alias _taubo"
 ```
 Example: `bind key +tau`
-
+#### Slowgauss script
+```
+alias tauslow "cl_pitchup 180;cl_pitchdown -180;-attack;w 50;cl_pitchup 89;cl_pitchdown 89;force_centerview"
+```
+Example: `bind key tauslow`
+#### Gauss script switcher
+```
+alias tauswitch tauswitch1
+alias tauswitch1 "bind mouse2 +tau; say gaussboost_ON; alias tauswitch tauswitch2"
+alias tauswitch2 "bind mouse2 +attack2; say gaussboost_OFF; alias tauswitch tauswitch1"
+```
+Example: `bind key tauswitch`
 ### 5. Object Boost Scripts
 <details>
   <summary>Expand the list of scripts</summary>
