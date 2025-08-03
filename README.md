@@ -66,7 +66,7 @@ Example: `bind e obbo200`
 ```
 alias obbo1600 "+use;w 10;-use;+jump;w;-jump"
 ```
-Example: `bind e obbo1500`
+Example: `bind e obbo1600`
 
 > 1300 Speed Object Boost
 ```
