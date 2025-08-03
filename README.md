@@ -15,6 +15,11 @@
     - [Gauss script switcher](#gauss-script-switcher)
   - [Object boost scripts](#5-object-boost-scripts)
 - [Anomalous Materials](#b-anomalous-materials)
+  - [Testchamber scripts](#7-testchamber-scripts)
+    - [Testchamber B](#test-chamber-b)
+    - [Testchamber D](#test-chamber-d)
+    - [Testchamber D v2](#test-chamber-d-v2)
+    - [Testchamber N](#test-chamber-n)
 - [Blast Pit](#c-blast-pit)
 - [Power Up](#d-power-up)
 
@@ -129,7 +134,7 @@ Example: `bind key obboshoot`
 
 ### 6. Wait Table (BunnyModXT has its own wait table built on it, but some old scripts uses this wait table so you might need them. Just put this at the very bottom of your config.)
 <details>
-  <summary>Expand</summary>
+  <summary>📃Expand the list of aliases</summary>
   
   ```
 alias	"w"			  "wait"
@@ -250,7 +255,7 @@ alias	"w800"		"w400;w400"
 #### Test Chamber B
 *The most consistent version, but it's slower by 0.7s. Only do this one if you can't get anything else to work*
 <details>
-  <summary>Click here to view the script</summary>
+  <summary>📃Click here to view the script</summary>
   
 ```
 alias testchamber "tc1"
@@ -289,7 +294,7 @@ Usage:
 #### Test Chamber D
 *Made by [Parklez](https://github.com/parklez). Might be inconsistent sometimes because of fps drops*
 <details>
-  <summary>Click here to view the script</summary>
+  <summary>📃Click here to view the script</summary>
   
 ```
 alias testchamber "tc1"
@@ -329,7 +334,7 @@ Usage:
 #### Test Chamber D v2
 *The fastest one. The original version was created by [Parklez](https://github.com/parklez), this one (modified by javac_) also 4fpses the trigger. Thanks to Razzie for the idea*
 <details>
-  <summary>Click here to view the script</summary>
+  <summary>📃Click here to view the script</summary>
   
 ```
 alias testchamber "tc1"
@@ -371,7 +376,7 @@ Usage:
 #### Test Chamber N
 *Made by N4Rk0t1k. The best one in terms of speed/consistency ratio. Try this one if you have any fps issues and can't do the TC_D vesion. Slower by 0.2-0.3s*
 <details>
-  <summary>Click here to view the script</summary>
+  <summary>📃Click here to view the script</summary>
   
 ```
 alias cart preboost1
