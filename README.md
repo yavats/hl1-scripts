@@ -294,7 +294,7 @@ bind - testchamber_reset
   - (optional, but very recommended) do the jumpbug at `23` or `30.3` fps
 </details>
 
-[Video link](https://youtu.be/-R4quekIkF4)
+[Video link](https://youtu.be/-R4quekIkF4)\
 [Practice  save](Practice%20saves/tc_b.sav)
 
 
@@ -337,7 +337,7 @@ bind - testchamber_reset
   - `0 90 90 90 90 90 90 90` (`0` and then `90` seven times), wait until you start turning mid-air (after you hit the trigger), then press `90` again and hold `a + ctrl`**
 </details>
 
-[Video link](https://youtu.be/7QxRBDo6F8E)
+[Video link](https://youtu.be/7QxRBDo6F8E)\
 [Practice  save](Practice%20saves/tc_d.sav)
 
 
@@ -382,7 +382,7 @@ bind - testchamber_reset
   - `0 90 90 90 90 90 90 90` (`0` and then `90` seven times), wait until you start turning mid-air (after you hit the trigger), then press `90 90 90`
 </details>
 
-[Video link](https://youtu.be/mnLNYTiTWYs)
+[Video link](https://youtu.be/mnLNYTiTWYs)\
 [Practice  save](Practice%20saves/tc_d.sav)
 
 
@@ -428,7 +428,7 @@ bind - testchamber_reset
   - Tapping `d` after the level changes helps with landing a lot
 </details>
 
-[Video link](https://youtu.be/DnRJmZiLDFM)
+[Video link](https://youtu.be/DnRJmZiLDFM)\
 [Practice  save](Practice%20saves/tc_n.sav)
 
 
