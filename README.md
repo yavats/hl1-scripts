@@ -295,7 +295,7 @@ bind - testchamber_reset
 </details>
 
 [Video link](https://youtu.be/-R4quekIkF4)
-
+[Practice  save](Practice%20saves/tc_b.sav)
 
 
 #### 🟠 Test Chamber D
@@ -338,7 +338,7 @@ bind - testchamber_reset
 </details>
 
 [Video link](https://youtu.be/7QxRBDo6F8E)
-
+[Practice  save](Practice%20saves/tc_d.sav)
 
 
 #### 🔴 Test Chamber D v2
@@ -383,7 +383,7 @@ bind - testchamber_reset
 </details>
 
 [Video link](https://youtu.be/mnLNYTiTWYs)
-
+[Practice  save](Practice%20saves/tc_d.sav)
 
 
 #### 🟡 Test Chamber N
@@ -429,7 +429,7 @@ bind - testchamber_reset
 </details>
 
 [Video link](https://youtu.be/DnRJmZiLDFM)
-
+[Practice  save](Practice%20saves/tc_n.sav)
 
 
 ## **C. Blast Pit**
