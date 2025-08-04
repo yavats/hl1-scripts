@@ -257,7 +257,10 @@ alias	"w800"		"w400;w400"
 
 
 #### 🟢 Testchamber B
-*The most consistent version, . Only do this one if you can't get anything else to work*
+*Made by [Parklez](https://github.com/parklez), modified by javac_*
+- The most consistent version
+- 0.7s slower than Testchamber D
+- Only do this one if you can't get anything else to work
 <details>
   <summary>📜Click here to view the script📜</summary>
   
