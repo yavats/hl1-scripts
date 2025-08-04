@@ -16,10 +16,10 @@
   - [Object boost scripts](#5-object-boost-scripts)
 - [Anomalous Materials](#b-anomalous-materials)
   - [Testchamber scripts](#7-testchamber-scripts)
-    - [Testchamber B](#-test-chamber-b)
-    - [Testchamber N](#-test-chamber-n)
-    - [Testchamber D](#-test-chamber-d)
-    - [Testchamber D v2](#-test-chamber-d-v2)
+    - [Testchamber B](#-testchamber-b)
+    - [Testchamber N](#-testchamber-n)
+    - [Testchamber D](#-testchamber-d)
+    - [Testchamber D v2](#-testchamber-d-v2)
 - [Blast Pit](#c-blast-pit)
 - [Power Up](#d-power-up)
 
@@ -256,8 +256,8 @@ alias	"w800"		"w400;w400"
 **📝You need to execute the config with the script (`bind key "exec tc.cfg`, for example) or press the `testchamber_reset` bind (`-` by default) before doing _any_ attempt📝**
 
 
-#### 🟢 Test Chamber B
-*The most consistent version, but it's slower by 0.7s. Only do this one if you can't get anything else to work*
+#### 🟢 Testchamber B
+*The most consistent version, . Only do this one if you can't get anything else to work*
 <details>
   <summary>📜Click here to view the script📜</summary>
   
@@ -298,8 +298,8 @@ bind - testchamber_reset
 [Practice  save](Practice%20saves/tc_b.sav)
 
 
-#### 🟡 Test Chamber N
-*Made by N4Rk0t1k. The best one in terms of speed/consistency ratio. Try this one if you have any fps issues and can't do the TC_D vesion. Slower by 0.2-0.3s*
+#### 🟡 Testchamber N
+*Made by N4Rk0t1k. The most balanced one (speed/consistency). Try this one if you have any fps issues and can't do the TC_D vesion. Slower by 0.2-0.3s*
 <details>
   <summary>📜Click here to view the script📜</summary>
   
@@ -344,7 +344,7 @@ bind - testchamber_reset
 [Practice  save](Practice%20saves/tc_n.sav)
 
 
-#### 🟠 Test Chamber D
+#### 🟠 Testchamber D
 *Made by [Parklez](https://github.com/parklez). Might be inconsistent sometimes because of fps drops*
 <details>
   <summary>📜Click here to view the script📜</summary>
@@ -387,7 +387,7 @@ bind - testchamber_reset
 [Practice  save](Practice%20saves/tc_d.sav)
 
 
-#### 🔴 Test Chamber D v2
+#### 🔴 Testchamber D v2
 *The fastest one. The original version was created by [Parklez](https://github.com/parklez), this one (modified by javac_) also 4fpses the trigger. Thanks to Razzie for the idea*
 <details>
   <summary>📜Click here to view the script📜</summary>
