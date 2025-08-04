@@ -17,9 +17,9 @@
 - [Anomalous Materials](#b-anomalous-materials)
   - [Testchamber scripts](#7-testchamber-scripts)
     - [Testchamber B](#-test-chamber-b)
+    - [Testchamber N](#-test-chamber-n)
     - [Testchamber D](#-test-chamber-d)
     - [Testchamber D v2](#-test-chamber-d-v2)
-    - [Testchamber N](#-test-chamber-n)
 - [Blast Pit](#c-blast-pit)
 - [Power Up](#d-power-up)
 
@@ -298,6 +298,52 @@ bind - testchamber_reset
 [Practice  save](Practice%20saves/tc_b.sav)
 
 
+#### 🟡 Test Chamber N
+*Made by N4Rk0t1k. The best one in terms of speed/consistency ratio. Try this one if you have any fps issues and can't do the TC_D vesion. Slower by 0.2-0.3s*
+<details>
+  <summary>📜Click here to view the script📜</summary>
+  
+```
+alias cart preboost1
+alias pausespam "w; unpause; w; setpause"
+alias longpausespam "pausespam; pausespam; pausespam; pausespam; pausespam; pausespam; pausespam"
+alias testchamber_reset "alias cart preboost1; alias mcart; say tc_script_reset"
+
+alias preboost1             "pausable 1; w 5; fps_max 18; w 34; alias cart preboost2; alias mcart +moveright" //0+9
+alias preboost2             "+use; w 2; -use; w 12; -moveright; alias cart preboost3; alias mcart +left" //0+9
+alias preboost3             "w 5; +use; w 1; -left; w 1; -use; -left; fps_max 99; w 2; alias cart cartboost; alias mcart +moveright" //0+9
+alias cartboost             "w 33; +use; w 3; setpause; longpausespam; unpause; -use; w 13; fps_max 30; w 9; alias cart cartfly; alias mcart +right" //0+9
+alias cartfly               "w 5; -moveright; -right; alias cart cartlanding1; alias mcart +moveleft" //0+9
+alias cartlanding1          "alias mcart +left; alias cart cartlanding2" //0+9
+alias cartlanding2          "speak scientist/scream20; fps_max 28.7; w 16; -moveleft; w 44; -left; +bxt_tas_jumpbug; fps_max 10; w 4; -bxt_tas_jumpbug; fps_max 100; alias cart cartwindow; alias mcart +moveright" //0+9
+alias cartwindow            "w 30; -moveright; alias cart; alias mcart" //0
+
+
+bind 0 cart
+bind 9 mcart
+bind - testchamber_reset
+```
+</details>
+
+<details>
+  <summary>📋Usage📋</summary>
+  
+- **Angles:**
+  - Pitch: `30.0 - 40.0`
+  - Yaw: `73.00 - 73.10` (I personally recommend .05 - 0.7, but doesn't really matter)
+- **Activation timing:**
+  - right after the cage starts going down
+- **Keypresses:**
+  - (first option) `0 90 90 90 90 90 90` (`0` and then `90` six times), wait until you hear the scientist screaming, then press `90` again and hold `w + ctrl`
+  - (second option) `0 90 90 90 90 90 90 90` (`0` and `90` seven times), start holding `w + ctrl` before landing
+- **Tips:**
+  - Tapping `d` after the level changes helps with landing a lot
+</details>
+
+[Video link](https://youtu.be/DnRJmZiLDFM)\
+[Practice  save](Practice%20saves/tc_n.sav)
+
+
 #### 🟠 Test Chamber D
 *Made by [Parklez](https://github.com/parklez). Might be inconsistent sometimes because of fps drops*
 <details>
@@ -384,52 +430,6 @@ bind - testchamber_reset
 
 [Video link](https://youtu.be/mnLNYTiTWYs)\
 [Practice  save](Practice%20saves/tc_d.sav)
-
-
-#### 🟡 Test Chamber N
-*Made by N4Rk0t1k. The best one in terms of speed/consistency ratio. Try this one if you have any fps issues and can't do the TC_D vesion. Slower by 0.2-0.3s*
-<details>
-  <summary>📜Click here to view the script📜</summary>
-  
-```
-alias cart preboost1
-alias pausespam "w; unpause; w; setpause"
-alias longpausespam "pausespam; pausespam; pausespam; pausespam; pausespam; pausespam; pausespam"
-alias testchamber_reset "alias cart preboost1; alias mcart; say tc_script_reset"
-
-alias preboost1             "pausable 1; w 5; fps_max 18; w 34; alias cart preboost2; alias mcart +moveright" //0+9
-alias preboost2             "+use; w 2; -use; w 12; -moveright; alias cart preboost3; alias mcart +left" //0+9
-alias preboost3             "w 5; +use; w 1; -left; w 1; -use; -left; fps_max 99; w 2; alias cart cartboost; alias mcart +moveright" //0+9
-alias cartboost             "w 33; +use; w 3; setpause; longpausespam; unpause; -use; w 13; fps_max 30; w 9; alias cart cartfly; alias mcart +right" //0+9
-alias cartfly               "w 5; -moveright; -right; alias cart cartlanding1; alias mcart +moveleft" //0+9
-alias cartlanding1          "alias mcart +left; alias cart cartlanding2" //0+9
-alias cartlanding2          "speak scientist/scream20; fps_max 28.7; w 16; -moveleft; w 44; -left; +bxt_tas_jumpbug; fps_max 10; w 4; -bxt_tas_jumpbug; fps_max 100; alias cart cartwindow; alias mcart +moveright" //0+9
-alias cartwindow            "w 30; -moveright; alias cart; alias mcart" //0
-
-
-bind 0 cart
-bind 9 mcart
-bind - testchamber_reset
-```
-</details>
-
-<details>
-  <summary>📋Usage📋</summary>
-  
-- **Angles:**
-  - Pitch: `30.0 - 40.0`
-  - Yaw: `73.00 - 73.10` (I personally recommend .05 - 0.7, but doesn't really matter)
-- **Activation timing:**
-  - right after the cage starts going down
-- **Keypresses:**
-  - (first option) `0 90 90 90 90 90 90` (`0` and then `90` six times), wait until you hear the scientist screaming, then press `90` again and hold `w + ctrl`
-  - (second option) `0 90 90 90 90 90 90 90` (`0` and `90` seven times), start holding `w + ctrl` before landing
-- **Tips:**
-  - Tapping `d` after the level changes helps with landing a lot
-</details>
-
-[Video link](https://youtu.be/DnRJmZiLDFM)\
-[Practice  save](Practice%20saves/tc_n.sav)
 
 
 ## **C. Blast Pit**
