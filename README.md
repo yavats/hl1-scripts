@@ -262,7 +262,7 @@ alias	"w800"		"w400;w400"
 - 0.7s slower than Testchamber D
 - Only do this one if you can't get anything else to work
 <details>
-  <summary>📜Click here to view the script📜</summary>
+  <summary>**📜Click here to view the script📜**</summary>
   
 ```
 alias testchamber "tc1"
@@ -283,7 +283,7 @@ bind - testchamber_reset
 </details>
 
 <details>
-  <summary>📋Usage📋</summary>
+  <summary>**📋Usage📋**</summary>
 
 - **Angles:**
   - Pitch: `30.0 - 40.0`
