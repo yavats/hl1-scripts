@@ -38,7 +38,7 @@ Example: `bind key +usespam`
 
 
 ### 2. Duckroll (aka Duckspam) Script
-*Only use this one for waterboosts, `+bxt_tas_ducktap` is much better for movement purposes*
+*Only use this for waterboosts, `+bxt_tas_ducktap` is much better for movement purposes*
 ```
 alias +duckroll "alias _zspecial @duck;@dr1"
 alias -duckroll "alias _zspecial;-duck"
@@ -48,6 +48,7 @@ alias @dr3 "-duck;alias @duck @dr4;bxt_append _zspecial"
 alias @dr4 "w;alias @duck @dr1;bxt_append _zspecial"
 ```
 Example: `bind key +duckroll`
+
 
 ### 3. Fps scripts
 #### Hold script
@@ -72,6 +73,8 @@ Example: `bind key fps_20_toggle`
 alias 4fpsbind "fps_max 4; w; fps_max 100"
 ```
 Example: `bind key 4fpsbind`
+
+
 ### 4. Gauss scripts
 #### 180° Gauss boost
 ```
@@ -93,37 +96,34 @@ alias tauswitch1 "bind mouse2 +tau; say gaussboost_ON; alias tauswitch tauswitch
 alias tauswitch2 "bind mouse2 +attack2; say gaussboost_OFF; alias tauswitch tauswitch1"
 ```
 Example: `bind key tauswitch`
+
+
 ### 5. Object Boost Scripts
 #### 2000 UPS
 ```
 alias obbo2000 "+use;w 11;-use;+jump;w;-jump"
 ```
 Example: `bind key obbo200`
-
 #### 1600 UPS
 ```
 alias obbo1600 "+use;w 10;-use;+jump;w;-jump"
 ```
 Example: `bind key obbo1600`
-
 #### 1300 UPS
 ```
 alias obbo1300 "+use;w 9;-use;+jump;w;-jump"
 ```
 Example: `bind key obbo1300`
-
 #### 1000 UPS
 ```
 alias obbo1000 "+use;w 8;-use;+jump;w;-jump"
 ```
 Example: `bind key obbo1000`
-
 #### 800 UPS
 ```
 alias obbo800 "+use;w 7;-use;+jump;w;-jump"
 ```
 Example: `bind key obbo800`
-
 #### Forward Object Boost (~1300-1400 UPS)
 ```
 alias obboshoot "+use;w 10;-use;+attack2;+jump;w;-attack2;-jump"
@@ -131,8 +131,7 @@ alias obboshoot "+use;w 10;-use;+attack2;+jump;w;-attack2;-jump"
 Example: `bind key obboshoot`
 
 
-
-### 6. Wait Table (BunnyModXT has its own wait table built on it, but some old scripts uses this wait table so you might need them. Just put this at the very bottom of your config.)
+### 6. Wait Table (Bunnymod XT has its own wait table built on it, but some old scripts uses this wait table so you might need it. Just put this at the very bottom of your config.)
 <details>
   <summary>📜Expand the list of aliases📜</summary>
   
@@ -249,19 +248,20 @@ alias	"w800"		"w400;w400"
 ```
 </details>
 
+
+
 ## **B. Anomalous Materials**
 
 ### 7. Testchamber Scripts
 \*troubleshooting, some common info\*\
 **📝You need to execute the config with the script (`bind key "exec tc.cfg`, for example) or press the `testchamber_reset` bind (`-` by default) before doing _any_ attempt📝**
 
-
 #### 🟢 Testchamber B
 *Made by [Parklez](https://github.com/parklez), modified by javac_*
 - Semi-automated (manual window landing)
 - The most consistent version
 - ~1s slower than [Testchamber D](#-testchamber-d)
-- Only do this one if you can't get anything else to work
+- Only use this one if you can't get anything else to work
 <details>
   <summary>📜Click here to view the script📜</summary>
   
@@ -307,7 +307,7 @@ bind - testchamber_reset
 - Fully automated
 - Very consistent even with fps drops
 - 0.3s slower than [Testchamber D](#-testchamber-d)
-- Try this one if you have fps issues and can't do the TC_D vesion consistently
+- Try this one if you have performance issues that prevent you from using version D
 <details>
   <summary>📜Click here to view the script📜</summary>
   
@@ -355,7 +355,7 @@ bind - testchamber_reset
 #### 🟠 Testchamber D
 *Made by [Parklez](https://github.com/parklez)*
 - Fully automated
-- May be inconsistent if you have fps issues
+- May be inconsistent if you have performance issues
 <details>
   <summary>📜Click here to view the script📜</summary>
   
