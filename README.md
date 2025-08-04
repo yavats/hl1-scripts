@@ -258,11 +258,12 @@ alias	"w800"		"w400;w400"
 
 #### 🟢 Testchamber B
 *Made by [Parklez](https://github.com/parklez), modified by javac_*
+- Semi-automated (manual window landing)
 - The most consistent version
-- 0.7s slower than Testchamber D
+- ~1s slower than [Testchamber D](#-testchamber-d)
 - Only do this one if you can't get anything else to work
 <details>
-  <summary>**📜Click here to view the script📜**</summary>
+  <summary>📜Click here to view the script📜</summary>
   
 ```
 alias testchamber "tc1"
@@ -283,7 +284,7 @@ bind - testchamber_reset
 </details>
 
 <details>
-  <summary>**📋Usage📋**</summary>
+  <summary>📋Usage📋</summary>
 
 - **Angles:**
   - Pitch: `30.0 - 40.0`
@@ -302,7 +303,11 @@ bind - testchamber_reset
 
 
 #### 🟡 Testchamber N
-*Made by N4Rk0t1k. The most balanced one (speed/consistency). Try this one if you have any fps issues and can't do the TC_D vesion. Slower by 0.2-0.3s*
+*Made by N4Rk0t1k*
+- Fully automated
+- Very consistent even with fps drops
+- 0.3s slower than [Testchamber D](#-testchamber-d)
+- Try this one if you have fps issues and can't do the TC_D vesion consistently
 <details>
   <summary>📜Click here to view the script📜</summary>
   
@@ -348,7 +353,9 @@ bind - testchamber_reset
 
 
 #### 🟠 Testchamber D
-*Made by [Parklez](https://github.com/parklez). Might be inconsistent sometimes because of fps drops*
+*Made by [Parklez](https://github.com/parklez)*
+- Fully automated
+- May be inconsistent if you have fps issues
 <details>
   <summary>📜Click here to view the script📜</summary>
   
@@ -391,7 +398,10 @@ bind - testchamber_reset
 
 
 #### 🔴 Testchamber D v2
-*The fastest one. The original version was created by [Parklez](https://github.com/parklez), this one (modified by javac_) also 4fpses the trigger. Thanks to Razzie for the idea*
+*[Testchamber D](#-testchamber-d) extended by javac_. Thanks to Razzie for the idea*
+- Fully automated + extended to 4 fps the UC trigger
+- 0.1s faster than [Testchamber D](#-testchamber-d)
+- It's not necessary to saveload after the script
 <details>
   <summary>📜Click here to view the script📜</summary>
   
