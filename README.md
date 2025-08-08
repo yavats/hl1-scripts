@@ -519,17 +519,18 @@ alias move
 ```
 <details>
   <summary>📋Usage📋</summary>
-* bind "k" box
-* bind "l" move
-* You need to re-execute the config with the script after each attempt
-* Push the box into the corner and stand close to it and the wall.
-* Pitch doesn't matter much, just aim at the corner of the box 
-* (make sure you don't aim too high tho otherwise it might not push the box in middle of script).
-* yaw: 262.41 - 262.70
-* Press K LK LK LK LK LK LK LK LK LK LK (K once and LK 10 times).
-* Hold space and make a strafe to the right after changelevel.
-* You have to press the buttons fast enough. You can press more than 10 times as well it will still work.
-* You can change the number of waits in alias box1 (every 100 waits = 1 second) if you don't have enough time to press the buttons.
+  
+- **bind "k" box** 
+- **bind "l" move**
+- **You need to re-execute the config with the script after each attempt**
+- **Push the box into the corner and stand close to it and the wall.**
+- **Pitch doesn't matter much, just aim at the corner of the box** 
+- **(make sure you don't aim too high tho otherwise it might not push the box in middle of script).**
+- **yaw: 262.41 - 262.70**
+- **Press K LK LK LK LK LK LK LK LK LK LK (K once and LK 10 times).**
+- **Hold space and make a strafe to the right after changelevel.**
+- **You have to press the buttons fast enough. You can press more than 10 times as well it will still work.**
+- **You can change the number of waits in alias box1 (every 100 waits = 1 second) if you don't have enough time to press the buttons.**
 </details>
 
 ## **D. Power Up**
