@@ -21,7 +21,11 @@
     - [Testchamber D](#-testchamber-d)
     - [Testchamber D v2](#-testchamber-d-v2)
 - [Blast Pit](#c-blast-pit)
+  - [Jumpbug Scripts](#8-jumpbugs)
+  - [Nade Boost Scripts](#9-nade-boost-scripts)
+  - [Hl21 Box Script](10-hl21-box-script)
 - [Power Up](#d-power-up)
+  - [ChangeLevel Delay Scripts](#11-changelevel-delay-scripts)
 
 
 ## A. **Basic scripts**
@@ -458,7 +462,7 @@ alias fps_100 "fps_max 100"
 alias +bpjb1 "fps_90; w5; +bxt_tas_jumpbug" 
 alias -bpjb1 "-bxt_tas_jumpbug; fps_100"
 ```
-Example: `bind y +bpjb1`
+Example: `bind key +bpjb1`
 
 #### 🟡 jb2 (Second Elevator)
 ```
@@ -467,7 +471,7 @@ alias fps_100 "fps_max 100"
 alias +bpjb2 "fps_55; w20; +bxt_tas_jumpbug" 
 alias -bpjb2 "-bxt_tas_jumpbug; fps_100"
 ```
-Example: `bind y +bpjb2`
+Example: `bind key +bpjb2`
 
 #### 🟠 jb3 (Pipe Before Power Up)
 ```
@@ -475,7 +479,7 @@ alias fps_33 "fps_max 58.82353"
 alias +bpjb3 "fps_33; w 5; +bxt_tas_jumpbug" 
 alias -bpjb3 "-bxt_tas_jumpbug; fps_100"
 ```
-Example: `bind y +bpjb3`
+Example: `bind key +bpjb3`
 </details>
 
 ### 9. Nade Boost Scripts
@@ -484,13 +488,13 @@ Example: `bind y +bpjb3`
 ```
 alias bp_nade2 "cl_pitchdown 30;cl_pitchup -30;+duck;+jump;wait;-attack;w 15;-jump;-duck;cl_pitchup 89;cl_pitchdown 89;force_centerview; say fps_90"
 ```
-Example: `bind tab "bp_nade2"`
+Example: `bind key "bp_nade2"`
 #### Maxam's Nade Route(From The Slop Version)
 ❗This one is pretty much harder, its recommended to use it only if you have low hp❗
 ```
 alias bp_nade3 "cl_pitchdown 89; cl_pitchup -89; -attack; w; cl_pitchup 89; force_centerview"
 ```
-Example: `bind tab "bp_nade3"`
+Example: `bind key "bp_nade3"`
 
 
 
@@ -498,7 +502,7 @@ Example: `bind tab "bp_nade3"`
 ```
 alias bpbutton2 "+attack2; -jump; w; weapon_handgrenade;-attack2; -moveleft; -moveright; weapon_handgrenade; w 20; cl_pitchdown 45; cl_pitchup -45; w 40; -duck; w 30; +use; w 20; -use; w 15; +jump; w; +duck; cl_pitchdown 89; cl_pitchup 89; fps_max 7.5; w 2; -jump; fps_max 100; w 50; -duck"
 ```
-Example: `bind g "bpbutton2"`
+Example: `bind key "bpbutton2"`
 
 ### 10. Hl21 Box Script
 ```
@@ -537,21 +541,21 @@ alias move
   
 ### 11. Changelevel Delay Scripts
 <details>
-  <summary>Click Here To View Scripts</summary>
+  <summary>📜Click Here To View Scripts📜</summary>
 
 #### 🟢 PU CLD (A)
 ```
 alias puskip "-jump;-moveright;-moveleft;speak fvox/power_level_is;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;cl_pitchdown 180;cl_pitchup -179;w 30;cl_pitchup -30;cl_pitchdown 31;wait;cl_pitchup 89;cl_pitchdown 89;w 10;+use;w 11;-use;+jump;wait;-jump"
 ```
 Video guide: [link](https://www.youtube.com/watch?v=IkZ4wWKrLVg)\
-Example: `bind g puskip`
+Example: `bind key puskip`
 
 #### 🟡 Power Up B
 *Facing forward, no object boost.*
 ```
 alias puskip "speak fvox/power_level_is;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 50"
 ```
-Example: `bind g puskip`
+Example: `bind key puskip`
 <details>
   <summary>📋Usage📋</summary>
 Walk forward and activate the script as you walk across the level change trigger, grab the tripmines and wait against the wall.
@@ -563,14 +567,14 @@ Walk forward and activate the script as you walk across the level change trigger
 ```
 alias puskip "weapon_shotgun;-jump;-moveright;-moveleft;w 280;+use;w 8;-use;+jump;wait;-jump;+attack2;wait;-attack2;+duck;w 27;-duck"
 ```
-Example: `bind g puskip`
+Example: `bind key puskip`
 
 #### 🔴 PU CLD (C) [Slower One, has more delay]
 *Facing forward, with object boost!*
 ```
 alias puskip "weapon_shotgun;-jump;-moveright;-moveleft;w 350;+use;w 12;-use;+jump;wait;-jump;+attack2;wait;-attack2;+duck;w 28;-duck"
 ```
-Example: `bind g puskip`
+Example: `bind key puskip`
 
 Video guide: [link](https://clips.twitch.tv/PuzzledTangentialClipsdadRickroll)
 </details>
