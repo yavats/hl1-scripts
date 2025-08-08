@@ -449,9 +449,9 @@ bind - testchamber_reset
 
 ### 8. Jumpbugs
 <details>
-  <summary>Click Here To View Scripts</summary>
+  <summary>📜Click Here To View Scripts📜</summary>
   
-#### jb1 (First Elevator)
+#### 🟢 jb1 (First Elevator)
 ```
 alias fps_90 "fps_max 90.90909"
 alias fps_100 "fps_max 100"
@@ -460,7 +460,7 @@ alias -bpjb1 "-bxt_tas_jumpbug; fps_100"
 ```
 Example: `bind y +bpjb1`
 
-#### jb2 (Second Elevator)
+#### 🟡 jb2 (Second Elevator)
 ```
 alias fps_55 "fps_max 55.55555"
 alias fps_100 "fps_max 100"
@@ -469,7 +469,7 @@ alias -bpjb2 "-bxt_tas_jumpbug; fps_100"
 ```
 Example: `bind y +bpjb2`
 
-#### jb3 (Pipe Before Power Up)
+#### 🟠 jb3 (Pipe Before Power Up)
 ```
 alias fps_33 "fps_max 58.82353"
 alias +bpjb3 "fps_33; w 5; +bxt_tas_jumpbug" 
@@ -486,7 +486,7 @@ alias bp_nade2 "cl_pitchdown 30;cl_pitchup -30;+duck;+jump;wait;-attack;w 15;-ju
 ```
 Example: `bind tab "bp_nade2"`
 #### Maxam's Nade Route(From The Slop Version)
-(This one is pretty much harder, its recommended to use it only if you have low hp)
+❗This one is pretty much harder, its recommended to use it only if you have low hp❗
 ```
 alias bp_nade3 "cl_pitchdown 89; cl_pitchup -89; -attack; w; cl_pitchup 89; force_centerview"
 ```
@@ -517,7 +517,8 @@ alias box11 "w 4; -right; -moveright; -forward; weapon_shotgun; alias move; alia
 alias box box1
 alias move
 ```
-#### Usage:
+<details>
+  <summary>📋Usage📋</summary>
 * bind "k" box
 * bind "l" move
 * You need to re-execute the config with the script after each attempt
@@ -529,6 +530,7 @@ alias move
 * Hold space and make a strafe to the right after changelevel.
 * You have to press the buttons fast enough. You can press more than 10 times as well it will still work.
 * You can change the number of waits in alias box1 (every 100 waits = 1 second) if you don't have enough time to press the buttons.
+</details>
 
 ## **D. Power Up**
   
@@ -536,30 +538,33 @@ alias move
 <details>
   <summary>Click Here To View Scripts</summary>
 
-#### PU CLD (A)
+#### 🟢 PU CLD (A)
 ```
 alias puskip "-jump;-moveright;-moveleft;speak fvox/power_level_is;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;cl_pitchdown 180;cl_pitchup -179;w 30;cl_pitchup -30;cl_pitchdown 31;wait;cl_pitchup 89;cl_pitchdown 89;w 10;+use;w 11;-use;+jump;wait;-jump"
 ```
 Video guide: [link](https://www.youtube.com/watch?v=IkZ4wWKrLVg)\
 Example: `bind g puskip`
 
-#### Power Up B
+#### 🟡 Power Up B
 *Facing forward, no object boost.*
 ```
 alias puskip "speak fvox/power_level_is;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 50"
 ```
 Example: `bind g puskip`
-How to use: Walk forward and activate the script as you walk across the level change trigger, grab the tripmines and wait against the wall.
+<details>
+  <summary>📋Usage📋</summary>
+Walk forward and activate the script as you walk across the level change trigger, grab the tripmines and wait against the wall.
+</details>
 
 
-#### PU CLD (C) [Faster One, has less delay)
+#### 🟠 PU CLD (C) [Faster One, has less delay)
 *Facing forward, with object boost!*
 ```
 alias puskip "weapon_shotgun;-jump;-moveright;-moveleft;w 280;+use;w 8;-use;+jump;wait;-jump;+attack2;wait;-attack2;+duck;w 27;-duck"
 ```
 Example: `bind g puskip`
 
-#### PU CLD (C) [Slower One, has more delay]
+#### 🔴 PU CLD (C) [Slower One, has more delay]
 *Facing forward, with object boost!*
 ```
 alias puskip "weapon_shotgun;-jump;-moveright;-moveleft;w 350;+use;w 12;-use;+jump;wait;-jump;+attack2;wait;-attack2;+duck;w 28;-duck"
