@@ -33,6 +33,12 @@
 - [On A Rail](g-on-a-rail)
   - [Jumpbug Scripts](#14-jumpbugs)
   - [Object Boost Script](#15-object-boost-script-forward)
+- [Apprehension](h-apprehension)
+  - [Object Boost Script](#16-object-boost-script-bridge)
+- [Residue Processing](j-residue-processing)
+  - [Meatgrab Script](#17-meatgrab-script)
+  - [RPClip Script](#18-rpclip-script)
+- [Surface Tension](k-surface-tension)
 
 
 ## A. **Basic scripts**
@@ -460,7 +466,7 @@ bind - testchamber_reset
 
 ### 8. Object Boost Script
 **For Barrel and bridge**
-❗The "usekey" in here must be your standard +use key❗
+- ❗The "usekey" in here must be your standard +use key❗
 
 ```
 alias ucobbo "obbo1500; wait; bind usekey +use"
@@ -472,8 +478,8 @@ Example `bind key "ucobbobind;say UCobbo"`
 ## **D. Office Complex**
 
 ### 9. Object Boost Script
-**(After headcrab jump but you can also use it with box at the start of blast pit)**
-❗The "usekey" in here must be your standard +use key❗
+- **(After headcrab jump but you can also use it with box at the start of blast pit)**
+- ❗The "usekey" in here must be your standard +use key❗
 ```
 alias ocobbo "obbo2000; wait; bind usekey +use"
 alias ocobbobind "bind space +attack2; bind usekey ocobbo"
@@ -522,7 +528,7 @@ alias bp_nade2 "cl_pitchdown 30;cl_pitchup -30;+duck;+jump;wait;-attack;w 15;-ju
 ```
 Example: `bind key "bp_nade2"`
 #### Maxam's Nade Route(From The Slop Version)
-❗This one is pretty much harder, its recommended to use it only if you have low hp❗
+- ❗This one is pretty much harder, its recommended to use it only if you have low hp❗
 ```
 alias bp_nade3 "cl_pitchdown 89; cl_pitchup -89; -attack; w; cl_pitchup 89; force_centerview"
 ```
@@ -629,7 +635,7 @@ alias -oarjb1 "-bxt_tas_jumpbug; fps_100"
 Example: `bind key +oarjb1`
  
 #### 🟡 Jumpbug for after launching the rocket
-❗Its recommended to do tankbox instead of using this script, unless you don't want to take the armor for rp clip route❗ 
+- ❗Its recommended to do tankbox instead of using this script, unless you don't want to take the armor for rp clip route❗ 
 ```
 alias fps_90 "fps_max 58.82353"
 alias fps_100 "fps_max 100"
@@ -641,14 +647,52 @@ Example: `bind key +oarjb2`
 
 
 ### 15. Object Boost Script (Forward)
-❗This script will use shotgun automatically, also remember it will rebind your key to +use back again, in case you fail execute again❗
-❗The "usekey" in here must be your standard +use key❗
+- ❗This script will use shotgun automatically, also remember it will rebind your key to +use back again, in case you fail execute again❗
+- ❗The "usekey" in here must be your standard +use key❗
 ```
 alias oarobbo "obbo2000; wait; +attack2; wait; -attack2; wait; bind usekey +use"
 alias oarobbobind "bind usekey oarobbo"
 alias noi "say oarobbo rdy"
 ```
 Example: `bind key "oarobbobind; noi"`
+
+
+## **H. Apprehension**
+
+### 16. Object Boost Script (Bridge)
+- ❗The "usekey" in here must be your standard +use key❗
+```
+alias obbo1500rebind "+use;w10;-use;+jump;w;-jump; bind usekey +use"
+```
+Example: `bind key "bind usekey obbo1500rebind; say obbo1500rebind`
+
+
+## **J. Residue Processing**
+
+### 17. Meatgrab Script
+```
+alias mg mg1
+alias mg1 "+duck;w 50;alias mg mg2"
+alias mg2 "+use;w 18;-use;fps_max 100;w 30;-duck;w 35; +jump; w 10; -jump; alias mg mg1"
+```
+📋Usage📋: `bind key mg` `key + +moveright(hold a bit) + key`
+
+### 18. RPClip Script
+```
+alias rpclip "cl_pitchdown 89;cl_pitchup -89;fps_max 20.2;+attack;w;weapon_crowbar;-attack;w32;+jump;-forward;weapon_handgrenade;w;-jump;+duck;w20;cl_pitchdown 89;cl_pitchup -89;w 10;fps_max 20;w4;-duck;fps_max 100;cl_pitchdown 89;cl_pitchup 89"
+```
+📋Usage📋: `bind key "rpclip"` `Hold +forward before and execute the script`
+
+## **K. Surface Tension**
+
+###
+
+
+
+
+
+
+
 
 
 
