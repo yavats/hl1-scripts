@@ -27,7 +27,7 @@
 - [Blast Pit](#e-blast-pit)
   - [Jumpbug Scripts](#10-jumpbugs)
   - [Nade Boost Scripts](#11-nade-boost-scripts)
-  - [Hl21 Box Script](12-hl21-box-script)
+  - [Hl21 Box Script](#12-hl21-box-script)
 - [Power Up](#f-power-up)
   - [ChangeLevel Delay Scripts](#13-changelevel-delay-scripts)
 - [On A Rail](g-on-a-rail)
