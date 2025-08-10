@@ -618,6 +618,7 @@ Video guide: [link](https://clips.twitch.tv/PuzzledTangentialClipsdadRickroll)
 ### 14. Jumpbugs
 <details>
   <summary>📜Click Here To View Scripts📜</summary>
+  
 #### 🟢 Jumpbug for right before nade rails
   
 ```
