@@ -20,12 +20,19 @@
     - [Testchamber N](#-testchamber-n)
     - [Testchamber D](#-testchamber-d)
     - [Testchamber D v2](#-testchamber-d-v2)
-- [Blast Pit](#c-blast-pit)
-  - [Jumpbug Scripts](#8-jumpbugs)
-  - [Nade Boost Scripts](#9-nade-boost-scripts)
-  - [Hl21 Box Script](10-hl21-box-script)
-- [Power Up](#d-power-up)
-  - [ChangeLevel Delay Scripts](#11-changelevel-delay-scripts)
+- [Unforeseen Consequences](c-unforeseen-consequences)
+  - [Object Boost Script](#8-object-boost-script)
+- [Office Complex](d-office-complex)
+  - [Object Boost Script](#9-object-boost-script)
+- [Blast Pit](#e-blast-pit)
+  - [Jumpbug Scripts](#10-jumpbugs)
+  - [Nade Boost Scripts](#11-nade-boost-scripts)
+  - [Hl21 Box Script](12-hl21-box-script)
+- [Power Up](#f-power-up)
+  - [ChangeLevel Delay Scripts](#13-changelevel-delay-scripts)
+- [On A Rail](g-on-a-rail)
+  - [Jumpbug Scripts](#14-jumpbugs)
+  - [Object Boost Script](#15-object-boost-script-forward)
 
 
 ## A. **Basic scripts**
@@ -449,9 +456,34 @@ bind - testchamber_reset
 [Practice  save](Practice%20saves/tc_d.sav)
 
 
-## **C. Blast Pit**
+## **C. Unforeseen Consequences**
 
-### 8. Jumpbugs
+### 8. Object Boost Script
+**For Barrel and bridge**
+❗The "usekey" in here must be your standard +use key❗
+
+```
+alias ucobbo "obbo1500; wait; bind usekey +use"
+alias ucobbobind "bind usekey ucobbo"
+```
+Example `bind key "ucobbobind;say UCobbo"`
+
+
+## **D. Office Complex**
+
+### 9. Object Boost Script
+**(After headcrab jump but you can also use it with box at the start of blast pit)**
+❗The "usekey" in here must be your standard +use key❗
+```
+alias ocobbo "obbo2000; wait; bind usekey +use"
+alias ocobbobind "bind space +attack2; bind usekey ocobbo"
+```
+Example `bind key "ocobbobind;say OCobbo"`
+
+
+## **E. Blast Pit**
+
+### 10. Jumpbugs
 <details>
   <summary>📜Click Here To View Scripts📜</summary>
   
@@ -482,7 +514,7 @@ alias -bpjb3 "-bxt_tas_jumpbug; fps_100"
 Example: `bind key +bpjb3`
 </details>
 
-### 9. Nade Boost Scripts
+### 11. Nade Boost Scripts
 
 #### Maxam's Nade Route
 ```
@@ -504,7 +536,7 @@ alias bpbutton2 "+attack2; -jump; w; weapon_handgrenade;-attack2; -moveleft; -mo
 ```
 Example: `bind key "bpbutton2"`
 
-### 10. Hl21 Box Script
+### 12. Hl21 Box Script
 ```
 alias box1 "fps_max 100; w 100; alias move +left; alias box box2" //k
 alias box2 "w 3; -left; alias move +moveright; alias box box3" //l + k
@@ -537,9 +569,10 @@ alias move
 - **You can change the number of waits in alias box1 (every 100 waits = 1 second) if you don't have enough time to press the buttons.**
 </details>
 
-## **D. Power Up**
+
+## **F. Power Up**
   
-### 11. Changelevel Delay Scripts
+### 13. Changelevel Delay Scripts
 <details>
   <summary>📜Click Here To View Scripts📜</summary>
 
@@ -578,6 +611,47 @@ Example: `bind key puskip`
 
 Video guide: [link](https://clips.twitch.tv/PuzzledTangentialClipsdadRickroll)
 </details>
+
+
+## **G. On A Rail**
+
+### 14. Jumpbugs
+<details>
+  <summary>📜Click Here To View Scripts📜</summary>
+#### 🟢 Jumpbug for right before nade rails
+  
+```
+alias fps_41 "fps_max 41.66666"
+alias +oarjb1 "fps_41; w5; +bxt_tas_jumpbug" 
+alias -oarjb1 "-bxt_tas_jumpbug; fps_100"
+```
+Example: `bind key +oarjb1`
+ 
+#### 🟡 Jumpbug for after launching the rocket
+❗Its recommended to do tankbox instead of using this script, unless you don't want to take the armor for rp clip route❗ 
+```
+alias fps_90 "fps_max 58.82353"
+alias fps_100 "fps_max 100"
+alias +oarjb2 "fps_90; w5; +bxt_tas_jumpbug"
+alias -oarjb2 "-bxt_tas_jumpbug; fps_100" 
+```
+Example: `bind key +oarjb2`
+</details>
+
+
+### 15. Object Boost Script (Forward)
+❗This script will use shotgun automatically, also remember it will rebind your key to +use back again, in case you fail execute again❗
+❗The "usekey" in here must be your standard +use key❗
+```
+alias oarobbo "obbo2000; wait; +attack2; wait; -attack2; wait; bind usekey +use"
+alias oarobbobind "bind usekey oarobbo"
+alias noi "say oarobbo rdy"
+```
+Example: `bind key "oarobbobind; noi"`
+
+
+
+
 
 
 
