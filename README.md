@@ -826,7 +826,9 @@ Example: `bind key "bind usekey fafobbo; say fafobbo"`
   <summary>📜Click Here To View Scripts📜</summary>
 
 #### 🟢 Smg CLD
-```alias "faf_e" "fps_max 100; save autosave; weapon_crowbar; -moveleft; +attack;w 350;-attack;force_centerview;weapon_9mmAR;cl_pitchdown 180;cl_pitchup -179;w 40;cl_pitchup 89;cl_pitchdown 89;w 30;+jump;+duck;w;cl_pitchdown 136;cl_pitchup -135;-forward;+attack2;w 30;-attack2;cl_pitchup 89;cl_pitchdown 89;force_centerview;-jump;-duck;w 10;+duck;w 16;-duck; weapon_hornetgun"```
+```
+alias "faf_e" "fps_max 100; save autosave; weapon_crowbar; -moveleft; +attack;w 350;-attack;force_centerview;weapon_9mmAR;cl_pitchdown 180;cl_pitchup -179;w 40;cl_pitchup 89;cl_pitchdown 89;w 30;+jump;+duck;w;cl_pitchdown 136;cl_pitchup -135;-forward;+attack2;w 30;-attack2;cl_pitchup 89;cl_pitchdown 89;force_centerview;-jump;-duck;w 10;+duck;w 16;-duck; weapon_hornetgun"
+```
 Example: `bind key faf_e`
 <details>
   <summary>📼Video Guide📼</summary>
@@ -838,7 +840,9 @@ Example: `bind key faf_e`
 
 
 #### 🟠 Grenade CLD
-```alias faf "save quick;speak fvox/power_level_is.beep._comma.beep._comma.beep._comma.beep;-moveright;-moveleft;-duck;weapon_crowbar;+attack;w 500;weapon_handgrenade;w 40;cl_pitchdown 180;cl_pitchup -179;w 40;cl_pitchup 89.999;cl_pitchdown 89.999;cl_pitchup -40;cl_pitchdown 40.001;w 30;-attack;w 4;+jump;+duck;wait;-jump;-duck;cl_pitchup 89;cl_pitchdown 89;w 61"```
+```
+alias faf "save quick;speak fvox/power_level_is.beep._comma.beep._comma.beep._comma.beep;-moveright;-moveleft;-duck;weapon_crowbar;+attack;w 500;weapon_handgrenade;w 40;cl_pitchdown 180;cl_pitchup -179;w 40;cl_pitchup 89.999;cl_pitchdown 89.999;cl_pitchup -40;cl_pitchdown 40.001;w 30;-attack;w 4;+jump;+duck;wait;-jump;-duck;cl_pitchup 89;cl_pitchdown 89;w 61"
+```
 Example: `bind key faf`
 Video guide: [link](https://www.youtube.com/watch?v=E4h4jmzd-gI)\
 
@@ -848,7 +852,7 @@ alias faf "w 400;smg;w 1;weapon_handgrenade;w 10;+attack;w 50;cl_pitchdown 180;c
 alias smg "cl_pitchdown 180;cl_pitchup -179;w 1;+attack2;w 1;cl_pitchup 89;cl_pitchdown 89;-attack2"
 ```
 📋Usage📋: `same as grenade cld but cook the grenade and switch to the SMG before activating.`
-Example: `bind g faf`
+Example: `bind key faf`
 
 </details>
 
@@ -878,7 +882,7 @@ https://github.com/user-attachments/assets/bce50158-6c12-410f-a647-aedc00a3a27b
 
   </details>
   
-Example: `bind m "+wc"`
+Example: `bind key "+wc"`
 
 ### 26. Smg Boost Scripts
 
