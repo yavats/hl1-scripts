@@ -49,7 +49,7 @@
 - [Lambda Core](#m-lambda-core)
   - [Watergauss Clip Script](#25-watergauss-clip-script)
   - [Smg Boost Scripts](#26-smg-boost-scripts)
-- [Xen](#xen)
+- [Xen](#n-xen)
   - [Jumpbug + Viewangle](#27-jumpbugs)
 
   
