@@ -810,14 +810,18 @@ alias tausloo "cl_pitchup 180;cl_pitchdown -180;-attack;w50;cl_pitchup 89.999;cl
 Example: `bind key tausloo`
 
 ### 22. Nadeboost For New ST Route
-```alias boostx "+duck;w19;cl_pitchup -96;cl_pitchdown -180;wait;+attack2;wait;-attack2;w2;-duck;cl_pitchup 89.999;cl_pitchdown 89.999;force_centerview"```
+```
+alias boostx "+duck;w19;cl_pitchup -96;cl_pitchdown -180;wait;+attack2;wait;-attack2;w2;-duck;cl_pitchup 89.999;cl_pitchdown 89.999;force_centerview"
+```
 Example: `bind key boostx`
 
 ## **L. Forget About Freeman**
 
 ### 23. Chairboost Script
 - ❗The "usekey" in here must be your standard +use key❗
-  ```alias fafobbo "obbo1300; wait; bind e +use"```
+  ```
+  alias fafobbo "obbo1300; wait; bind e +use"
+  ```
 Example: `bind key "bind usekey fafobbo; say fafobbo"`
 
 ### 24. CLD Scripts
@@ -830,6 +834,8 @@ Example: `bind key "bind usekey fafobbo; say fafobbo"`
 alias "faf_e" "fps_max 100; save autosave; weapon_crowbar; -moveleft; +attack;w 350;-attack;force_centerview;weapon_9mmAR;cl_pitchdown 180;cl_pitchup -179;w 40;cl_pitchup 89;cl_pitchdown 89;w 30;+jump;+duck;w;cl_pitchdown 136;cl_pitchup -135;-forward;+attack2;w 30;-attack2;cl_pitchup 89;cl_pitchdown 89;force_centerview;-jump;-duck;w 10;+duck;w 16;-duck; weapon_hornetgun"
 ```
 Example: `bind key faf_e`
+</details>
+
 <details>
   <summary>📼Video Guide📼</summary>
   
