@@ -39,8 +39,20 @@
   - [Meatgrab Script](#17-meatgrab-script)
   - [RPClip Script](#18-rpclip-script)
 - [Surface Tension](k-surface-tension)
+  - [CLD Scripts](#19-cld-scripts)
+  - [P2P Scripts](#20-hl21-p2p-scripts)
+  - [Slowgauss Script](#21-slowgauss-after-ihd-door)
+  - [Nadeboost](#22-nadeboost-for-new-st-route)
+- [Forget About Freeman](l-forget-about-freeman)
+  - [Chairboost Script](#23-chairboost-script)
+  - [CLD Scripts](#24-cld-scripts)
+- [Lambda Core](m-lambda-core)
+  - [Watergauss Clip Script](#25-watergauss-clip-script)
+  - [Smg Boost Scripts](#26-smg-boost-scripts)
+- [Xen]
+  - [Jumpbug + Viewangle](#27-jumpbugs)
 
-
+  
 ## A. **Basic scripts**
 ### 1. Usespam script
 ```
@@ -116,6 +128,7 @@ Example: `bind key tauswitch`
 
 
 ### 5. Object Boost Scripts
+- ❗Almost all of the object boost scripts use this aliases. So just add all of the aliases here to bottom line of your main scripted config! (Otherwise they won't work when you execute them!)❗
 #### 2000 UPS
 ```
 alias obbo2000 "+use;w 11;-use;+jump;w;-jump"
@@ -685,7 +698,280 @@ alias rpclip "cl_pitchdown 89;cl_pitchup -89;fps_max 20.2;+attack;w;weapon_crowb
 
 ## **K. Surface Tension**
 
-###
+### 19. CLD Scripts
+<details>
+  <summary>📜Click Here To View Scripts📜</summary>
+
+#### 🟢 Fast CLD Script
+- ❗If you want to change keybinds, pay attention to the order❗
+```
+bind j sst
+bind h sstmove
+
+alias sst sst1
+alias sstmove
+
+alias sst1 "weapon_gauss; w 50; fps_max 100; +attack2; alias sstmove +forward; alias sst sst2"
+alias sst2 "w 20; alias sstmove +moveleft; alias sst sst3"
+alias sst3 "w 90; -moveleft; w 10; -forward; alias sst sst4"
+alias sst4 "alias sstmove +left; alias sst sst5"
+alias sst5 "w 10; +jump; w 28; -left; -moveleft; w 15; tau; w 10; +attack2; w 40; alias sstmove +moveright; alias sst sst6"
+alias sst6 "alias sstmove +right; alias sst sst7"
+alias sst7 "alias sstmove; w 30; -moveright; -right; tau; w 25; -jump; cl_pitchdown 89; cl_pitchup -89; w 22; weapon_shotgun; cl_pitchup 89; alias sst"
+```
+
+#### 🟡 Slow CLD Script
+- ❗If you want to change keybinds, pay attention to the order❗
+```
+//valve script
+
+alias tau "cl_pitchup 180;cl_pitchdown -180;-attack2;wait;cl_pitchup 89.999;cl_pitchdown 89.999;force_centerview"
+
+alias stskip st1
+alias stmove +forward
+alias st1 "weapon_gauss;+duck;w 146;-duck;-forward;alias stskip st2;alias stmove +moveright"
+alias st2 "+attack2;w 150;-moveright;+use;w 2;-use;alias stskip st3;alias stmove +forward"
+alias st3 "w 15;+jump;tau;-forward;w 60;alias stskip st4;alias stmove +moveright"
+alias st4 "w 26;-right;-moveright;w 30;-jump;cl_pitchup -89.999;cl_pitchdown 89.999;w 44;cl_pitchup 89.999;cl_pitchdown 89.999;weapon_shotgun;save autosave;alias stskip st1;alias stmove +forward;save autosave"
+
+bind f12 stskip //3
+bind f11 stmove //2
+bind f10 +right //1
+```
+📋Usage📋: 
+</details>
+
+### 20. HL21 P2P Scripts
+
+<details>
+  <summary>📜Click Here To View Scripts📜</summary>
+
+#### 🟢 Jorik's P2P Script
+- ❗You must edit ptpsens value to your normally used sensitivity value❗
+- ❗If you are too slow at pressing keys, increase ptpdelay value❗
+- ❗If you want to change keybinds, pay attention to the order❗
+```
+alias ptpscript ptp0
+alias ptpmove1 +moveleft
+alias ptpmove2 +forward
+alias ptptau "cl_pitchup 180;cl_pitchdown -180;-attack2;wait;cl_pitchup 89;cl_pitchdown 89;force_centerview"
+alias ptpre "-forward;-moveleft;-moveright;-duck;-jump;-right;-left;-attack2;ptpsens;alias ptpscript ptp0;alias ptpmove2 +forward;alias ptpmove1 +moveleft" // use if you failed keys order
+alias ptpsens "sensitivity 0.6" // change it (sensitivity after script done)
+alias ptpdelay "w 200" // change it (start delay, increase it if you dont have time to press keys, every w 100 = 1 sec)
+
+alias ptp0 "sensitivity 0;ptpdelay;alias ptpscript ptp1"
+alias ptp1 "+attack2;w 52;-forward;-moveleft;+jump;alias ptpscript ptp2;alias ptpmove2 +moveright"
+alias ptp2 "+duck;w 70;-moveright;alias ptpscript ptp3;alias ptpmove2 +moveleft"
+alias ptp3 "-jump;w 20;-moveleft;-duck;alias ptpscript ptp4;alias ptpmove2 +right"
+alias ptp4 "w 38;-right;w 10;alias ptpscript ptp5;alias ptpmove2 +moveleft"
+alias ptp5 "w 18;-moveleft;w 10;force_centerview;alias ptpscript ptp6;alias ptpmove2 +forward"
+alias ptp6 "w 16;ptptau;w;-forward;alias ptpscript ptp7;alias ptpmove2 +moveright"
+alias ptp7 "w 10;+attack2;w 70;alias ptpscript ptp8;alias ptpmove2 +right"
+alias ptp8 "w 6;-right;-moveright;alias ptpscript ptp9;alias ptpmove2 +back"
+alias ptp9 "w 2;-back;+jump;w 70;alias ptpscript ptp10;alias ptpmove2 +left"
+alias ptp10 "w 5;-left;-moveleft;-jump;ptptau;w;save autosave;w 71;alias ptpscript ptp11;alias ptpmove2 +right;alias ptpmove1 +moveright"
+alias ptp11 "w 4;-right;w 2;-moveright;+duck;w 10;fps_max 20;+use;w 4;-duck;fps_max 100;w 15;-use;ptpsens;alias ptpscript ptp0;alias ptpmove2 +forward;alias ptpmove1 +moveleft"
+
+bind k ptpscript
+bind j ptpmove2
+bind h ptpmove1
+
+
+```
+<details>
+  <summary>📼Video Guide📼</summary>
+  
+  https://github.com/user-attachments/assets/ffbffe26-d0c3-4f61-983f-51a2d8b2e2bd
+  
+  </details>
+  
+
+<details>
+  <summary>📋Usage📋</summary>
+  
+- Start manually charge gauss when you entered map
+- Go to the corner i showed in the video
+- Aim at the corner i showed in the video (yaw is ~268.70 - ~268.90 , pitch almost doesnt matter but its around 6.0)
+- Press keys in order after you aimed (and release +attack2 key after you pressed first script key):
+  -  k
+  - h j k
+  - j k (8x)
+  - h j k (2x) 
+ </details>
+
+ #### 🟡 Javac's Hole In One P2P Script
+
+ </details>
+
+ ### 21. Slowgauss After Ihd Door
+ ```
+alias tausloo "cl_pitchup 180;cl_pitchdown -180;-attack;w50;cl_pitchup 89.999;cl_pitchdown 89.999;force_centerview"
+```
+Example: `bind key tausloo`
+
+### 22. Nadeboost For New ST Route
+```alias boostx "+duck;w19;cl_pitchup -96;cl_pitchdown -180;wait;+attack2;wait;-attack2;w2;-duck;cl_pitchup 89.999;cl_pitchdown 89.999;force_centerview"```
+Example: `bind key boostx`
+
+## **L. Forget About Freeman**
+
+### 23. Chairboost Script
+- ❗The "usekey" in here must be your standard +use key❗
+  ```alias fafobbo "obbo1300; wait; bind e +use"```
+Example: `bind key "bind usekey fafobbo; say fafobbo"`
+
+### 24. CLD Scripts
+
+<details>
+  <summary>📜Click Here To View Scripts📜</summary>
+
+#### 🟢 Smg CLD
+```alias "faf_e" "fps_max 100; save autosave; weapon_crowbar; -moveleft; +attack;w 350;-attack;force_centerview;weapon_9mmAR;cl_pitchdown 180;cl_pitchup -179;w 40;cl_pitchup 89;cl_pitchdown 89;w 30;+jump;+duck;w;cl_pitchdown 136;cl_pitchup -135;-forward;+attack2;w 30;-attack2;cl_pitchup 89;cl_pitchdown 89;force_centerview;-jump;-duck;w 10;+duck;w 16;-duck; weapon_hornetgun"```
+Example: `bind key faf_e`
+<details>
+  <summary>📼Video Guide📼</summary>
+  
+  
+  </details>
+
+#### 🟡 Smg CLD with fast ladder climb
+
+
+#### 🟠 Grenade CLD
+```alias faf "save quick;speak fvox/power_level_is.beep._comma.beep._comma.beep._comma.beep;-moveright;-moveleft;-duck;weapon_crowbar;+attack;w 500;weapon_handgrenade;w 40;cl_pitchdown 180;cl_pitchup -179;w 40;cl_pitchup 89.999;cl_pitchdown 89.999;cl_pitchup -40;cl_pitchdown 40.001;w 30;-attack;w 4;+jump;+duck;wait;-jump;-duck;cl_pitchup 89;cl_pitchdown 89;w 61"```
+Example: `bind key faf`
+Video guide: [link](https://www.youtube.com/watch?v=E4h4jmzd-gI)\
+
+#### 🔴 Grenade CLD + Smg nade to scare vortigaunts
+```
+alias faf "w 400;smg;w 1;weapon_handgrenade;w 10;+attack;w 50;cl_pitchdown 180;cl_pitchup -179;w 40;cl_pitchup 89.999;cl_pitchdown 89.999;cl_pitchup -40;cl_pitchdown 40.001;w 30;-attack;w 4;+jump;+duck;w 1;-jump;-duck;cl_pitchup 89.999;cl_pitchdown 90;w 61"
+alias smg "cl_pitchdown 180;cl_pitchup -179;w 1;+attack2;w 1;cl_pitchup 89;cl_pitchdown 89;-attack2"
+```
+📋Usage📋: `same as grenade cld but cook the grenade and switch to the SMG before activating.`
+Example: `bind g faf`
+
+</details>
+
+## **M. Lambda Core**
+- ❗If you don't have enough time to get into the corner, increase alias "dst" value❗
+### 25. Watergauss Clip Script
+
+```
+alias _taubow
+alias _taubofuncw "cl_pitchup 180;cl_pitchdown -180;-attack;wait;cl_pitchup -12;cl_pitchdown 12;wait;cl_pitchup 89.999;cl_pitchdown 89.999"
+alias +tauw "+attack; alias _taubow _taubofuncw"
+alias -tauw "_taubow; alias _taubow"
+
+alias fps_20 "fps_max 20"
+alias fps_100 "fps_max 100"
+alias +wc "+duck;w;-duck;w5;+duck;w30;-duck;w60;gwc;w10;wwc"
+alias -wc "-tauw;-attack2;"
+alias wwc "fps_20;dst;-forward;-moveright;-wc;w;fps_100;weapon_handgrenade"
+alias gwc "w5;-attack2;+tauw;w;"
+alias dst "w8" (WAITING VALUE FOR SHOOTING. INCREASE IT IF YOU DONT HAVE ENOUGH TIME)
+```
+
+<details>
+  <summary>📼Video Guide📼</summary>
+  
+https://github.com/user-attachments/assets/bce50158-6c12-410f-a647-aedc00a3a27b
+
+  </details>
+  
+Example: `bind m "+wc"`
+
+### 26. Smg Boost Scripts
+
+
+
+## **N. Xen**
+
+### 27. Jumpbugs
+
+#### 🟢 Viewsnap + Fps switch
+- ❗Change xenv_sens value to your normal sensitivity value before use❗
+```
+bind f1 xenv // script bind
+bind o +bxt_tas_jumpbug // jumpbug bind
+
+alias xenv_sens "sensitivity 2.37" // your default sens
+
+alias xenv xenv1
+alias xenv1 "+attack2; w 10; weapon_gauss; +attack2; +duck; bxt_autopause 1; fps_max 97; cl_pitchup -35.83; cl_pitchdown 35.83; m_pitch 0; sensitivity 1819.54545; say xen_strat; xenv_reset; alias xenv xenv2"
+alias xenv2 "sensitivity 0; unpause; +attack2; w 10; -attack2; fps_max 97; w 40; w 10; -duck; bxt_autopause 0; xenv_sens; cl_pitchup 89; cl_pitchdown 89; m_pitch 0.022; fps_max 33.33333; alias xenv xenv1"
+```
+<details>
+  <summary>📋Usage📋</summary>
+  - Go through portal and immediately start charging
+  - Meanwhile charging press the script bind (❗you can release attack2 after pressing keybind script will charge itself!❗)
+  - After changelevel, game will be autopaused, set viewangle, unpause the game, and hold your jumpbug bind to hit the jumpbug
+  </details>
+
+#### 🟡 Viewsnap (Fully automatic) [❗NOT RECOMMENDED, VERY INCONSISTENT❗]
+```
+bind f1 xenv
+
+//// PRE-REQUIREMENTS ////
+// 1) change the sensitivity in xenv_sens
+// 2) change the bindings in xenv_binds_set to whatever keys you wanna use
+// 3) change the bindings in xenv_binds_def to default actions for the selected keys
+
+//// EXECUTION ////
+// 1) press xenv key before the changelevel after entering the portal. DON'T HOLD +DUCK, IT'LL BREAK THE SCRIPT!
+// 2) set the angles
+// 3) assuming your binds are 1=xen_dolb 2=xenv_mv1 3=xenv_mv2: press 123 123 1
+// 4) ???
+// 5) PROFIT
+
+
+alias xenv_sens "sensitivity 2.37"
+alias xenv_binds_set "bind 2 xenv_dolb; bind 3 xenv_mv1; bind 4 xenv_mv2"
+alias xenv_binds_def "bind 2 slot2; bind 3 weapon_9mmAR; bind 4 weapon_shotgun"
+
+
+alias xenv_reset "alias xenv_dolb xenv_dolb1; alias xenv_mv1 +moveright; alias xenv_mv2 +left"
+alias xenv "+duck; bxt_autopause 1; fps_max 97; cl_pitchup -35.83; cl_pitchdown 35.83; m_pitch 0; sensitivity 1819.54545; say xen_strat; xenv_reset; xenv_binds_set"
+
+alias xenv_dolb1 "sensitivity 0; unpause; +attack2; w 10; -attack2; fps_max 97; r_norefresh 1; w 40; +attack2; w 10; alias xenv_dolb xenv_dolb2"
+alias xenv_dolb2 "w 14; -duck; w 58; -moveright; w 4; -attack2; w 85; -left; w 63; alias xenv_mv1 +moveleft; alias xenv_dolb xenv_dolb3"
+alias xenv_dolb3 "w 13; -left; -moveleft; +bxt_tas_jumpbug; bxt_autopause 0; w 30; -bxt_tas_jumpbug; r_norefresh 0; xenv_sens; cl_pitchup 89; cl_pitchdown 89; m_pitch 0.022; fps_max 100; weapon_shotgun; alias xenv_mv1; alias xenv_mv2; xenv_binds_def"
+```
+<details>
+  <summary>📋Usage📋</summary>
+  - First change the sensitivity in xenv_sens
+  - And change xenv_binds_set (the script keys) and xenv_binds_def (your normal weapon binds)
+  - Press xenv key before the changelevel after entering the portal. DON'T HOLD +DUCK, IT'LL BREAK THE SCRIPT!
+  - Set viewangle
+  - Press in order (for keys 1=xen_dolb 2=xenv_mv1 3=xenv_mv2):
+     - 123 (2x)
+     - 1
+  </details>
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
 
 
 
