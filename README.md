@@ -911,9 +911,11 @@ alias xenv2 "sensitivity 0; unpause; +attack2; w 10; -attack2; fps_max 97; w 40;
 ```
 <details>
   <summary>📋Usage📋</summary>
+  
 - Go through portal and immediately start charging
 - Meanwhile charging press the script bind (❗you can release attack2 after pressing keybind script will charge itself!❗)
 - After changelevel, game will be autopaused, set viewangle, unpause the game, and hold your jumpbug bind to hit the jumpbug
+  
   </details>
 
 #### 🟡 Viewsnap (Fully automatic) [❗NOT RECOMMENDED, VERY INCONSISTENT❗]
@@ -947,6 +949,7 @@ alias xenv_dolb3 "w 13; -left; -moveleft; +bxt_tas_jumpbug; bxt_autopause 0; w 3
 ```
 <details>
   <summary>📋Usage📋</summary>
+  
 - First change the sensitivity in xenv_sens
 - And change xenv_binds_set (the script keys) and xenv_binds_def (your normal weapon binds)
 - Press xenv key before the changelevel after entering the portal. DON'T HOLD +DUCK, IT'LL BREAK THE SCRIPT!
@@ -954,6 +957,7 @@ alias xenv_dolb3 "w 13; -left; -moveleft; +bxt_tas_jumpbug; bxt_autopause 0; w 3
 - Press in order (for keys 1=xen_dolb 2=xenv_mv1 3=xenv_mv2):
   - 123 (2x)
   - 1
+  
   </details>
   
 
