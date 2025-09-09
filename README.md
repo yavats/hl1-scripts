@@ -683,6 +683,7 @@ https://github.com/user-attachments/assets/74b9a510-18cd-4087-9d80-1a6206a7d13d
 ## **F. Power Up**
   
 ### 13. Changelevel Delay Scripts
+
 <details>
   <summary>📜Click Here To View Scripts📜</summary>
 
@@ -690,12 +691,16 @@ https://github.com/user-attachments/assets/74b9a510-18cd-4087-9d80-1a6206a7d13d
 ```
 alias puskip "-jump;-moveright;-moveleft;speak fvox/power_level_is;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;cl_pitchdown 180;cl_pitchup -179;w 30;cl_pitchup -30;cl_pitchdown 31;wait;cl_pitchup 89;cl_pitchdown 89;w 10;+use;w 11;-use;+jump;wait;-jump"
 ```
+
+
+
 <details>
   <summary>📼Video Guide📼</summary>
 
 [link](https://www.youtube.com/watch?v=IkZ4wWKrLVg)
 
 </details>
+
 Example: `bind key puskip`
 
 #### 🟡 Power Up B
@@ -707,6 +712,7 @@ Example: `bind key puskip`
 <details>
   <summary>📋Usage📋</summary>
 Walk forward and activate the script as you walk across the level change trigger, grab the tripmines and wait against the wall.
+  
 </details>
 
 <details>
@@ -741,9 +747,10 @@ Example: `bind key puskip`
   <summary>📼Video Guide📼</summary>
   
 [link](https://clips.twitch.tv/PuzzledTangentialClipsdadRickroll)
+
+</details>
   
 </details>
-
 
 ## **G. On A Rail**
 
