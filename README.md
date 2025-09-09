@@ -1092,9 +1092,9 @@ Example: `bind key faf`
 </details>
 
 ## **M. Lambda Core**
-- ❗If you don't have enough time to get into the corner, increase alias "dst" value❗
-### 25. Watergauss Clip Script
 
+### 25. Watergauss Clip Script
+- ❗If you don't have enough time to get into the corner, increase alias "dst" value❗
 ```
 alias _taubow
 alias _taubofuncw "cl_pitchup 180;cl_pitchdown -180;-attack;wait;cl_pitchup -12;cl_pitchdown 12;wait;cl_pitchup 89.999;cl_pitchdown 89.999"
