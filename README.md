@@ -515,6 +515,18 @@ alias -bpjb1 "-bxt_tas_jumpbug; fps_100"
 ```
 Example: `bind key +bpjb1`
 
+<details>
+  <summary>🖼️See Where To Use🖼️</summary>
+  ❗Jumpbug spots highlighted with green lines❗
+  | Walk off from the spot holding your script key(❗DO NOT JUMP SCRIPT WILL NOT WORK❗)|                                            | Where to Land
+
+
+  |
+</details>
+
+
+
+
 #### 🟡 jb2 (Second Elevator)
 ```
 alias fps_55 "fps_max 55.55555"
