@@ -718,7 +718,7 @@ Walk forward and activate the script as you walk across the level change trigger
 <details>
   <summary>📼Video Guide📼</summary>
   
-https://github.com/user-attachments/assets/8d3c27d7-fe0a-4d13-93c8-b15fb38b651f
+https://github.com/user-attachments/assets/33a614b2-d5ce-4c87-8976-fb3b5afc06c8
 
   </details>
 
@@ -732,7 +732,7 @@ Example: `bind key puskip`
 <details>
   <summary>📼Video Guide📼</summary>
   
-https://github.com/user-attachments/assets/da8c89b5-4c03-410e-9288-c8070bfe3e45
+https://github.com/user-attachments/assets/6ece04ab-acfb-410a-8578-b615b72dc9d3
 
   </details>
 
@@ -807,9 +807,7 @@ Example: `bind key +oarjb2`
 | ![](Jumpbugs/bprail1.jpg)           | ![](Jumpbugs/bprail11.jpg)          |     
 
 </details>
-
-
-  <summary>📼Video Guide📼</summary>
+ <summary>📼Video Guide📼</summary>
 
 https://github.com/user-attachments/assets/871d363d-d7ec-437e-bf92-d3d72bf17d74
 
@@ -879,6 +877,7 @@ https://github.com/user-attachments/assets/f13a3cac-dcbb-445e-a663-dd701d6a38e9
 ## **K. Surface Tension**
 
 ### 19. CLD Scripts
+
 <details>
   <summary>📜Click Here To View Scripts📜</summary>
 
@@ -899,6 +898,8 @@ alias sst5 "w 10; +jump; w 28; -left; -moveleft; w 15; tau; w 10; +attack2; w 40
 alias sst6 "alias sstmove +right; alias sst sst7"
 alias sst7 "alias sstmove; w 30; -moveright; -right; tau; w 25; -jump; cl_pitchdown 89; cl_pitchup -89; w 22; weapon_shotgun; cl_pitchup 89; alias sst"
 ```
+
+<details>
   <summary>📼Video Guide📼</summary>
 
 https://github.com/user-attachments/assets/b7cf65e0-5aaf-4bd0-abe1-d05d5b21822a
