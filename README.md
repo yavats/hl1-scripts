@@ -586,7 +586,7 @@ Example: `bind key +bpjb4`
   
 | Jump down (+jumpbug)                | Land                                |
 | ----------------------------------- | ----------------------------------- |
-| ![](Jumpbugs/bpjb4.png)             | ![](Jumpbugs/bpjb44.png)            |     
+| ![](Jumpbugs/bpjb4.png)             | ![](Jumpbugs/bpjb44.jpg)            |     
 
 </details>
 
@@ -599,12 +599,27 @@ Example: `bind key +bpjb4`
 alias bp_nade2 "cl_pitchdown 30;cl_pitchup -30;+duck;+jump;wait;-attack;w 15;-jump;-duck;cl_pitchup 89;cl_pitchdown 89;force_centerview; say fps_90"
 ```
 Example: `bind key "bp_nade2"`
+
+<details>
+  <summary>📼Video Guide📼</summary>
+  
+https://github.com/user-attachments/assets/9fdc0f7c-3739-4e50-ac59-0fc1beaa2976
+
+  </details>
+  
 #### Maxam's Nade Route(From The Slop Version)
 - ❗This one is pretty much harder, its recommended to use it only if you have low hp❗
 ```
 alias bp_nade3 "cl_pitchdown 89; cl_pitchup -89; -attack; w; cl_pitchup 89; force_centerview"
 ```
 Example: `bind key "bp_nade3"`
+
+<details>
+  <summary>📼Video Guide📼</summary>
+  
+https://github.com/user-attachments/assets/1d0bab80-0d45-4576-82b3-a7eafec3fe5b
+
+  </details>
 
 
 
@@ -613,6 +628,13 @@ Example: `bind key "bp_nade3"`
 alias bpbutton2 "+attack2; -jump; w; weapon_handgrenade;-attack2; -moveleft; -moveright; weapon_handgrenade; w 20; cl_pitchdown 45; cl_pitchup -45; w 40; -duck; w 30; +use; w 20; -use; w 15; +jump; w; +duck; cl_pitchdown 89; cl_pitchup 89; fps_max 7.5; w 2; -jump; fps_max 100; w 50; -duck"
 ```
 Example: `bind key "bpbutton2"`
+
+<details>
+  <summary>📼Video Guide📼</summary>
+  
+https://github.com/user-attachments/assets/1d0bab80-0d45-4576-82b3-a7eafec3fe5b
+
+  </details>
 
 ### 12. Hl21 Box Script
 ```
@@ -647,6 +669,13 @@ alias move
 - **You can change the number of waits in alias box1 (every 100 waits = 1 second) if you don't have enough time to press the buttons.**
 </details>
 
+<details>
+  <summary>📼Video Guide📼</summary>
+  
+https://github.com/user-attachments/assets/74b9a510-18cd-4087-9d80-1a6206a7d13d
+
+  </details>
+
 
 ## **F. Power Up**
   
@@ -658,7 +687,12 @@ alias move
 ```
 alias puskip "-jump;-moveright;-moveleft;speak fvox/power_level_is;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;cl_pitchdown 180;cl_pitchup -179;w 30;cl_pitchup -30;cl_pitchdown 31;wait;cl_pitchup 89;cl_pitchdown 89;w 10;+use;w 11;-use;+jump;wait;-jump"
 ```
-Video guide: [link](https://www.youtube.com/watch?v=IkZ4wWKrLVg)\
+<details>
+  <summary>📼Video Guide📼</summary>
+
+[link](https://www.youtube.com/watch?v=IkZ4wWKrLVg)
+
+</details>
 Example: `bind key puskip`
 
 #### 🟡 Power Up B
@@ -672,6 +706,12 @@ Example: `bind key puskip`
 Walk forward and activate the script as you walk across the level change trigger, grab the tripmines and wait against the wall.
 </details>
 
+<details>
+  <summary>📼Video Guide📼</summary>
+  
+https://github.com/user-attachments/assets/8d3c27d7-fe0a-4d13-93c8-b15fb38b651f
+
+  </details>
 
 #### 🟠 PU CLD (C) [Faster One, has less delay)
 *Facing forward, with object boost!*
@@ -680,6 +720,13 @@ alias puskip "weapon_shotgun;-jump;-moveright;-moveleft;w 280;+use;w 8;-use;+jum
 ```
 Example: `bind key puskip`
 
+<details>
+  <summary>📼Video Guide📼</summary>
+  
+https://github.com/user-attachments/assets/da8c89b5-4c03-410e-9288-c8070bfe3e45
+
+  </details>
+
 #### 🔴 PU CLD (C) [Slower One, has more delay]
 *Facing forward, with object boost!*
 ```
@@ -687,7 +734,11 @@ alias puskip "weapon_shotgun;-jump;-moveright;-moveleft;w 350;+use;w 12;-use;+ju
 ```
 Example: `bind key puskip`
 
-Video guide: [link](https://clips.twitch.tv/PuzzledTangentialClipsdadRickroll)
+<details>
+  <summary>📼Video Guide📼</summary>
+  
+[link](https://clips.twitch.tv/PuzzledTangentialClipsdadRickroll)
+  
 </details>
 
 
@@ -705,6 +756,23 @@ alias +oarjb1 "fps_41; w5; +bxt_tas_jumpbug"
 alias -oarjb1 "-bxt_tas_jumpbug; fps_100"
 ```
 Example: `bind key +oarjb1`
+
+<details>
+  <summary>🖼️See Where To Use🖼️</summary>
+❗Jumpbug spots highlighted with green lines❗
+  
+| Jump down (+jumpbug)                | Land                                |
+| ----------------------------------- | ----------------------------------- |
+| ![](Jumpbugs/bpjb4.png)             | ![](Jumpbugs/bpjb44.jpg)            |     
+
+</details>
+
+<details>
+  <summary>📼Video Guide📼</summary>
+
+https://github.com/user-attachments/assets/8941b401-79c4-45bb-baee-cb370f084e6d
+
+  </details>
  
 #### 🟡 Jumpbug for after launching the rocket
 - ❗Its recommended to do tankbox instead of using this script, unless you don't want to take the armor for rp clip route❗ 
@@ -715,6 +783,13 @@ alias +oarjb2 "fps_90; w5; +bxt_tas_jumpbug"
 alias -oarjb2 "-bxt_tas_jumpbug; fps_100" 
 ```
 Example: `bind key +oarjb2`
+
+  <summary>📼Video Guide📼</summary>
+
+https://github.com/user-attachments/assets/871d363d-d7ec-437e-bf92-d3d72bf17d74
+
+  </details>
+
 </details>
 
 
@@ -727,6 +802,12 @@ alias oarobbobind "bind usekey oarobbo"
 alias noi "say oarobbo rdy"
 ```
 Example: `bind key "oarobbobind; noi"`
+
+  <summary>📼Video Guide📼</summary>
+
+https://github.com/user-attachments/assets/6a65b678-a4a4-4c22-9e75-0c507d95fc6c
+
+  </details>
 
 
 ## **H. Apprehension**
