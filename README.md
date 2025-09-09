@@ -635,7 +635,7 @@ Example: `bind key "bpbutton2"`
 <details>
   <summary>📼Video Guide📼</summary>
   
-https://github.com/user-attachments/assets/1d0bab80-0d45-4576-82b3-a7eafec3fe5b
+https://github.com/user-attachments/assets/9351dbc4-6465-46af-b5cf-1738cb6fa574
 
   </details>
 
