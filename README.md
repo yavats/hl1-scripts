@@ -607,7 +607,9 @@ Example: `bind key +bpjb4`
   
 | Jump down (+jumpbug)                | Land                                |
 | ----------------------------------- | ----------------------------------- |
-| ![](Jumpbugs/bpjb4.png)             | ![](Jumpbugs/bpjb44.jpg)            |    
+| ![](Jumpbugs/bpjb4.png)             | ![](Jumpbugs/bpjb44.jpg)            |   
+
+</details>
 
 <details>
   <summary>📼Video Guide📼</summary>
@@ -616,8 +618,6 @@ https://github.com/user-attachments/assets/23bf2d50-a205-43b2-b4c6-de5e4a8dbf95
 
   </details>
 
-
-</details>
 
 </details>
 
