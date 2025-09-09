@@ -774,7 +774,7 @@ Example: `bind key +oarjb1`
 
 </details>
 
-<details>
+ <details>
   <summary>📼Video Guide📼</summary>
 
 https://github.com/user-attachments/assets/8941b401-79c4-45bb-baee-cb370f084e6d
@@ -793,7 +793,7 @@ alias -oarjb2 "-bxt_tas_jumpbug; fps_100"
 ```
 Example: `bind key +oarjb2`
 
-<details>
+ <details>
   <summary>🖼️See Where To Use🖼️</summary>
 ❗Jumpbug spots highlighted with green lines❗
   
@@ -802,7 +802,9 @@ Example: `bind key +oarjb2`
 | ![](Jumpbugs/bprail1.jpg)           | ![](Jumpbugs/bprail11.jpg)          |     
 
 
-</details>
+ </details>
+ 
+<details>
  <summary>📼Video Guide📼</summary>
 
 https://github.com/user-attachments/assets/871d363d-d7ec-437e-bf92-d3d72bf17d74
@@ -933,6 +935,7 @@ bind f10 +right //1
 
 </details>
 
+<details>
   <summary>📼Video Guide📼</summary>
 
 https://github.com/user-attachments/assets/c1c5ca51-0e94-4b83-877f-c0bd2be1e947
@@ -978,6 +981,7 @@ bind h ptpmove1
 
 
 ```
+  </details>
   
 <details>
   <summary>📋Usage📋</summary>
@@ -989,7 +993,8 @@ bind h ptpmove1
   -  k
   - h j k
   - j k (8x)
-  - h j k (2x) 
+  - h j k (2x)
+  
  </details>
 
  <details>
@@ -1001,6 +1006,7 @@ bind h ptpmove1
 
  #### 🟡 Javac's Hole In One P2P Script
 
+  
  </details>
 
  ### 21. Slowgauss After Ihd Door
@@ -1012,6 +1018,7 @@ alias tausloo "cl_pitchup 180;cl_pitchdown -180;-attack;w50;cl_pitchup 89.999;cl
 ```
 Example: `bind key tausloo`
 
+<details>
   <summary>📼Video Guide📼</summary>
   
 https://github.com/user-attachments/assets/7a8a3b3c-8ccb-4cb5-8b81-b74e16819707
@@ -1024,6 +1031,7 @@ alias boostx "+duck;w19;cl_pitchup -96;cl_pitchdown -180;wait;+attack2;wait;-att
 ```
 Example: `bind key boostx`
 
+<details>
   <summary>📼Video Guide📼</summary>
   
 https://github.com/user-attachments/assets/954369ee-eb51-4a2e-82ff-80e47a811c3c
@@ -1065,6 +1073,7 @@ https://github.com/user-attachments/assets/e3635e60-279f-4404-9e5e-f20b57c2512a
 alias faf "save quick;speak fvox/power_level_is.beep._comma.beep._comma.beep._comma.beep;-moveright;-moveleft;-duck;weapon_crowbar;+attack;w 500;weapon_handgrenade;w 40;cl_pitchdown 180;cl_pitchup -179;w 40;cl_pitchup 89.999;cl_pitchdown 89.999;cl_pitchup -40;cl_pitchdown 40.001;w 30;-attack;w 4;+jump;+duck;wait;-jump;-duck;cl_pitchup 89;cl_pitchdown 89;w 61"
 ```
 Example: `bind key faf`
+
 <details>
   <summary>📼Video Guide📼</summary>
   
