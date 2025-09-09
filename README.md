@@ -922,23 +922,9 @@ alias xenv2 "sensitivity 0; unpause; +attack2; w 10; -attack2; fps_max 97; w 40;
 ```
 bind f1 xenv
 
-//// PRE-REQUIREMENTS ////
-// 1) change the sensitivity in xenv_sens
-// 2) change the bindings in xenv_binds_set to whatever keys you wanna use
-// 3) change the bindings in xenv_binds_def to default actions for the selected keys
-
-//// EXECUTION ////
-// 1) press xenv key before the changelevel after entering the portal. DON'T HOLD +DUCK, IT'LL BREAK THE SCRIPT!
-// 2) set the angles
-// 3) assuming your binds are 1=xen_dolb 2=xenv_mv1 3=xenv_mv2: press 123 123 1
-// 4) ???
-// 5) PROFIT
-
-
 alias xenv_sens "sensitivity 2.37"
 alias xenv_binds_set "bind 2 xenv_dolb; bind 3 xenv_mv1; bind 4 xenv_mv2"
 alias xenv_binds_def "bind 2 slot2; bind 3 weapon_9mmAR; bind 4 weapon_shotgun"
-
 
 alias xenv_reset "alias xenv_dolb xenv_dolb1; alias xenv_mv1 +moveright; alias xenv_mv2 +left"
 alias xenv "+duck; bxt_autopause 1; fps_max 97; cl_pitchup -35.83; cl_pitchdown 35.83; m_pitch 0; sensitivity 1819.54545; say xen_strat; xenv_reset; xenv_binds_set"
