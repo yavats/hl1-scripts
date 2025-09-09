@@ -849,6 +849,7 @@ alias mg2 "+use;w 18;-use;fps_max 100;w 30;-duck;w 35; +jump; w 10; -jump; alias
 ```
 📋Usage📋: `bind key mg` `key + +moveright(hold a bit) + key`
 
+<details>
   <summary>📼Video Guide📼</summary>
 
 https://github.com/user-attachments/assets/cc3236c9-4a0d-40fb-820f-1047aa5835e2
