@@ -527,6 +527,13 @@ Example: `bind key +bpjb1`
 
 </details>
 
+<details>
+  <summary>📼Video Guide📼</summary>
+  
+https://github.com/user-attachments/assets/a2cb5c0c-0c9c-4b84-8c62-4770badde94b
+
+  </details>
+
 #### 🟡 jb2 (Second Elevator)
 - ❗Jump off from the spot holding your script key (MAKE SURE YOU HOLD THE SCRIPT KEY BEFORE JUMPING OFF)❗
 - ❗Jumpbug spot is shown in the image below❗
@@ -547,6 +554,13 @@ Example: `bind key +bpjb2`
 | ![](Jumpbugs/bpjb2.png)             | ![](Jumpbugs/bpjb22.png)            |     
 
 </details>
+
+<details>
+  <summary>📼Video Guide📼</summary>
+  
+https://github.com/user-attachments/assets/b18dd592-c1b2-4497-950d-a65763b3e3ed
+
+  </details>
 
 #### 🟠 jb3 (from boxes)
 - ❗Jump off from the spot while ducking holding your script key (MAKE SURE YOU ARE CROUCHED AND HOLD THE SCRIPT KEY BEFORE JUMPING OFF)❗
@@ -569,6 +583,13 @@ Example: `bind key +bpjb3`
 
 </details>
 
+<details>
+  <summary>📼Video Guide📼</summary>
+  
+https://github.com/user-attachments/assets/c69e2f7f-11da-40d4-b480-cc245cc9fdb0
+
+  </details>
+
 
 #### 🔴 jb4 (Pipe Before Power Up)
 - ❗Jump off from the spot holding your script key (MAKE SURE YOU HOLD THE SCRIPT KEY BEFORE JUMPING OFF)❗
@@ -586,7 +607,15 @@ Example: `bind key +bpjb4`
   
 | Jump down (+jumpbug)                | Land                                |
 | ----------------------------------- | ----------------------------------- |
-| ![](Jumpbugs/bpjb4.png)             | ![](Jumpbugs/bpjb44.jpg)            |     
+| ![](Jumpbugs/bpjb4.png)             | ![](Jumpbugs/bpjb44.jpg)            |    
+
+<details>
+  <summary>📼Video Guide📼</summary>
+  
+https://github.com/user-attachments/assets/23bf2d50-a205-43b2-b4c6-de5e4a8dbf95
+
+  </details>
+
 
 </details>
 
