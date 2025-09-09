@@ -527,9 +527,6 @@ Example: `bind key +bpjb1`
 
 </details>
 
-
-
-
 #### 🟡 jb2 (Second Elevator)
 - ❗Jump off from the spot holding your script key (MAKE SURE YOU HOLD THE SCRIPT KEY BEFORE JUMPING OFF)❗
 - ❗Jumpbug spot is shown in the image below❗
@@ -692,8 +689,6 @@ https://github.com/user-attachments/assets/74b9a510-18cd-4087-9d80-1a6206a7d13d
 alias puskip "-jump;-moveright;-moveleft;speak fvox/power_level_is;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;cl_pitchdown 180;cl_pitchup -179;w 30;cl_pitchup -30;cl_pitchdown 31;wait;cl_pitchup 89;cl_pitchdown 89;w 10;+use;w 11;-use;+jump;wait;-jump"
 ```
 
-
-
 <details>
   <summary>📼Video Guide📼</summary>
 
@@ -806,6 +801,7 @@ Example: `bind key +oarjb2`
 | ----------------------------------- | ----------------------------------- |
 | ![](Jumpbugs/bprail1.jpg)           | ![](Jumpbugs/bprail11.jpg)          |     
 
+
 </details>
  <summary>📼Video Guide📼</summary>
 
@@ -826,12 +822,13 @@ alias noi "say oarobbo rdy"
 ```
 Example: `bind key "oarobbobind; noi"`
 
-<details>
-  <summary>📼Video Guide📼</summary>
+
+ <details>
+   <summary>📼Video Guide📼</summary>
 
 https://github.com/user-attachments/assets/6a65b678-a4a4-4c22-9e75-0c507d95fc6c
 
-  </details>
+</details>
 
 
 ## **H. Apprehension**
