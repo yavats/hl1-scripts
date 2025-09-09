@@ -507,6 +507,8 @@ Example `bind key "ocobbobind;say OCobbo"`
   <summary>📜Click Here To View Scripts📜</summary>
   
 #### 🟢 jb1 (First Elevator)
+❗Walk off from the spot holding your script key(DO NOT JUMP SCRIPT WILL NOT WORK)❗
+❗Jumpbug spot is shown in the image below❗
 ```
 alias fps_90 "fps_max 90.90909"
 alias fps_100 "fps_max 100"
@@ -517,17 +519,20 @@ Example: `bind key +bpjb1`
 
 <details>
   <summary>🖼️See Where To Use🖼️</summary>
-  ❗Jumpbug spots highlighted with green lines❗
-  | Walk off from the spot holding your script key(❗DO NOT JUMP SCRIPT WILL NOT WORK❗)|                                            | Where to Land
+❗Jumpbug spots highlighted with green lines❗
+  
+| Walk down (+jumpbug)                | Land                                |
+| ----------------------------------- | ----------------------------------- |
+| ![](Jumpbugs/bpjb1.png)             | ![](Jumpbugs/bpjb11.png)            |     
 
-
-  |
 </details>
 
 
 
 
 #### 🟡 jb2 (Second Elevator)
+❗Jump off from the spot holding your script key (MAKE SURE YOU HOLD THE SCRIPT KEY BEFORE JUMPING OFF)❗
+❗Jumpbug spot is shown in the image below❗
 ```
 alias fps_55 "fps_max 55.55555"
 alias fps_100 "fps_max 100"
@@ -536,13 +541,55 @@ alias -bpjb2 "-bxt_tas_jumpbug; fps_100"
 ```
 Example: `bind key +bpjb2`
 
-#### 🟠 jb3 (Pipe Before Power Up)
+<details>
+  <summary>🖼️See Where To Use🖼️</summary>
+❗Jumpbug spots highlighted with green lines❗
+  
+| Jump down (+jumpbug)                | Land                                |
+| ----------------------------------- | ----------------------------------- |
+| ![](Jumpbugs/bpjb2.png)             | ![](Jumpbugs/bpjb22.png)            |     
+
+</details>
+
+#### 🟠 jb3 (from boxes)
+❗Jump off from the spot while ducking holding your script key (MAKE SURE YOU ARE CROUCHED AND HOLD THE SCRIPT KEY BEFORE JUMPING OFF)❗
 ```
-alias fps_33 "fps_max 58.82353"
-alias +bpjb3 "fps_33; w 5; +bxt_tas_jumpbug" 
+alias fps_76 "fps_max 76"
+alias fps_100 "fps_max 100"
+alias +bpjb3 "fps_76; w20; +bxt_tas_jumpbug" 
 alias -bpjb3 "-bxt_tas_jumpbug; fps_100"
 ```
 Example: `bind key +bpjb3`
+
+<details>
+  <summary>🖼️See Where To Use🖼️</summary>
+❗Jumpbug spots highlighted with green lines❗
+  
+| Jump down (+jumpbug)                | Land                                |
+| ----------------------------------- | ----------------------------------- |
+| ![](Jumpbugs/bpjb3.png)             | ![](Jumpbugs/bpjb33.png)            |     
+
+</details>
+
+
+#### 🔴 jb4 (Pipe Before Power Up)
+```
+alias fps_58 "fps_max 58.82353"
+alias +bpjb4 "fps_58; w 5; +bxt_tas_jumpbug" 
+alias -bpjb4 "-bxt_tas_jumpbug; fps_100"
+```
+Example: `bind key +bpjb4`
+
+<details>
+  <summary>🖼️See Where To Use🖼️</summary>
+❗Jumpbug spots highlighted with green lines❗
+  
+| Jump down (+jumpbug)                | Land                                |
+| ----------------------------------- | ----------------------------------- |
+| ![](Jumpbugs/bpjb4.png)             | ![](Jumpbugs/bpjb44.png)            |     
+
+</details>
+
 </details>
 
 ### 11. Nade Boost Scripts
