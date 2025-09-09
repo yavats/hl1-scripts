@@ -507,8 +507,8 @@ Example `bind key "ocobbobind;say OCobbo"`
   <summary>📜Click Here To View Scripts📜</summary>
   
 #### 🟢 jb1 (First Elevator)
-❗Walk off from the spot holding your script key(DO NOT JUMP SCRIPT WILL NOT WORK)❗
-❗Jumpbug spot is shown in the image below❗
+- ❗Walk off from the spot holding your script key(DO NOT JUMP SCRIPT WILL NOT WORK)❗
+- ❗Jumpbug spot is shown in the image below❗
 ```
 alias fps_90 "fps_max 90.90909"
 alias fps_100 "fps_max 100"
@@ -531,8 +531,8 @@ Example: `bind key +bpjb1`
 
 
 #### 🟡 jb2 (Second Elevator)
-❗Jump off from the spot holding your script key (MAKE SURE YOU HOLD THE SCRIPT KEY BEFORE JUMPING OFF)❗
-❗Jumpbug spot is shown in the image below❗
+- ❗Jump off from the spot holding your script key (MAKE SURE YOU HOLD THE SCRIPT KEY BEFORE JUMPING OFF)❗
+- ❗Jumpbug spot is shown in the image below❗
 ```
 alias fps_55 "fps_max 55.55555"
 alias fps_100 "fps_max 100"
@@ -552,7 +552,8 @@ Example: `bind key +bpjb2`
 </details>
 
 #### 🟠 jb3 (from boxes)
-❗Jump off from the spot while ducking holding your script key (MAKE SURE YOU ARE CROUCHED AND HOLD THE SCRIPT KEY BEFORE JUMPING OFF)❗
+- ❗Jump off from the spot while ducking holding your script key (MAKE SURE YOU ARE CROUCHED AND HOLD THE SCRIPT KEY BEFORE JUMPING OFF)❗
+- ❗Jumpbug spot is shown in the image below❗
 ```
 alias fps_76 "fps_max 76"
 alias fps_100 "fps_max 100"
@@ -573,6 +574,8 @@ Example: `bind key +bpjb3`
 
 
 #### 🔴 jb4 (Pipe Before Power Up)
+- ❗Jump off from the spot holding your script key (MAKE SURE YOU HOLD THE SCRIPT KEY BEFORE JUMPING OFF)❗
+- ❗Jumpbug spot is shown in the image below❗
 ```
 alias fps_58 "fps_max 58.82353"
 alias +bpjb4 "fps_58; w 5; +bxt_tas_jumpbug" 
@@ -749,6 +752,8 @@ Example: `bind key puskip`
   <summary>📜Click Here To View Scripts📜</summary>
   
 #### 🟢 Jumpbug for right before nade rails
+- ❗Walk off from the spot holding your script key(DO NOT JUMP SCRIPT WILL NOT WORK)❗
+- ❗Jumpbug spot is shown in the image below❗
   
 ```
 alias fps_41 "fps_max 41.66666"
@@ -761,9 +766,9 @@ Example: `bind key +oarjb1`
   <summary>🖼️See Where To Use🖼️</summary>
 ❗Jumpbug spots highlighted with green lines❗
   
-| Jump down (+jumpbug)                | Land                                |
+| Walk down (+jumpbug)                | Land                                |
 | ----------------------------------- | ----------------------------------- |
-| ![](Jumpbugs/bpjb4.png)             | ![](Jumpbugs/bpjb44.jpg)            |     
+| ![](Jumpbugs/bprail2.png)           | ![](Jumpbugs/bprail22.png)          |     
 
 </details>
 
@@ -775,7 +780,9 @@ https://github.com/user-attachments/assets/8941b401-79c4-45bb-baee-cb370f084e6d
   </details>
  
 #### 🟡 Jumpbug for after launching the rocket
-- ❗Its recommended to do tankbox instead of using this script, unless you don't want to take the armor for rp clip route❗ 
+- ❗Its recommended to do tankbox instead of using this script, unless you don't want to take the armor for rp clip route❗
+- ❗Jump off from the spot holding your script key (MAKE SURE YOU HOLD THE SCRIPT KEY BEFORE JUMPING OFF)❗
+- ❗Jumpbug spot is shown in the image below❗
 ```
 alias fps_90 "fps_max 58.82353"
 alias fps_100 "fps_max 100"
@@ -783,6 +790,17 @@ alias +oarjb2 "fps_90; w5; +bxt_tas_jumpbug"
 alias -oarjb2 "-bxt_tas_jumpbug; fps_100" 
 ```
 Example: `bind key +oarjb2`
+
+<details>
+  <summary>🖼️See Where To Use🖼️</summary>
+❗Jumpbug spots highlighted with green lines❗
+  
+| Walk down (+jumpbug)                | Land                                |
+| ----------------------------------- | ----------------------------------- |
+| ![](Jumpbugs/bprail1.jpg)           | ![](Jumpbugs/bprail11.jpg)          |     
+
+</details>
+
 
   <summary>📼Video Guide📼</summary>
 
@@ -830,11 +848,23 @@ alias mg2 "+use;w 18;-use;fps_max 100;w 30;-duck;w 35; +jump; w 10; -jump; alias
 ```
 📋Usage📋: `bind key mg` `key + +moveright(hold a bit) + key`
 
+  <summary>📼Video Guide📼</summary>
+
+https://github.com/user-attachments/assets/cc3236c9-4a0d-40fb-820f-1047aa5835e2
+
+  </details>
+
 ### 18. RPClip Script
 ```
 alias rpclip "cl_pitchdown 89;cl_pitchup -89;fps_max 20.2;+attack;w;weapon_crowbar;-attack;w32;+jump;-forward;weapon_handgrenade;w;-jump;+duck;w20;cl_pitchdown 89;cl_pitchup -89;w 10;fps_max 20;w4;-duck;fps_max 100;cl_pitchdown 89;cl_pitchup 89"
 ```
 📋Usage📋: `bind key "rpclip"` `Hold +forward before and execute the script`
+
+  <summary>📼Video Guide📼</summary>
+
+https://github.com/user-attachments/assets/f13a3cac-dcbb-445e-a663-dd701d6a38e9
+
+  </details>
 
 ## **K. Surface Tension**
 
@@ -859,6 +889,11 @@ alias sst5 "w 10; +jump; w 28; -left; -moveleft; w 15; tau; w 10; +attack2; w 40
 alias sst6 "alias sstmove +right; alias sst sst7"
 alias sst7 "alias sstmove; w 30; -moveright; -right; tau; w 25; -jump; cl_pitchdown 89; cl_pitchup -89; w 22; weapon_shotgun; cl_pitchup 89; alias sst"
 ```
+  <summary>📼Video Guide📼</summary>
+
+https://github.com/user-attachments/assets/b7cf65e0-5aaf-4bd0-abe1-d05d5b21822a
+
+  </details>
 
 #### 🟡 Slow CLD Script
 - ❗If you want to change keybinds, pay attention to the order❗
@@ -878,7 +913,24 @@ bind f12 stskip //3
 bind f11 stmove //2
 bind f10 +right //1
 ```
-📋Usage📋: 
+
+<details>
+  <summary>📋Usage📋</summary>
+
+- Execute script and go between the rocks until you can't move
+- Look at the corner of the rock (if confused, check video guide below)
+- Then press the keys in order:
+- f11 + f12 (3x)
+- f10 + f11 + f12 (hold those a bit otherwise it won't go right)
+
+</details>
+
+  <summary>📼Video Guide📼</summary>
+
+https://github.com/user-attachments/assets/c1c5ca51-0e94-4b83-877f-c0bd2be1e947
+
+  </details>
+
 </details>
 
 ### 20. HL21 P2P Scripts
@@ -918,14 +970,7 @@ bind h ptpmove1
 
 
 ```
-<details>
-  <summary>📼Video Guide📼</summary>
   
-  https://github.com/user-attachments/assets/ffbffe26-d0c3-4f61-983f-51a2d8b2e2bd
-  
-  </details>
-  
-
 <details>
   <summary>📋Usage📋</summary>
   
@@ -939,21 +984,43 @@ bind h ptpmove1
   - h j k (2x) 
  </details>
 
+ <details>
+  <summary>📼Video Guide📼</summary>
+  
+  https://github.com/user-attachments/assets/ffbffe26-d0c3-4f61-983f-51a2d8b2e2bd
+  
+  </details>
+
  #### 🟡 Javac's Hole In One P2P Script
 
  </details>
 
  ### 21. Slowgauss After Ihd Door
+ ❗For slowgauss to work you need either 1 or 2 ammo left on your gauss❗
+ ❗Recommended to have 2 ammo if possible, then you will have 1 more ammo left for another slow gauss to break the cage later❗
+ 
  ```
 alias tausloo "cl_pitchup 180;cl_pitchdown -180;-attack;w50;cl_pitchup 89.999;cl_pitchdown 89.999;force_centerview"
 ```
 Example: `bind key tausloo`
+
+  <summary>📼Video Guide📼</summary>
+  
+https://github.com/user-attachments/assets/7a8a3b3c-8ccb-4cb5-8b81-b74e16819707
+
+  </details>
 
 ### 22. Nadeboost For New ST Route
 ```
 alias boostx "+duck;w19;cl_pitchup -96;cl_pitchdown -180;wait;+attack2;wait;-attack2;w2;-duck;cl_pitchup 89.999;cl_pitchdown 89.999;force_centerview"
 ```
 Example: `bind key boostx`
+
+  <summary>📼Video Guide📼</summary>
+  
+https://github.com/user-attachments/assets/954369ee-eb51-4a2e-82ff-80e47a811c3c
+
+  </details>
 
 ## **L. Forget About Freeman**
 
@@ -977,8 +1044,9 @@ Example: `bind key faf_e`
 
 <details>
   <summary>📼Video Guide📼</summary>
-  
-  
+
+https://github.com/user-attachments/assets/e3635e60-279f-4404-9e5e-f20b57c2512a
+
   </details>
 
 #### 🟡 Smg CLD with fast ladder climb
@@ -989,7 +1057,12 @@ Example: `bind key faf_e`
 alias faf "save quick;speak fvox/power_level_is.beep._comma.beep._comma.beep._comma.beep;-moveright;-moveleft;-duck;weapon_crowbar;+attack;w 500;weapon_handgrenade;w 40;cl_pitchdown 180;cl_pitchup -179;w 40;cl_pitchup 89.999;cl_pitchdown 89.999;cl_pitchup -40;cl_pitchdown 40.001;w 30;-attack;w 4;+jump;+duck;wait;-jump;-duck;cl_pitchup 89;cl_pitchdown 89;w 61"
 ```
 Example: `bind key faf`
-Video guide: [link](https://www.youtube.com/watch?v=E4h4jmzd-gI)\
+<details>
+  <summary>📼Video Guide📼</summary>
+  
+ [link](https://www.youtube.com/watch?v=E4h4jmzd-gI)\
+
+ </details>
 
 #### 🔴 Grenade CLD + Smg nade to scare vortigaunts
 ```
@@ -1058,6 +1131,13 @@ alias xenv2 "sensitivity 0; unpause; +attack2; w 10; -attack2; fps_max 97; w 40;
   
   </details>
 
+<details>
+  <summary>📼Video Guide📼</summary>
+
+https://github.com/user-attachments/assets/1df2eb19-dc8d-4264-9340-5d9c057f2a1d
+
+  </details>
+
 #### 🟡 Viewsnap (Fully automatic) [❗NOT RECOMMENDED, VERY INCONSISTENT❗]
 ```
 bind f1 xenv
@@ -1084,6 +1164,13 @@ alias xenv_dolb3 "w 13; -left; -moveleft; +bxt_tas_jumpbug; bxt_autopause 0; w 3
   - 123 (2x)
   - 1
   
+  </details>
+
+  <details>
+  <summary>📼Video Guide📼</summary>
+
+https://github.com/user-attachments/assets/1356e7f6-a6c1-4852-875f-641789c8ff70
+
   </details>
   
 
