@@ -821,6 +821,7 @@ alias noi "say oarobbo rdy"
 ```
 Example: `bind key "oarobbobind; noi"`
 
+<details>
   <summary>📼Video Guide📼</summary>
 
 https://github.com/user-attachments/assets/6a65b678-a4a4-4c22-9e75-0c507d95fc6c
