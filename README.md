@@ -861,6 +861,7 @@ alias rpclip "cl_pitchdown 89;cl_pitchup -89;fps_max 20.2;+attack;w;weapon_crowb
 ```
 📋Usage📋: `bind key "rpclip"` `Hold +forward before and execute the script`
 
+<details>
   <summary>📼Video Guide📼</summary>
 
 https://github.com/user-attachments/assets/f13a3cac-dcbb-445e-a663-dd701d6a38e9
