@@ -672,7 +672,7 @@ alias box2 "w 3; -left; alias move +moveright; alias box box3" //l + k
 alias box3 "w 22; +use; w 9; -use; w 20; +use; w 6; -use; +duck; w; -duck; w; +duck; +use; w 21; -use; -duck; w 15; +use; w 8; -use; w; +duck; w 25; -duck; w 25; +use; w 6; -use; alias move +forward; alias box box4" //l + k
 alias box4 "w 23; +use; w 10; -use; w 5; +use; w 8; -use; w 25; -moveright; w 10; +use; w 4; -use; w 42; -forward; w 30; alias move +moveleft; alias box box5" //l + k
 alias box5 "w 10; +use; w 9; -use; -moveleft; alias move +right; alias box box6" //l + k
-alias box6 "w 12; -right; w 53; record bp1; alias move +moveleft; alias box box7" //l + k
+alias box6 "w 12; -right; w 53; alias move +moveleft; alias box box7" //l + k
 alias box7 "w 5; alias move +forward; alias box box8" //l + k
 alias box8 "w 7; -forward; w 25; -moveleft; w 5; alias move +forward; alias box box9" //l + k
 alias box9 "w 2; +use; w 11; +duck; w; -duck; w; -use; alias move +moveright; alias box box10" //l + k
