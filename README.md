@@ -63,10 +63,11 @@ alias @use2 "w;alias @use @use3;bxt_append _zspecial"
 alias @use3 "-use;alias @use @use4;bxt_append _zspecial"
 alias @use4 "w;alias @use @use1;bxt_append _zspecial"
 ```
-Example: `bind key +usespam`
+Example: `bind key +usespam`\
+Usage: hold the script key
 
 
-### 2. Duckroll (aka Duckspam) Script
+### 2. Duckroll (aka Duckspam) script
 *Only use this for waterboosts, `+bxt_tas_ducktap` is much better for movement purposes*
 ```
 alias +duckroll "alias _zspecial @duck;@dr1"
@@ -76,32 +77,33 @@ alias @dr2 "w;alias @duck @dr3;bxt_append _zspecial"
 alias @dr3 "-duck;alias @duck @dr4;bxt_append _zspecial"
 alias @dr4 "w;alias @duck @dr1;bxt_append _zspecial"
 ```
-Example: `bind key +duckroll`
+Example: `bind key +duckroll`\
+Usage: hold the script key
 
 
 ### 3. Fps scripts
 #### Hold script
-*If you want other value, just change the first fps value (20 fps on here) and replace `20` with something else in all the aliases (`fps_20`, `+/-fps_20_hold`, `fps_20_reset`)*
+*If you want another value, replace `20` in the `fps_max 20` command and alias names (`+/-fps_20_hold`, `fps_20_reset`)*
 ```
-alias fps_20 "fps_max 20"
-alias fps_default "fps_max 100"
-
-alias +fps_20_hold "fps_20; alias -fps_20_hold fps_20_reset"
-alias fps_20_reset "fps_default; alias -fps_20_hold"
+alias +fps_20_hold "fps_max 20; alias -fps_20_hold fps_20_reset"
+alias fps_20_reset "fps_max 100; alias -fps_20_hold"
 ```
-Example: `bind key +fps_20_hold`
+Example: `bind key +fps_20_hold`\
+Usage: hold the script key to lower fps, release to change back to default
 #### Toggle script
 ```
 alias fps_20_toggle fps_20_toggle1
 alias fps_20_toggle1 "fps_max 20; alias fps_20_toggle fps_20_toggle2"
 alias fps_20_toggle2 "fps_max 100; alias fps_20_toggle fps_20_toggle1" 
 ```
-Example: `bind key fps_20_toggle`
+Example: `bind key fps_20_toggle`\
+Usage: press the script key to lower fps, press again to change back to default
 #### 4 fps script
 ```
 alias 4fpsbind "fps_max 4; w; fps_max 100"
 ```
-Example: `bind key 4fpsbind`
+Example: `bind key 4fpsbind`\
+Usage: press the script key once
 
 
 ### 4. Gauss scripts
@@ -112,23 +114,35 @@ alias _taubofunc "cl_pitchup 180;cl_pitchdown -180;-attack2;wait;cl_pitchup -12;
 alias +tau "+attack2; alias _taubo _taubofunc"
 alias -tau "_taubo; alias _taubo"
 ```
-Example: `bind key +tau`
+Example: `bind key +tau`\
+Usage: hold the script key to charge, release to boost
+#### Alternative gauss boost func (c4a1d Interloper selfgauss)
+```
+alias _taubofunc2 "cl_pitchup 165;cl_pitchdown -165;-attack2;w;cl_pitchup 89;cl_pitchdown 89;force_centerview"
+```
+Example: `bind key "alias _taubofunc _taubofunc2"`\
+Usage: either use a bind for `alias _taubofunc _taubofunc2` to change the `+tau` script behaviour or duplicate it, rename and make a rebind (`bind key "bind mouse2 +tau2"`, for example)\
+[Video link](https://youtu.be/EJgwb4_xUXU)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/taubofunc2.sav)
 #### Slowgauss script
 ```
-alias tauslow "cl_pitchup 180;cl_pitchdown -180;-attack;w 50;cl_pitchup 89;cl_pitchdown 89;force_centerview"
+alias slowgauss "cl_pitchup 180;cl_pitchdown -180;-attack;w 50;cl_pitchup 89;cl_pitchdown 89;force_centerview"
 ```
-Example: `bind key tauslow`
+Example: `bind key slowgauss`\
+Usage: start charging with `mouse2`, immediately switch to `mouse1`, wait around 3s for the gauss to be fully charged and press the script key to boost. Note that the script has a 0.5s delay to make sure the shot happens (necessary due to shooting being cycle-based). Also you need to have exactly 1 or 2 ammo for this trick to work.\
+[Video link](https://youtu.be/d7jesoiDjr4)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/slowgauss.sav)
 #### Gauss script switcher
 ```
 alias tauswitch tauswitch1
 alias tauswitch1 "bind mouse2 +tau; say gaussboost_ON; alias tauswitch tauswitch2"
 alias tauswitch2 "bind mouse2 +attack2; say gaussboost_OFF; alias tauswitch tauswitch1"
 ```
-Example: `bind key tauswitch`
+Example: `bind key tauswitch`\
+Usage: press the script key to change the `mouse2` bind to `+tau`, press again to revert the default bind (`+attack2`) back
 
 
 ### 5. Object Boost Scripts
-- ❗Almost all of the object boost scripts use this aliases. So just add all of the aliases here to bottom line of your main scripted config! (Otherwise they won't work when you execute them!)❗
 #### 2000 UPS
 ```
 alias obbo2000 "+use;w 11;-use;+jump;w;-jump"
@@ -154,16 +168,17 @@ Example: `bind key obbo1000`
 alias obbo800 "+use;w 7;-use;+jump;w;-jump"
 ```
 Example: `bind key obbo800`
-#### Forward Object Boost (~1300-1400 UPS)
+#### Forward boost (~1300-1400 UPS)
 ```
 alias obboshoot "+use;w 10;-use;+attack2;+jump;w;-attack2;-jump"
 ```
 Example: `bind key obboshoot`
 
 
-### 6. Wait Table (Bunnymod XT has its own wait table built on it, but some old scripts uses this wait table so you might need it. Just put this at the very bottom of your config.)
+### 6. Wait table
+*Bunnymod XT has its own built-in `w value` function, but you might still need the table below for some old scripts to work without rewriting them*
 <details>
-  <summary>📜Expand the list of aliases📜</summary>
+  <summary>📜Expand the table📜</summary>
   
   ```
 alias	"w"			  "wait"
@@ -282,7 +297,132 @@ alias	"w800"		"w400;w400"
 
 ## **B. Anomalous Materials**
 
-### 7. Testchamber Scripts
+### 7. Elevator reverse scripts
+#### 🔴 Elevator reverse script v1
+*Made by javac_*
+- Less consistent than [v2](#-elevator-reverse-script-v2)
+- Faster by 0.1-0.2s
+- Sometimes doesn't work even if everything was done correctly, probably has something to do with the elevator button cycles (?)
+
+<details>
+  <summary>📜Click here to view the script📜</summary>
+  
+```
+// part 1
+alias wolk1 "fps_max 100; w 50; alias wolk wolk2; alias wolkmove +moveright"
+alias wolk2 "w 8; +speed; w 17; -speed; -moveright; alias wolkmove; alias wolk" 
+
+alias wolk wolk1
+alias wolkmove
+
+
+// part 2
+alias elev1 "fps_max 100; w 93; alias elevmove +forward; alias elev elev2" // 3
+alias elev2 "force_centerview; fps_max 4; w; fps_max 100; w 10; +duck; alias elevmove +moveright; alias elev elev3" // 1 3
+alias elev3 "w 29; -moveright; -forward; w 20; alias elevmove +left; alias elev elev4" // 1 3
+alias elev4 "w 10; alias elevmove +forward; alias elev elev5" // 1 3
+alias elev5 "+use; w; -use; w 12; -left; w 80; alias elevmove +moveright; alias elev elev6" // 1 3
+alias elev6 "alias elevmove +right; alias elev elev7" // 1 3
+alias elev7 "w 10; fps_max 4; w; fps_max 100; w; -forward; -duck; fps_max 4; w; fps_max 100; w 2; -moveright; -right; alias elev; alias elevmove" // 1 3
+
+alias elev elev1
+alias elevmove
+
+
+
+// binds
+bind 2 wolk
+bind 4 wolkmove
+bind 3 elev
+bind 1 elevmove
+```
+</details>
+
+<details>
+  <summary>📋Usage📋</summary>
+
+Go into the left corner, set the angles and activate the first part of the script. Wait until the elevator reaches the highest point and activate the second part.
+
+- **Angles:**
+  - Pitch: doesn't matter
+  - Yaw: `89.9 - 91.0`
+- **Activation timing:**
+  - 1st part: any moment after pressing the elevator button
+  - 2nd part: right after the elevator reaches its highest position
+- **Keypresses**:
+  - 1st part: `2 4 2`
+  - 2nd part: `3 13 13 13 13 13 13` (`3` and then `13` six times)
+</details>
+
+[Video link](https://youtu.be/g3vjjVVva70)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/elevator_reverse.sav)
+
+
+
+
+#### 🟡Elevator reverse script v2
+*Made by N4rk0t1k*
+- Way more consistent than [v1](#-elevator-reverse-script-v1) due to the fixed activation timing
+- Slightly slower
+- Still has the same button cycle timing issue as [v1](#-elevator-reverse-script-v1)
+<details>
+  <summary>📜Click here to view the script📜</summary>
+  
+```
+alias amel_use "cl_pitchup 30; cl_pitchdown -30; +use; w; -use; cl_pitchup 0; w; cl_pitchup 89; cl_pitchdown 89"
+alias amel_fps "fps_max 4; w; fps_max 40"
+alias pre_amel "fps_max 20; -back; -moveright; -moveleft; -jump; -duck; +use; w; -use; w 50; -forward; w 23; fps_max 38; w 28; alias AMEL amel1"
+
+alias amel1 "sensitivity 0; alias AMEL amel2; alias AMEL_MOVE +moveright" // 3
+alias amel2 "w 8; -moveright; +use; w 6; -use; amel_fps; alias AMEL amel3; alias AMEL_MOVE +forward" // 1 3
+alias amel3 "w 7; +duck; w 3; -forward; alias AMEL amel4; alias AMEL_MOVE +moveright" // 1 3
+alias amel4 "w 10; alias AMEL amel5; alias AMEL_MOVE +forward" // 1 3
+alias amel5 "w 5; -moveright; alias AMEL amel6; alias AMEL_MOVE +moveleft" // 1 3
+alias amel6 "w 4; -moveleft; amel_use; w 3; -forward; w 4; amel_fps; alias AMEL amel7; alias AMEL_MOVE +moveleft" // 1 3
+alias amel7 "w 10; alias AMEL amel8; alias AMEL_MOVE +forward" // 1 3
+alias amel8 "w 10; -moveleft; w; alias AMEL amel9; alias AMEL_MOVE +right" // 1 3
+alias amel9 "alias AMEL amel10; alias AMEL_MOVE +moveright" // 1 3
+alias amel10 "w; fps_max 4; w 2; -moveright; fps_max 40; -right; -duck; -forward; fps_max 100; amel_sens; alias AMEL; alias AMEL_MOVE" // 1 3
+
+alias AMEL
+alias AMEL_MOVE
+
+
+
+// settings
+alias amel_sens "sensitivity 3"
+
+// binds
+bind mouse2 pre_amel
+bind 3 AMEL
+bind 1 AMEL_MOVE
+```
+</details>
+
+<details>
+  <summary>📋Usage📋</summary>
+
+Hold `w` and press the `pre_amel` key (`mouse2` here) to activate the elevator button. Go into the left corner, set the angles and press the script keys.
+
+- **Angles:**
+  - Pitch: doesn't matter
+  - Yaw: `90.0 - 91.0` (~`90.5` is recommended)
+- **Activation timing:**
+  - none (the script starts with pressing the elevator button)
+- **Keypresses**:
+  - `mouse2`, `3 13 13 13 13 13 13 13 13 13` (`3` and then `13` nine times), then hold `w + d`
+- **Additional actions**:
+  - change sensitivity in the `amel_sens` alias to your default
+</details>
+
+[Video link](https://youtu.be/CYudVS20Zxc)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/elevator_reverse.sav)
+
+
+
+
+
+### 8. Test Chamber scripts
 \*troubleshooting, some common info\*\
 **📝You need to execute the config with the script (`bind key "exec tc.cfg`, for example) or press the `testchamber_reset` bind (`-` by default) before doing _any_ attempt📝**
 
@@ -329,7 +469,7 @@ bind - testchamber_reset
 </details>
 
 [Video link](https://youtu.be/-R4quekIkF4)\
-[Practice  save](Practice%20saves/tc_b.sav)
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/tc_b.sav)
 
 
 #### 🟡 Testchamber N
@@ -379,7 +519,7 @@ bind - testchamber_reset
 </details>
 
 [Video link](https://youtu.be/DnRJmZiLDFM)\
-[Practice  save](Practice%20saves/tc_n.sav)
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/tc_n.sav)
 
 
 #### 🟠 Testchamber D
@@ -424,7 +564,7 @@ bind - testchamber_reset
 </details>
 
 [Video link](https://youtu.be/7QxRBDo6F8E)\
-[Practice  save](Practice%20saves/tc_d.sav)
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/tc_d.sav)
 
 
 #### 🔴 Testchamber D v2
@@ -472,7 +612,7 @@ bind - testchamber_reset
 </details>
 
 [Video link](https://youtu.be/mnLNYTiTWYs)\
-[Practice  save](Practice%20saves/tc_d.sav)
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/tc_d.sav)
 
 
 ## **C. Unforeseen Consequences**
