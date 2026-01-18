@@ -360,7 +360,7 @@ Go into the left corner, set the angles and activate the first part of the scrip
 
 
 
-#### 🟡Elevator reverse script v2
+#### 🟡 Elevator reverse script v2
 *Made by N4rk0t1k*
 - Way more consistent than [v1](#-elevator-reverse-script-v1) due to the fixed activation timing
 - Slightly slower
