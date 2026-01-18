@@ -181,115 +181,115 @@ Example: `bind key obboshoot`
   <summary>📜Expand the table📜</summary>
   
   ```
-alias	"w"			  "wait"
-alias	"w1"			"wait"
-alias	"w2"			"w;w"
-alias	"w3"			"w2;w"
-alias	"w4"			"w2;w2"
-alias	"w5"			"w4;w"
-alias	"w6"			"w3;w3"
-alias	"w7"			"w6;w"
-alias	"w8"			"w4;w4"
-alias	"w9"			"w7;w2"
-alias	"w10"			"w5;w5"
-alias	"w11"			"w9;w2"
-alias	"w12"			"w6;w6"
-alias	"w13"			"w9;w4"
-alias	"w14"			"w9;w5"
-alias	"w15"			"w9;w6"
-alias	"w16"			"w9;w7"
-alias	"w17"			"w9;w8"
-alias	"w18"			"w9;w9"
-alias	"w19"			"w9;w10"
-alias	"w20"			"w9;w11"
-alias	"w21"			"w9;w12"
-alias	"w22"			"w9;w13"
-alias	"w23"			"w9;w14"
-alias	"w24"			"w9;w15"
-alias	"w25"			"w9;w16"
-alias	"w26"			"w9;w17"
-alias	"w27"			"w9;w18"
-alias	"w28"			"w9;w19"
-alias	"w29"			"w9;w20"
-alias	"w30"			"w9;w21"
-alias	"w31"			"w9;w22"
-alias	"w32"			"w9;w23"
-alias	"w33"			"w9;w24"
-alias	"w34"			"w9;w25"
-alias	"w35"			"w9;w26"
-alias	"w36"			"w9;w27"
-alias	"w37"			"w9;w28"
-alias	"w38"			"w9;w29"
-alias	"w39"			"w9;w30"
-alias	"w40"			"w9;w31"
-alias	"w41"			"w9;w32"
-alias	"w42"			"w9;w33"
-alias	"w43"			"w9;w34"
-alias	"w44"			"w9;w35"
-alias	"w45"			"w9;w36"
-alias	"w46"			"w9;w37"
-alias	"w47"			"w9;w38"
-alias	"w48"			"w9;w39"
-alias	"w49"			"w9;w40"
-alias	"w50"			"w9;w41"
-alias	"w51"			"w50;w1"
-alias	"w52"			"w50;w2"
-alias	"w53"			"w50;w3"
-alias	"w54"			"w50;w4"
-alias	"w55"			"w50;w5"
-alias	"w56"			"w50;w6"
-alias	"w57"			"w50;w7"
-alias	"w58"			"w50;w8"
-alias	"w59"			"w50;w9"
-alias	"w60"			"w50;w10"
-alias	"w61"			"w50;w11"
-alias	"w62"			"w50;w12"
-alias	"w63"			"w50;w13"
-alias	"w64"			"w50;w14"
-alias	"w65"			"w50;w15"
-alias	"w66"			"w50;w16"
-alias	"w67"			"w50;w17"
-alias	"w68"			"w50;w18"
-alias	"w69"			"w50;w19"
-alias	"w70"			"w50;w20"
-alias	"w71"			"w50;w21"
-alias	"w72"			"w50;w22"
-alias	"w73"			"w50;w23"
-alias	"w74"			"w50;w24"
-alias	"w75"			"w50;w25"
-alias	"w76"			"w50;w26"
-alias	"w77"			"w50;w27"
-alias	"w78"			"w50;w28"
-alias	"w79"			"w50;w29"
-alias	"w80"			"w50;w30"
-alias	"w81"			"w50;w31"
-alias	"w82"			"w50;w32"
-alias	"w83"			"w50;w33"
-alias	"w84"			"w50;w34"
-alias	"w85"			"w50;w35"
-alias	"w86"			"w50;w36"
-alias	"w87"			"w50;w37"
-alias	"w88"			"w50;w38"
-alias	"w89"			"w50;w39"
-alias	"w90"			"w50;w40"
-alias	"w91"			"w50;w41"
-alias	"w92"			"w50;w42"
-alias	"w93"			"w50;w43"
-alias	"w94"			"w50;w44"
-alias	"w95"			"w50;w45"
-alias	"w96"			"w50;w46"
-alias	"w97"			"w50;w47"
-alias	"w98"			"w50;w48"
-alias	"w99"			"w50;w49"
-alias	"w100"		"w50;w50"
-alias "w200" 		"w100;w100"
-alias "w300" 		"w200;w100"
-alias "w350" 		"w300;w50"
-alias "w400" 		"w200;w200"
-alias "w500"		"w400;w100"
-alias	"w600"		"w300;w300"
-alias	"w700"		"w600;w100"
-alias	"w800"		"w400;w400"
+alias "w"       "wait"
+alias "w1"      "wait"
+alias "w2"      "w;w"
+alias "w3"      "w2;w"
+alias "w4"      "w2;w2"
+alias "w5"      "w4;w"
+alias "w6"      "w3;w3"
+alias "w7"      "w6;w"
+alias "w8"      "w4;w4"
+alias "w9"      "w7;w2"
+alias "w10"     "w5;w5"
+alias "w11"     "w9;w2"
+alias "w12"     "w6;w6"
+alias "w13"     "w9;w4"
+alias "w14"     "w9;w5"
+alias "w15"     "w9;w6"
+alias "w16"     "w9;w7"
+alias "w17"     "w9;w8"
+alias "w18"     "w9;w9"
+alias "w19"     "w9;w10"
+alias "w20"     "w9;w11"
+alias "w21"     "w9;w12"
+alias "w22"     "w9;w13"
+alias "w23"     "w9;w14"
+alias "w24"     "w9;w15"
+alias "w25"     "w9;w16"
+alias "w26"     "w9;w17"
+alias "w27"     "w9;w18"
+alias "w28"     "w9;w19"
+alias "w29"     "w9;w20"
+alias "w30"     "w9;w21"
+alias "w31"     "w9;w22"
+alias "w32"     "w9;w23"
+alias "w33"     "w9;w24"
+alias "w34"     "w9;w25"
+alias "w35"     "w9;w26"
+alias "w36"     "w9;w27"
+alias "w37"     "w9;w28"
+alias "w38"     "w9;w29"
+alias "w39"     "w9;w30"
+alias "w40"     "w9;w31"
+alias "w41"     "w9;w32"
+alias "w42"     "w9;w33"
+alias "w43"     "w9;w34"
+alias "w44"     "w9;w35"
+alias "w45"     "w9;w36"
+alias "w46"     "w9;w37"
+alias "w47"     "w9;w38"
+alias "w48"     "w9;w39"
+alias "w49"     "w9;w40"
+alias "w50"     "w9;w41"
+alias "w51"     "w50;w1"
+alias "w52"     "w50;w2"
+alias "w53"     "w50;w3"
+alias "w54"     "w50;w4"
+alias "w55"     "w50;w5"
+alias "w56"     "w50;w6"
+alias "w57"     "w50;w7"
+alias "w58"     "w50;w8"
+alias "w59"     "w50;w9"
+alias "w60"     "w50;w10"
+alias "w61"     "w50;w11"
+alias "w62"     "w50;w12"
+alias "w63"     "w50;w13"
+alias "w64"     "w50;w14"
+alias "w65"     "w50;w15"
+alias "w66"     "w50;w16"
+alias "w67"     "w50;w17"
+alias "w68"     "w50;w18"
+alias "w69"     "w50;w19"
+alias "w70"     "w50;w20"
+alias "w71"     "w50;w21"
+alias "w72"     "w50;w22"
+alias "w73"     "w50;w23"
+alias "w74"     "w50;w24"
+alias "w75"     "w50;w25"
+alias "w76"     "w50;w26"
+alias "w77"     "w50;w27"
+alias "w78"     "w50;w28"
+alias "w79"     "w50;w29"
+alias "w80"     "w50;w30"
+alias "w81"     "w50;w31"
+alias "w82"     "w50;w32"
+alias "w83"     "w50;w33"
+alias "w84"     "w50;w34"
+alias "w85"     "w50;w35"
+alias "w86"     "w50;w36"
+alias "w87"     "w50;w37"
+alias "w88"     "w50;w38"
+alias "w89"     "w50;w39"
+alias "w90"     "w50;w40"
+alias "w91"     "w50;w41"
+alias "w92"     "w50;w42"
+alias "w93"     "w50;w43"
+alias "w94"     "w50;w44"
+alias "w95"     "w50;w45"
+alias "w96"     "w50;w46"
+alias "w97"     "w50;w47"
+alias "w98"     "w50;w48"
+alias "w99"     "w50;w49"
+alias "w100"    "w50;w50"
+alias "w200"    "w100;w100"
+alias "w300"    "w200;w100"
+alias "w350"    "w300;w50"
+alias "w400"    "w200;w200"
+alias "w500"    "w400;w100"
+alias "w600"    "w300;w300"
+alias "w700"    "w600;w100"
+alias "w800"    "w400;w400"
 ```
 </details>
 
@@ -621,7 +621,7 @@ bind - testchamber_reset
 ## **E. Blast Pit**
 
 
-### 11. Nade boost scripts
+### 9. Nade boost scripts
 
 #### 💣 Barrel bridge nade
 *Made by [Parklez](https://github.com/parklez)*
@@ -702,7 +702,7 @@ Usage: cook a nade before the changelevel, start jumping as soon as you touch th
 
 
 
-### 12. 📦 HL21 box script
+### 10. 📦 HL21 box script
 *made by javac_*\
 A HL21-like script, which consists of 2 parts. The first one involves a CLD and object boost, the second one makes a turn and blows up the explosive crates. It keeps all your health so you can use it for something else (for example, [this boost](#-maxams-route-nade-boost-v1) ).
 
@@ -810,7 +810,7 @@ Uses both parts of the script
 
 ## **F. Power Up**
   
-### 13. Changelevel delay scripts
+### 11. Changelevel delay scripts
 
 #### 🟡 Power Up A
 *Made by [Parklez](https://github.com/parklez)*
@@ -881,100 +881,158 @@ Usage: Break 2 crates containing tripmines, do an object boost with obbo1600 or 
 
 
 
-## **G. On A Rail**
-
-### 14. Jumpbugs
-<details>
-  <summary>📜Click Here To View Scripts📜</summary>
-  
-#### 🟢 Jumpbug for right before nade rails
-- ❗Walk off from the spot holding your script key(DO NOT JUMP SCRIPT WILL NOT WORK)❗
-- ❗Jumpbug spot is shown in the image below❗
-  
-```
-alias fps_41 "fps_max 41.66666"
-alias +oarjb1 "fps_41; w5; +bxt_tas_jumpbug" 
-alias -oarjb1 "-bxt_tas_jumpbug; fps_100"
-```
-Example: `bind key +oarjb1`
-
-<details>
-  <summary>🖼️See Where To Use🖼️</summary>
-❗Jumpbug spots highlighted with green lines❗
-  
-| Walk down (+jumpbug)                | Land                                |
-| ----------------------------------- | ----------------------------------- |
-| ![](Jumpbugs/bprail2.png)           | ![](Jumpbugs/bprail22.png)          |     
-
-</details>
-
- <details>
-  <summary>📼Video Guide📼</summary>
-
-https://github.com/user-attachments/assets/8941b401-79c4-45bb-baee-cb370f084e6d
-
-  </details>
- 
-#### 🟡 Jumpbug for after launching the rocket
-- ❗Its recommended to do tankbox instead of using this script, unless you don't want to take the armor for rp clip route❗
-- ❗Jump off from the spot holding your script key (MAKE SURE YOU HOLD THE SCRIPT KEY BEFORE JUMPING OFF)❗
-- ❗Jumpbug spot is shown in the image below❗
-```
-alias fps_90 "fps_max 58.82353"
-alias fps_100 "fps_max 100"
-alias +oarjb2 "fps_90; w5; +bxt_tas_jumpbug"
-alias -oarjb2 "-bxt_tas_jumpbug; fps_100" 
-```
-Example: `bind key +oarjb2`
-
- <details>
-  <summary>🖼️See Where To Use🖼️</summary>
-❗Jumpbug spots highlighted with green lines❗
-  
-| Walk down (+jumpbug)                | Land                                |
-| ----------------------------------- | ----------------------------------- |
-| ![](Jumpbugs/bprail1.jpg)           | ![](Jumpbugs/bprail11.jpg)          |     
-
-
- </details>
- 
-<details>
- <summary>📼Video Guide📼</summary>
-
-https://github.com/user-attachments/assets/871d363d-d7ec-437e-bf92-d3d72bf17d74
-
-  </details>
-
-</details>
-
-
-### 15. Object Boost Script (Forward)
-- ❗This script will use shotgun automatically, also remember it will rebind your key to +use back again, in case you fail execute again❗
-- ❗The "usekey" in here must be your standard +use key❗
-```
-alias oarobbo "obbo2000; wait; +attack2; wait; -attack2; wait; bind usekey +use"
-alias oarobbobind "bind usekey oarobbo"
-alias noi "say oarobbo rdy"
-```
-Example: `bind key "oarobbobind; noi"`
-
-
- <details>
-   <summary>📼Video Guide📼</summary>
-
-https://github.com/user-attachments/assets/6a65b678-a4a4-4c22-9e75-0c507d95fc6c
-
-</details>
 
 
 ## **H. Apprehension**
 
-### 16. Object Boost Script (Bridge)
-- ❗The "usekey" in here must be your standard +use key❗
+### 12. Obboducktap script
 ```
-alias obbo1500rebind "+use;w10;-use;+jump;w;-jump; bind usekey +use"
+alias app_obbo "+use; w 9; -use; w; +duck; w 8; -duck"
 ```
-Example: `bind key "bind usekey obbo1500rebind; say obbo1500rebind`
+Example: `bind key app_obbo`\
+Usage: drop down, hold A, press the script key. Don't stay too close to the box\
+[Video link](https://youtu.be/Vu7-yZZ5hr8)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/app_obbo.sav)
+
+
+### 13. ⬛ Captured scripts
+#### 🟡 Captured v1
+*Made by [Parklez](https://github.com/parklez)*
+<details>
+  <summary>📜Click here to view the script📜</summary>
+  
+```
+alias captured ct1
+alias ct1 "fps_max 100;w 2205;alias captured ct2"
+alias ct2 "w 164;alias captured ct3"
+alias ct3 "w 6;+speed;w 21;-right;-speed;alias captured ct4"
+alias ct4 "w 11;+jump;+duck;w 21;-forward;alias captured ct5"
+alias ct5 "w 15;-moveright;-right;w 50;alias captured ct6"
+alias ct6 "w 30;-duck;-jump;-moveleft;-left;w 40;cl_pitchdown 89.999;cl_pitchup -89.999;w;+use;w;-use;w;alias captured ct7"
+alias ct7 "w;-forward;w;alias captured ct8"
+alias ct8 "w;-forward;w;alias captured ct9"
+alias ct9 "w;-forward;w;alias captured ct10"
+alias ct10 "w;-forward;w;+use;w;-use;cl_pitchup 89;cl_pitchdown 89; alias captured"
+
+// binds
+bind 7 captured
+```
+</details>
+
+<details>
+  <summary>📋Usage📋</summary>
+
+Lower fps to 8 before the changelevel, press the first script key as soon as you see the "loading..." text on the screen, then press the rest of the keys
+- **Keypresses**:
+```
+7
+s + 7
+rightarrow + 7
+w + 7
+d + rightarrow + 7
+a + leftarrow + 7
+w + 7
+w + 7
+w + 7
+w + 7   
+```
+  
+</details>
+
+[Video link](https://youtu.be/5-jEl8-MREc)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/captured.sav)
+
+
+#### 🟡 Captured v1.2
+[Captured v1](#-captured-v1) 2-key edition
+<details>
+  <summary>📜Click here to view the script📜</summary>
+  
+```
+alias ct1 "fps_max 100; w 2205; alias ctmove +back; alias ct ct2" // 0
+alias ct2 "w 164; -back; alias ctmove +right; alias ct ct3" // 90
+alias ct3 "w 6; +speed; w 21; -right; -speed; alias ctmove +forward; alias ct ct4" // 90
+alias ct4 "w 11; +jump; +duck; w 21; -forward; alias ctmove +moveright; alias ct ct5" // 90
+alias ct5 "alias ctmove +right; alias ct ct6" // 90
+alias ct6 "w 15; -moveright; -right; w 50; alias ctmove +moveleft; alias ct ct7" // 90
+alias ct7 "alias ctmove +left; alias ct ct8" // 90
+alias ct8 "w 30; -duck; -jump; -moveleft; -left; w 40; cl_pitchdown 89.999; cl_pitchup -89.999; w; +use; w; -use; w; alias ctmove +forward; alias ct ct9" // 90
+alias ct9 "w; -forward; w; alias ct ct10" // 90
+alias ct10 "w; -forward; w; alias ct ct11" // 90
+alias ct11 "w; -forward; w; alias ct ct12" // 90
+alias ct12 "w; -forward; w; +use; w; -use; cl_pitchup 89; cl_pitchdown 89; alias ctmove; alias ct" // 90
+alias ct ct1
+alias ctmove
+
+
+// binds
+bind 0 ct
+bind 9 ctmove
+```
+</details>
+
+<details>
+  <summary>📋Usage📋</summary>
+
+Lower fps to 8 before the changelevel, press the first script key as soon as you see the "loading..." text on the screen, then press the rest of the keys
+- **Keypresses**:
+  - `0 90 90 90 90 90 90 90 90 90 90 90` (`0` and then `90` eleven times)
+  
+</details>
+
+[Video link](https://youtu.be/XqQ8PqylHC0)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/captured.sav)
+
+
+#### 🟠 Captured v2
+*made by javac_*
+- Slightly faster
+<details>
+  <summary>📜Click here to view the script📜</summary>
+  
+```
+alias capt1 "sensitivity 0; fps_max 40; w 800; alias captmv +right; alias capt capt2" // 0
+alias capt2 "w 8; -right; w 8; alias captmv +back; alias capt capt3" // 90
+alias capt3 "w 40; -back; w 86; fps_max 100; w 56; alias captmv +forward; alias capt capt4" // 90
+alias capt4 "w 11; +jump; +duck; w 3; -forward; w 10; alias captmv +moveright; alias capt capt5" // 90
+alias capt5 "alias captmv +right; alias capt capt6" // 90
+alias capt6 "w 18; -right; -moveright; w 25; alias captmv +moveleft; alias capt capt7" // 90
+alias capt7 "alias captmv +left; alias capt capt8" // 90
+alias capt8 "w 15; -moveleft; -left; -jump; w 35; -duck; w 7; +use; w; -use; alias captmv +forward; alias capt capt9" // 90
+alias capt9 "w; -forward; w; alias capt capt10" // 90
+alias capt10 "w; -forward; w; alias capt capt11" // 90
+alias capt11 "w; -forward; w; alias capt capt12" // 90
+alias capt12 "alias captmv; w; -forward; +use; w; -use; alias capt; capt_sens" // 90
+alias capt capt1
+alias captmv
+
+
+// settings
+alias capt_sens "sensitivity 3"
+
+// binds
+bind 0 capt
+bind 9 captmv
+```
+</details>
+
+<details>
+  <summary>📋Usage📋</summary>
+
+Lower fps to 8 before the changelevel, press the first script key as soon as you see the "loading..." text on the screen, then press the rest of the keys
+- **Keypresses**:
+  - `0 90 90 90 90 90 90 90 90 90 90 90` (`0` and then `90` eleven times)
+- **Additional actions**:
+  - change sensitivity in the `capt_sens` alias to your default
+  
+</details>
+
+[Video link](https://youtu.be/FM-C0JTUf3A)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/captured.sav)
+
+
+
+
 
 
 ## **J. Residue Processing**
