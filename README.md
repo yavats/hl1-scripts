@@ -855,7 +855,7 @@ Usage: Break 2 crates containing tripmines, do an object boost with obbo1600 or 
 
 
 #### 🔴 Power Up F
-*[Power Up D](#--power-up-d) modified by javac_*
+*[Power Up D](#-power-up-d) modified by javac_*
 - Fastest version
 - Facing forward
 - With object boost (1800 UPS)
