@@ -560,7 +560,7 @@ bind - testchamber_reset
 - **Activation timing:**
   - right after the cage starts going down
 - **Keypresses:**
-  - `0 90 90 90 90 90 90 90` (`0` and then `90` seven times), wait until you start turning mid-air (after you hit the trigger), then press `90` again and hold `a + ctrl`**
+  - `0 90 90 90 90 90 90 90` (`0` and then `90` seven times), wait until you start turning mid-air (after you hit the trigger), then press `90` again and hold `a + ctrl`
 </details>
 
 [Video link](https://youtu.be/7QxRBDo6F8E)\
