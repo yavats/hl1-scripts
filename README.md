@@ -615,235 +615,195 @@ bind - testchamber_reset
 [Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/tc_d.sav)
 
 
-## **C. Unforeseen Consequences**
 
-### 8. Object Boost Script
-**For Barrel and bridge**
-- ❗The "usekey" in here must be your standard +use key❗
-
-```
-alias ucobbo "obbo1500; wait; bind usekey +use"
-alias ucobbobind "bind usekey ucobbo"
-```
-Example `bind key "ucobbobind;say UCobbo"`
-
-
-## **D. Office Complex**
-
-### 9. Object Boost Script
-- **(After headcrab jump but you can also use it with box at the start of blast pit)**
-- ❗The "usekey" in here must be your standard +use key❗
-```
-alias ocobbo "obbo2000; wait; bind usekey +use"
-alias ocobbobind "bind space +attack2; bind usekey ocobbo"
-```
-Example `bind key "ocobbobind;say OCobbo"`
 
 
 ## **E. Blast Pit**
 
-### 10. Jumpbugs
-<details>
-  <summary>📜Click Here To View Scripts📜</summary>
-  
-#### 🟢 jb1 (First Elevator)
-- ❗Walk off from the spot holding your script key(DO NOT JUMP SCRIPT WILL NOT WORK)❗
-- ❗Jumpbug spot is shown in the image below❗
+
+### 11. Nade boost scripts
+
+#### 💣 Barrel bridge nade
+*Made by [Parklez](https://github.com/parklez)*
+- Use with ≤ 9 armor
 ```
-alias fps_90 "fps_max 90.90909"
-alias fps_100 "fps_max 100"
-alias +bpjb1 "fps_90; w5; +bxt_tas_jumpbug" 
-alias -bpjb1 "-bxt_tas_jumpbug; fps_100"
+alias bp_nade "fps_max 100; cl_pitchdown 85;cl_pitchup -85;+duck;+jump;w;-attack;w 15;-jump;-duck;cl_pitchup 89;cl_pitchdown 89;force_centerview"
 ```
-Example: `bind key +bpjb1`
+Example: `bind key bp_nade`\
+Usage: walk forward and activate the script\
+[Video link](https://youtu.be/6au7vtLFNBY)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/bp_nade.sav)
 
-<details>
-  <summary>🖼️See Where To Use🖼️</summary>
-❗Jumpbug spots highlighted with green lines❗
-  
-| Walk down (+jumpbug)                | Land                                |
-| ----------------------------------- | ----------------------------------- |
-| ![](Jumpbugs/bpjb1.png)             | ![](Jumpbugs/bpjb11.png)            |     
 
-</details>
-
-<details>
-  <summary>📼Video Guide📼</summary>
-  
-https://github.com/user-attachments/assets/a2cb5c0c-0c9c-4b84-8c62-4770badde94b
-
-  </details>
-
-#### 🟡 jb2 (Second Elevator)
-- ❗Jump off from the spot holding your script key (MAKE SURE YOU HOLD THE SCRIPT KEY BEFORE JUMPING OFF)❗
-- ❗Jumpbug spot is shown in the image below❗
+#### 💣 Maxam's nade route boost v1
+- Requirements: 51 hp, 20 armor
+- Makes an autosave midair as a backup
 ```
-alias fps_55 "fps_max 55.55555"
-alias fps_100 "fps_max 100"
-alias +bpjb2 "fps_55; w20; +bxt_tas_jumpbug" 
-alias -bpjb2 "-bxt_tas_jumpbug; fps_100"
+alias bp_nade2 "fps_max 100; cl_pitchdown 30;cl_pitchup -30;+duck;+jump;w;-attack;w 15;-jump;-duck;cl_pitchup 89;cl_pitchdown 89;force_centerview; save autosave"
 ```
-Example: `bind key +bpjb2`
+Example: `bind key bp_nade2`\
+Usage: walk forward and activate the script\
+[Video link](https://youtu.be/DkA5ik4JRn4)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/bp_nade2.sav)
 
-<details>
-  <summary>🖼️See Where To Use🖼️</summary>
-❗Jumpbug spots highlighted with green lines❗
-  
-| Jump down (+jumpbug)                | Land                                |
-| ----------------------------------- | ----------------------------------- |
-| ![](Jumpbugs/bpjb2.png)             | ![](Jumpbugs/bpjb22.png)            |     
 
-</details>
-
-<details>
-  <summary>📼Video Guide📼</summary>
-  
-https://github.com/user-attachments/assets/b18dd592-c1b2-4497-950d-a65763b3e3ed
-
-  </details>
-
-#### 🟠 jb3 (from boxes)
-- ❗Jump off from the spot while ducking holding your script key (MAKE SURE YOU ARE CROUCHED AND HOLD THE SCRIPT KEY BEFORE JUMPING OFF)❗
-- ❗Jumpbug spot is shown in the image below❗
+#### 💣 Maxam's nade route boost v2
+- Requiremenets: 53 hp, 20 armor
+- More consistent boost than [v1](#maxams-nade-route-boost-v1)
+- Makes an autosave midair as a backup
 ```
-alias fps_76 "fps_max 76"
-alias fps_100 "fps_max 100"
-alias +bpjb3 "fps_76; w20; +bxt_tas_jumpbug" 
-alias -bpjb3 "-bxt_tas_jumpbug; fps_100"
+alias bp_nade3 "fps_max 100; cl_pitchdown 15;cl_pitchup -15;+duck;+jump;w;-attack;w 15;-jump;-duck;cl_pitchup 89;cl_pitchdown 89;force_centerview; save autosave"
 ```
-Example: `bind key +bpjb3`
-
-<details>
-  <summary>🖼️See Where To Use🖼️</summary>
-❗Jumpbug spots highlighted with green lines❗
-  
-| Jump down (+jumpbug)                | Land                                |
-| ----------------------------------- | ----------------------------------- |
-| ![](Jumpbugs/bpjb3.png)             | ![](Jumpbugs/bpjb33.png)            |     
-
-</details>
-
-<details>
-  <summary>📼Video Guide📼</summary>
-  
-https://github.com/user-attachments/assets/c69e2f7f-11da-40d4-b480-cc245cc9fdb0
-
-  </details>
+Example: `bind key bp_nade3`\
+Usage: walk forward and activate the script\
+[Video link](https://youtu.be/DkA5ik4JRn4) (same as [v1](#maxams-nade-route-boost-v1))\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/bp_nade2.sav)
 
 
-#### 🔴 jb4 (Pipe Before Power Up)
-- ❗Jump off from the spot holding your script key (MAKE SURE YOU HOLD THE SCRIPT KEY BEFORE JUMPING OFF)❗
-- ❗Jumpbug spot is shown in the image below❗
+#### 💣 Slope nade boost
+- Requirements: ~30-35 hp, 20 armor
+- Much more difficult execution
+- Slightly faster than other scripts
 ```
-alias fps_58 "fps_max 58.82353"
-alias +bpjb4 "fps_58; w 5; +bxt_tas_jumpbug" 
-alias -bpjb4 "-bxt_tas_jumpbug; fps_100"
+alias bp_nade4 "fps_max 100; +jump; cl_pitchdown 89; cl_pitchup -89; -attack; w; cl_pitchup 89; force_centerview; -jump"
 ```
-Example: `bind key +bpjb4`
+Example: `bind key bp_nade4`\
+Usage: cook a nade beforehand, gain around 600 ups, land near the slope and press the script key. DON'T JUMP ON YOUR OWN, THE SCRIPT DOES IT FOR YOU! It's highly recommended to do a jumpbug before this boost to save more hp and get a good jump pattern\
+[Video link](https://youtu.be/pbZzpa-TUfY)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/bp_nade4.sav)
+
+
+#### 💥 Fire button room boost v1
+- Requirements: 41 hp (may vary by +-2)
+- Makes an autosave in case of failure
+- Harder activation timing
+```
+alias bpbutton "fps_max 100; +attack2; -jump; w; weapon_handgrenade;-attack2; -moveleft; -moveright; weapon_handgrenade; w 20; cl_pitchdown 45; cl_pitchup -45; w 30; save autosave; w 10; -duck; w 30; +use; w 20; -use; w 15; +jump; w; +duck; cl_pitchdown 89; cl_pitchup 89; w; -jump; w 60; -duck"
+```
+Example: `bind key bpbutton`\
+Usage: cook a nade a couple frames after the changelevel, start jumping as soon as you touch the ground, switch to the shotgun, keep jumping and break the bottom plank BY ACTIVATING THE SCRIPT, not with regular `+attack2`. Hold `w` during activation\
+[Video link](https://youtu.be/wvnJec6XsXU)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/bpbutton.sav)
+
+
+#### 💥 Fire button room boost v2
+- Requirements: 45 hp (may vary by +-2)
+- Makes an autosave in case of failure
+- Easy activation timing -> more consistent
+```
+alias bpbutton2 "fps_max 100; +attack2; -jump; w; weapon_handgrenade;-attack2; -moveleft; -moveright; weapon_handgrenade; w 20; cl_pitchdown 45; cl_pitchup -45; w 30; save autosave; w 10; -duck; w 30; +use; w 20; -use; w 15; +jump; w; +duck; cl_pitchdown 89; cl_pitchup 89; fps_max 7.5; w 2; -jump; fps_max 100; w 50; -duck"
+```
+Example: `bind key bpbutton`\
+Usage: cook a nade before the changelevel, start jumping as soon as you touch the ground, switch to the shotgun, keep jumping and break the bottom plank BY ACTIVATING THE SCRIPT, not with regular `+attack2`. Hold `w` during activation\
+[Video link](https://youtu.be/_Llz6Epy7OA)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/bpbutton.sav)
+
+
+
+
+
+### 12. 📦 HL21 box script
+*made by javac_*\
+A HL21-like script, which consists of 2 parts. The first one involves a CLD and object boost, the second one makes a turn and blows up the explosive crates. It keeps all your health so you can use it for something else (for example, [this boost](#-maxams-route-nade-boost-v1) ).
 
 <details>
-  <summary>🖼️See Where To Use🖼️</summary>
-❗Jumpbug spots highlighted with green lines❗
-  
-| Jump down (+jumpbug)                | Land                                |
-| ----------------------------------- | ----------------------------------- |
-| ![](Jumpbugs/bpjb4.png)             | ![](Jumpbugs/bpjb44.jpg)            |   
+  <summary>📜Click here to view the script📜</summary>
 
-</details>
-
-<details>
-  <summary>📼Video Guide📼</summary>
-  
-https://github.com/user-attachments/assets/23bf2d50-a205-43b2-b4c6-de5e4a8dbf95
-
-  </details>
-
-
-</details>
-
-### 11. Nade Boost Scripts
-
-#### Maxam's Nade Route
+1st part (main)
 ```
-alias bp_nade2 "cl_pitchdown 30;cl_pitchup -30;+duck;+jump;wait;-attack;w 15;-jump;-duck;cl_pitchup 89;cl_pitchdown 89;force_centerview; say fps_90"
-```
-Example: `bind key "bp_nade2"`
-
-<details>
-  <summary>📼Video Guide📼</summary>
-  
-https://github.com/user-attachments/assets/9fdc0f7c-3739-4e50-ac59-0fc1beaa2976
-
-  </details>
-  
-#### Maxam's Nade Route(From The Slop Version)
-- ❗This one is pretty much harder, its recommended to use it only if you have low hp❗
-```
-alias bp_nade3 "cl_pitchdown 89; cl_pitchup -89; -attack; w; cl_pitchup 89; force_centerview"
-```
-Example: `bind key "bp_nade3"`
-
-<details>
-  <summary>📼Video Guide📼</summary>
-  
-https://github.com/user-attachments/assets/1d0bab80-0d45-4576-82b3-a7eafec3fe5b
-
-  </details>
-
-
-
-#### Tentacle Room Boost 
-```
-alias bpbutton2 "+attack2; -jump; w; weapon_handgrenade;-attack2; -moveleft; -moveright; weapon_handgrenade; w 20; cl_pitchdown 45; cl_pitchup -45; w 40; -duck; w 30; +use; w 20; -use; w 15; +jump; w; +duck; cl_pitchdown 89; cl_pitchup 89; fps_max 7.5; w 2; -jump; fps_max 100; w 50; -duck"
-```
-Example: `bind key "bpbutton2"`
-
-<details>
-  <summary>📼Video Guide📼</summary>
-  
-https://github.com/user-attachments/assets/9351dbc4-6465-46af-b5cf-1738cb6fa574
-
-  </details>
-
-### 12. Hl21 Box Script
-```
-alias box1 "fps_max 100; w 100; alias move +left; alias box box2" //k
-alias box2 "w 3; -left; alias move +moveright; alias box box3" //l + k
-alias box3 "w 22; +use; w 9; -use; w 20; +use; w 6; -use; +duck; w; -duck; w; +duck; +use; w 21; -use; -duck; w 15; +use; w 8; -use; w; +duck; w 25; -duck; w 25; +use; w 6; -use; alias move +forward; alias box box4" //l + k
-alias box4 "w 23; +use; w 10; -use; w 5; +use; w 8; -use; w 25; -moveright; w 10; +use; w 4; -use; w 42; -forward; w 30; alias move +moveleft; alias box box5" //l + k
-alias box5 "w 10; +use; w 9; -use; -moveleft; alias move +right; alias box box6" //l + k
-alias box6 "w 12; -right; w 53; alias move +moveleft; alias box box7" //l + k
-alias box7 "w 5; alias move +forward; alias box box8" //l + k
-alias box8 "w 7; -forward; w 25; -moveleft; w 5; alias move +forward; alias box box9" //l + k
-alias box9 "w 2; +use; w 11; +duck; w; -duck; w; -use; alias move +moveright; alias box box10" //l + k
-alias box10 "alias move +right; alias box box11" //l + k
-alias box11 "w 4; -right; -moveright; -forward; weapon_shotgun; alias move; alias box" //l + k
-
+alias box1 "save autosave; fps_max 100; cl_pitchdown 28.7; cl_pitchup -28.7; sensitivity 0; w 100; alias boxmove +left; alias box box2" // 1
+alias box2 "w 3; -left; alias boxmove +moveright; alias box box3" //2+1
+alias box3 "w 22; +use; w 9; -use; w 20; +use; w 6; -use; +duck; w; -duck; w; +duck; +use; w 21; -use; -duck; w 15; +use; w 8; -use; w; +duck; w 25; -duck; w 25; +use; w 6; -use; alias boxmove +forward; alias box box4" //2+1
+alias box4 "w 23; +use; w 10; -use; w 5; +use; w 8; -use; w 25; -moveright; w 10; +use; w 4; -use; w 42; -forward; w 30; alias boxmove +moveleft; alias box box5" //2+1
+alias box5 "w 10; +use; w 9; -use; -moveleft; alias boxmove +right; alias box box6" //2+1
+alias box6 "w 12; -right; w 53; alias boxmove +moveleft; alias box box7" //2+1
+alias box7 "w 5; alias boxmove +forward; alias box box8" //2+1
+alias box8 "w 7; -forward; w 25; -moveleft; w 5; alias boxmove +forward; alias box box9" //2+1
+alias box9 "w 2; +use; w 11; +duck; w; -duck; w; -use; alias boxmove +moveright; alias box box10" //2+1
+alias box10 "alias boxmove +right; alias box box11" //2+1
+alias box11 "w 4; -right; -moveright; -forward; weapon_shotgun; bpbox_sens; cl_pitchdown 89; cl_pitchup 89; alias boxmove; alias box" //2+1
 alias box box1
-alias move
+alias boxmove
+
+// settings
+alias bpbox_sens "sensitivity 3"
+
+// binds
+bind 1 box
+bind 2 boxmove
 ```
-<details>
-  <summary>📋Usage📋</summary>
-  
-- **bind "k" box** 
-- **bind "l" move**
-- **You need to re-execute the config with the script after each attempt**
-- **Push the box into the corner and stand close to it and the wall.**
-- **Pitch doesn't matter much, just aim at the corner of the box** 
-- **(make sure you don't aim too high tho otherwise it might not push the box in middle of script).**
-- **yaw: 262.41 - 262.70**
-- **Press K LK LK LK LK LK LK LK LK LK LK (K once and LK 10 times).**
-- **Hold space and make a strafe to the right after changelevel.**
-- **You have to press the buttons fast enough. You can press more than 10 times as well it will still work.**
-- **You can change the number of waits in alias box1 (every 100 waits = 1 second) if you don't have enough time to press the buttons.**
+
+2nd part (extension)
+```
+alias af1 "sensitivity 0; alias afmove +moveright; alias af af2" // 9
+alias af2 "+jump; w 34; alias afmove +right; alias af af3" // 0+9
+alias af3 "w 8; -right; +duck; w 20; alias af af4" // 0+9
+alias af4 "w 4; -moveright; w 32; -right; cl_pitchup -10.5; cl_pitchdown 10.5; w 20; +attack2; w 10; -attack2; w 20; -duck; -moveright; w 17; alias afmove +moveright; alias af af5" // 0+9
+alias af5 "w 9; alias afmove +right; alias af af6" // 0+9
+alias af6 "w 15; -right; w 50; -moveright; -jump; cl_pitchdown 89; cl_pitchup 89; alias af; alias afmove; save autosave; bpbox_sens" // 0+9
+alias af af1
+alias afmove
+
+// binds
+bind 9 af
+bind 0 afmove
+```
+
 </details>
 
-<details>
-  <summary>📼Video Guide📼</summary>
-  
-https://github.com/user-attachments/assets/74b9a510-18cd-4087-9d80-1a6206a7d13d
 
-  </details>
+
+<details>
+  <summary>📋Usage (basic version)📋</summary>
+
+Only uses 1st part of the script
+  
+- **Angles:**
+  - Pitch: doesn't matter much, just aim at the box corner
+  - Yaw: `262.40 - 262.71`
+- **Activation timing:**
+  - none
+- **Keypresses:**
+  - `1 21 21 21 21 21 21 21 21 21 21` (`1` and then `21` ten times) before you touch the changelevel trigger
+  - Start holding `d + space` before the changelevel (but not too early)
+- **Additional actions:**
+  - Change sensitivity in the `bpbox_sens` alias to your default
+</details>
+
+[Video link (basic ver.)](https://youtu.be/5Sl6lXTGL60)
+
+<details>
+  <summary>📋Usage (extended version)📋</summary>
+
+Uses both parts of the script
+  
+- **Angles:**
+  - Pitch: doesn't matter much, just aim at the box corner
+  - Yaw: `262.40 - 262.62`
+- **Activation timing:**
+  - 1st part: none
+  - 2nd part: after touching the changelevel trigger
+- **Keypresses:**
+  - 1st part: `1 21 21 21 21 21 21 21 21 21 21` (`1` and then `21` ten times) before you touch the changelevel trigger
+  - 2nd part: `9 09 09 09 09 09` (`9` and then `09` five times) after you touch the changelevel trigger
+- **Additional actions:**
+  - Change sensitivity in the `bpbox_sens` alias to your default
+</details>
+
+[Video link (extended ver.)](https://youtu.be/TkOWi8z1Aa4)
+
+<details>
+  <summary>💡Tips💡</summary>
+
+  - (1st part) Increase waits in the `box1` alias if you don't have enough time to press the keys before hitting the changelevel trigger
+  - Make sure you don't accidentally move the box by walking into it before you start the script
+  - The first part of the script makes an autosave so you can load back and retry if necessary
+  - The second part makes an autosave before the second changelevel
+  - It's recommended to spam both scripts
+  
+</details>
+
+
 
 
 ## **F. Power Up**
