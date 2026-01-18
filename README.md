@@ -603,8 +603,8 @@ bind - testchamber_reset
   <summary>📋Usage📋</summary>
   
 - **Angles:**
-  - Pitch: **30.0 - 40.0**
-  - Yaw: **136.45 - 136.51** (I personally recommend .50-.51, but doesn't really matter)
+  - Pitch: `30.0 - 40.0`
+  - Yaw: `136.45 - 136.51` (I personally recommend `.50 - .51`, but doesn't really matter)
 - **Activation timing:**
   - right after the cage starts going down
 - **Keypresses:**
