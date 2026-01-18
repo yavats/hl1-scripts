@@ -803,78 +803,83 @@ Uses both parts of the script
   
 </details>
 
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/bp_box.sav)
+
 
 
 
 ## **F. Power Up**
   
-### 13. Changelevel Delay Scripts
+### 13. Changelevel delay scripts
 
-<details>
-  <summary>📜Click Here To View Scripts📜</summary>
-
-#### 🟢 PU CLD (A)
+#### 🟡 Power Up A
+*Made by [Parklez](https://github.com/parklez)*
+- The most widely used one
+- Backwards movement
+- Does an object boost
 ```
-alias puskip "-jump;-moveright;-moveleft;speak fvox/power_level_is;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;cl_pitchdown 180;cl_pitchup -179;w 30;cl_pitchup -30;cl_pitchdown 31;wait;cl_pitchup 89;cl_pitchdown 89;w 10;+use;w 11;-use;+jump;wait;-jump"
+alias puskip_a "fps_max 100; -jump;-moveright;-moveleft;speak fvox/power_level_is;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;cl_pitchdown 180;cl_pitchup -179;w 30;cl_pitchup -30;cl_pitchdown 31;w;cl_pitchup 89;cl_pitchdown 89;w 10;+use;w 11;-use;+jump;w;-jump; weapon_tripmine"
 ```
+Example: `bind key puskip_a`\
+Usage: Throw a nade under the box at 20 fps to nuke everything, walk into the changelevel trigger holding `s` and activate the script before touching it. Use mouse movement to control the character, pickup tripmines and get stuck into the corner\
+[Video link](https://youtu.be/IkZ4wWKrLVg)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/puskip.sav)
 
-<details>
-  <summary>📼Video Guide📼</summary>
 
-[link](https://www.youtube.com/watch?v=IkZ4wWKrLVg)
-
-</details>
-
-Example: `bind key puskip`
-
-#### 🟡 Power Up B
-*Facing forward, no object boost.*
+#### 🟢 Power Up B
+*Made by [Parklez](https://github.com/parklez)*
+- Simplest (and slowest) version
+- Facing forward
+- No object boost
 ```
-alias puskip "speak fvox/power_level_is;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 50"
+alias puskip_b "fps_max 100; speak fvox/power_level_is;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 50; weapon_tripmine"
 ```
-Example: `bind key puskip`
-<details>
-  <summary>📋Usage📋</summary>
-Walk forward and activate the script as you walk across the level change trigger, grab the tripmines and wait against the wall.
-  
-</details>
+Example: `bind key puskip_b`\
+Usage: Throw a nade under the box at 20 fps to nuke everything, walk into the changelevel trigger holding `w` and activate the script before touching it. Use mouse movement to control the character and go to the wall, picking up tripmines on the way\
+[Video link](https://youtu.be/B4_AL1Mtu4g)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/puskip.sav)
 
-<details>
-  <summary>📼Video Guide📼</summary>
-  
-https://github.com/user-attachments/assets/33a614b2-d5ce-4c87-8976-fb3b5afc06c8
 
-  </details>
-
-#### 🟠 PU CLD (C) [Faster One, has less delay)
-*Facing forward, with object boost!*
+#### 🟠 Power Up D
+*Made by Wize*
+- Facing forward
+- With object boost (1400 UPS)
+- Makes an autosave when activated
 ```
-alias puskip "weapon_shotgun;-jump;-moveright;-moveleft;w 280;+use;w 8;-use;+jump;wait;-jump;+attack2;wait;-attack2;+duck;w 27;-duck"
+alias puskip_d "fps_max 100; save autosave;weapon_shotgun;-jump;-moveright;-moveleft;w 300;+use;w 7;-use;+jump;w;-jump;+attack2;w;-attack2;+duck;w 37;-duck;weapon_tripmine"
 ```
-Example: `bind key puskip`
+Example: `bind key puskip_d`\
+Usage: Break 2 crates containing tripmines, do an object boost with obbo1600 or obbo2000 script, make sure the box you boost with doesn't get stuck! You want to push it far enough to be able to boost with it again during CLD. Hold `w` and press the script key before touching the changelevel trigger, then use mouse movement to go to the box you left behind and wait until the script ends\
+[Video link](https://youtu.be/e4KVJcd7h14)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/puskip.sav)
 
-<details>
-  <summary>📼Video Guide📼</summary>
-  
-https://github.com/user-attachments/assets/6ece04ab-acfb-410a-8578-b615b72dc9d3
 
-  </details>
-
-#### 🔴 PU CLD (C) [Slower One, has more delay]
-*Facing forward, with object boost!*
+#### 🔴 Power Up F
+*[Power Up D](#--power-up-d) modified by javac_*
+- Fastest version
+- Facing forward
+- With object boost (1800 UPS)
+- Makes an autosave when activated
 ```
-alias puskip "weapon_shotgun;-jump;-moveright;-moveleft;w 350;+use;w 12;-use;+jump;wait;-jump;+attack2;wait;-attack2;+duck;w 28;-duck"
+alias puskip_f "fps_max 100; save autosave;weapon_shotgun;-jump;-moveright;-moveleft;w 300;+use;w 7;-use;+jump;w;-jump;+attack2;w;-attack2;+duck;w 37;-duck;weapon_tripmine"
 ```
-Example: `bind key puskip`
+Example: `bind key puskip_f`\
+Usage: Break 2 crates containing tripmines, do an object boost with obbo1600 or obbo2000 script, make sure the box you boost with doesn't get stuck! You want to push it far enough to be able to boost with it again during CLD. Hold `w` and press the script key before touching the changelevel trigger, then use mouse movement to go to the box you left behind and wait until the script ends\
+[Video link](https://youtu.be/5R8_ISE3k3A)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/puskip.sav)
 
-<details>
-  <summary>📼Video Guide📼</summary>
-  
-[link](https://clips.twitch.tv/PuzzledTangentialClipsdadRickroll)
 
-</details>
-  
-</details>
+
+
+
+
+
+
+
+
+
+
+
 
 ## **G. On A Rail**
 
