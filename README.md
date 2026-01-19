@@ -1212,7 +1212,7 @@ Switch to the gauss, hold crouch, go into the corner, uncrouch, aim at the corne
 *Made by jorikgrozniy*
 - Doesn't cancel fall damage (~20 hp)
 - Currently not used
-- (added just so that people don't ask where's version 1)
+- (added just so that people don't ask where's version 1)\
 [Video link](https://youtu.be/MhjXw0nr2iI)
 
 
