@@ -1037,7 +1037,7 @@ Lower fps to 8 before the changelevel, press the first script key as soon as you
 
 ## **J. Residue Processing**
 
-### 14. Meatgrab scripts
+### 14. 🥩 Meatgrab scripts
 #### 🟢 Simple meatgrab
 ```
 alias meatgrab "fps_max 100;+use;w 15;-use"
@@ -1098,21 +1098,33 @@ Usage: same as [v1](#-2-key-meatgrab-v1)\
 
 
 
-
-
-
-### 18. RPClip Script
+### 15. 💥 RP clipping scripts
+#### 🟢 RP clipping 80 hp ver.
+*Made by Tankfird & jorikgrozniy, modified by Kisimov*
+- Requirements: 80 hp, 0 armor
 ```
-alias rpclip "cl_pitchdown 89;cl_pitchup -89;fps_max 20.2;+attack;w;weapon_crowbar;-attack;w32;+jump;-forward;weapon_handgrenade;w;-jump;+duck;w20;cl_pitchdown 89;cl_pitchup -89;w 10;fps_max 20;w4;-duck;fps_max 100;cl_pitchdown 89;cl_pitchup 89"
+alias rp_80 "cl_pitchdown 89;cl_pitchup -89;fps_max 20.2;+attack;w;weapon_crowbar;-attack;w 32;-forward; +jump; weapon_handgrenade;w;-jump;+duck;w 20;w 10;fps_max 20;w 10;-duck;fps_max 100;cl_pitchdown 89;cl_pitchup 89"
 ```
-📋Usage📋: `bind key "rpclip"` `Hold +forward before and execute the script`
+Example: `bind key rp_80`\
+Usage: hold `w` and activate the script after you pass the gray pipe on the floor\
+[Video link](https://youtu.be/Ho4tTNmveC4)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/rpclipping.sav)
 
-<details>
-  <summary>📼Video Guide📼</summary>
 
-https://github.com/user-attachments/assets/f13a3cac-dcbb-445e-a663-dd701d6a38e9
+#### 🟡 RP clipping 75 hp ver.
+*Made by javac_, [idea](https://youtu.be/RB6xVRVnwfw) by Tankfird*
+- Requirements: 75 hp, 0 armor
+```
+alias rp_75 "fps_max 19.9; cl_pitchdown 89;cl_pitchup -89; +attack; w 30; +jump; +duck; -forward; w; -jump; w 10; fps_max 6.41; w; fps_max 19.85; w 5; -attack; w 5; cl_pitchdown -89; cl_pitchup 89; w 14; -duck; cl_pitchdown 89; force_centerview; fps_max 100"
+```
+Example: `bind key rp_75`\
+Usage: hold `w` and activate the script after you pass the gray pipe on the floor\
+[Video link](https://youtu.be/50h5JHY5WvI)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/rpclipping.sav)
 
-  </details>
+
+
+
 
 ## **K. Surface Tension**
 
