@@ -1195,7 +1195,7 @@ bind 1 sstmove
 <details>
   <summary>📋Usage📋</summary>
 
-Switch to the gauss, hold crouch, go into the corner, uncrouch, aim at the edge of the cliff (not really precise). Try to be as fast as possible to avoid getting damage. Also it's *highly* recommended to have some armor so the helicopter shots don't change player's position much (good for consistency)
+Switch to the gauss, hold crouch, go into the corner, uncrouch, aim at the corner of the cliff (not really precise). Try to be as fast as possible to avoid getting damage. Also it's *highly* recommended to have some armor so the helicopter shots don't change player's position much (good for consistency)
 - **Keypresses**: `2 12 12 12 12 12 12` (`2` and then `12` six times)
 - **Additional actions**: increase delay in the `sstdelay` alias if you don't have enough time to press the script keys
   
@@ -1207,70 +1207,64 @@ Switch to the gauss, hold crouch, go into the corner, uncrouch, aim at the edge 
 
 
 
-### 20. HL21 P2P Scripts
+### 17. Pipe2pipe scripts
+#### ⚪ Pipe2pipe script v1
+*Made by jorikgrozniy*
+- Doesn't cancel fall damage (~20 hp)
+- Currently not used
+- (added just so that people don't ask where's version 1)
+[Video link](https://youtu.be/MhjXw0nr2iI)
 
+
+#### 🟢 Pipe2pipe script v2
+*Made by jorikgrozniy*
+- Most consistent
+- Saves hp
+- 2-3s slower than C2P
 <details>
-  <summary>📜Click Here To View Scripts📜</summary>
+  <summary>📜Click here to view the script📜</summary>
 
-#### 🟢 Jorik's P2P Script
-- ❗You must edit ptpsens value to your normally used sensitivity value❗
-- ❗If you are too slow at pressing keys, increase ptpdelay value❗
-- ❗If you want to change keybinds, pay attention to the order❗
 ```
+alias ptptau "cl_pitchup 180;cl_pitchdown -180;-attack2;w;cl_pitchup 89;cl_pitchdown 89;force_centerview"
+alias ptpre "say reset_script;fps_max 100;-forward;-moveleft;-moveright;-back;-duck;-jump;-right;-left;-attack2;ptpsens;alias ptpscript ptp0;alias ptpmove2;alias ptpmove1"
+
+alias ptp0 "fps_max 100;sensitivity 0;ptpdelay;alias ptpscript ptp1;alias ptpmove1 +moveleft;alias ptpmove2 +forward" // 3 12
+alias ptp1 "+attack2;w 52;-forward;-moveleft;+jump;alias ptpscript ptp2;alias ptpmove2 +moveright" // 3 2
+alias ptp2 "+duck;w 70;-moveright;alias ptpscript ptp3;alias ptpmove2 +moveleft" // 3 2
+alias ptp3 "-jump;w 20;-moveleft;-duck;alias ptpscript ptp4;alias ptpmove2 +right" // 3 2
+alias ptp4 "w 38;-right;w 10;alias ptpscript ptp5;alias ptpmove2 +moveleft" // 3 2
+alias ptp5 "w 18;-moveleft;w 10;force_centerview;alias ptpscript ptp6;alias ptpmove2 +forward" // 3 2
+alias ptp6 "w 16;ptptau;w;-forward;alias ptpscript ptp7;alias ptpmove2 +moveright" // 3 2
+alias ptp7 "w 10;+attack2;w 70;alias ptpscript ptp8;alias ptpmove2 +right" // 3 2
+alias ptp8 "w 6;-right;-moveright;alias ptpscript ptp9;alias ptpmove2 +back" // 3 2
+alias ptp9 "w 2;-back;+jump;w 70;alias ptpscript ptp10;alias ptpmove2 +left" // 3 12
+alias ptp10 "w 5;-left;-moveleft;-jump;ptptau;w;save autosave;w 71;alias ptpscript ptp11;alias ptpmove2 +right;alias ptpmove1 +moveright" // 3 12
+alias ptp11 "w 4;-right;w 2;-moveright;+duck;w 10;fps_max 20;+use;w 4;-duck;fps_max 100;w 15;-use;ptpsens;alias ptpscript;alias ptpmove2;alias ptpmove1" // 3
+
 alias ptpscript ptp0
-alias ptpmove1 +moveleft
-alias ptpmove2 +forward
-alias ptptau "cl_pitchup 180;cl_pitchdown -180;-attack2;wait;cl_pitchup 89;cl_pitchdown 89;force_centerview"
-alias ptpre "-forward;-moveleft;-moveright;-duck;-jump;-right;-left;-attack2;ptpsens;alias ptpscript ptp0;alias ptpmove2 +forward;alias ptpmove1 +moveleft" // use if you failed keys order
-alias ptpsens "sensitivity 0.6" // change it (sensitivity after script done)
-alias ptpdelay "w 200" // change it (start delay, increase it if you dont have time to press keys, every w 100 = 1 sec)
-
-alias ptp0 "sensitivity 0;ptpdelay;alias ptpscript ptp1"
-alias ptp1 "+attack2;w 52;-forward;-moveleft;+jump;alias ptpscript ptp2;alias ptpmove2 +moveright"
-alias ptp2 "+duck;w 70;-moveright;alias ptpscript ptp3;alias ptpmove2 +moveleft"
-alias ptp3 "-jump;w 20;-moveleft;-duck;alias ptpscript ptp4;alias ptpmove2 +right"
-alias ptp4 "w 38;-right;w 10;alias ptpscript ptp5;alias ptpmove2 +moveleft"
-alias ptp5 "w 18;-moveleft;w 10;force_centerview;alias ptpscript ptp6;alias ptpmove2 +forward"
-alias ptp6 "w 16;ptptau;w;-forward;alias ptpscript ptp7;alias ptpmove2 +moveright"
-alias ptp7 "w 10;+attack2;w 70;alias ptpscript ptp8;alias ptpmove2 +right"
-alias ptp8 "w 6;-right;-moveright;alias ptpscript ptp9;alias ptpmove2 +back"
-alias ptp9 "w 2;-back;+jump;w 70;alias ptpscript ptp10;alias ptpmove2 +left"
-alias ptp10 "w 5;-left;-moveleft;-jump;ptptau;w;save autosave;w 71;alias ptpscript ptp11;alias ptpmove2 +right;alias ptpmove1 +moveright"
-alias ptp11 "w 4;-right;w 2;-moveright;+duck;w 10;fps_max 20;+use;w 4;-duck;fps_max 100;w 15;-use;ptpsens;alias ptpscript ptp0;alias ptpmove2 +forward;alias ptpmove1 +moveleft"
-
-bind k ptpscript
-bind j ptpmove2
-bind h ptpmove1
+alias ptpmove2
+alias ptpmove1
 
 
+
+
+// settings
+alias ptpsens "sensitivity 2.37"
+alias ptpdelay "w 100"
+
+// binds
+bind 3 ptpscript
+bind 2 ptpmove2
+bind 1 ptpmove1
+bind - ptpre
 ```
-  </details>
-  
-<details>
-  <summary>📋Usage📋</summary>
-  
-- Start manually charge gauss when you entered map
-- Go to the corner i showed in the video
-- Aim at the corner i showed in the video (yaw is ~268.70 - ~268.90 , pitch almost doesnt matter but its around 6.0)
-- Press keys in order after you aimed (and release +attack2 key after you pressed first script key):
-  -  k
-  - h j k
-  - j k (8x)
-  - h j k (2x)
-  
- </details>
+</details>
 
- <details>
-  <summary>📼Video Guide📼</summary>
-  
-  https://github.com/user-attachments/assets/ffbffe26-d0c3-4f61-983f-51a2d8b2e2bd
-  
-  </details>
 
- #### 🟡 Javac's Hole In One P2P Script
 
-  
- </details>
+
+
+
 
  ### 21. Slowgauss After Ihd Door
  ❗For slowgauss to work you need either 1 or 2 ammo left on your gauss❗
