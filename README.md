@@ -1128,81 +1128,84 @@ Usage: hold `w` and activate the script after you pass the gray pipe on the floo
 ## **G. Surface Tension**
 ### 16. CLD scripts
 
-#### ST CLD v1
+#### 🟢 ST CLD v1
 *Made by Wize*
 - More consistent version
+<details>
+  <summary>📜Click here to view the script📜</summary>
+  
+```
+alias st0 "bxt_autojump 1; fps_max 100; alias stmove +forward; w 40; alias stskip st1" // 1
+alias st1 "weapon_gauss;+duck;w 146;-duck;-forward;alias stskip st2;alias stmove +moveright" // 2+1
+alias st2 "+attack2;w 150;-moveright;+use;w 2;-use;alias stskip st3;alias stmove +forward" // 2+1
+alias st3 "w 15;+jump;cl_pitchup 180;cl_pitchdown -180;-attack2;w;cl_pitchup 89;cl_pitchdown 89;force_centerview;-forward;w 60;alias stskip st4;alias stmove +moveright" // 2+1
+alias st4 "alias stmove +right; alias stskip st5" // 2+1
+alias st5 "alias stmove; w 26;-right;-moveright;w 30;-jump;cl_pitchup -89;cl_pitchdown 89;w 44;cl_pitchup 89;weapon_shotgun;alias stskip" // 2+1
 
-#### ST CLD v2
+alias stskip st0
+alias stmove
+
+
+// binds
+bind 1 stskip
+bind 2 stmove
+```
+</details>
+<details>
+  <summary>📋Usage📋</summary>
+
+Switch to the gauss, aim at the cliff corner. Try to be as fast as possible to avoid getting damage. Also it's *highly* recommended to have some armor so the helicopter shots don't change player's position much (good for consistency)
+- **Keypresses**: `1 21 21 21 21 21` (`1` and then `21` five times)
+  
+</details>
+
+[Video link](https://youtu.be/Rf5UCa3_MP4)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/st_cld.sav)
+
+
+#### 🟡 ST CLD v2
 *Made by javac_*
 - Faster version
 - Lower chance of taking damage
-
-
-
-
-#### 🟢 Fast CLD Script
-- ❗If you want to change keybinds, pay attention to the order❗
+<details>
+  <summary>📜Click here to view the script📜</summary>
+  
 ```
-bind j sst
-bind h sstmove
+alias tau "cl_pitchup 180;cl_pitchdown -180;-attack2;w;cl_pitchup 89;cl_pitchdown 89;force_centerview"
+alias sst1 "bxt_autojump 1; fps_max 100; weapon_gauss; sstdelay; +attack2; alias sstmove +forward; alias sst sst2" // 2
+alias sst2 "w 20; alias sstmove +moveleft; alias sst sst3" // 1+2
+alias sst3 "w 90; -moveleft; w 10; -forward; alias sst sst4" //  1+2
+alias sst4 "alias sstmove +left; alias sst sst5" // 1+2
+alias sst5 "w 10; +jump; w 28; -left; -moveleft; w 15; tau; w 10; +attack2; w 40; alias sstmove +moveright; alias sst sst6" // 1+2
+alias sst6 "alias sstmove +right; alias sst sst7" // 1+2
+alias sst7 "alias sstmove; w 30; -moveright; -right; tau; w 25; -jump; cl_pitchdown 89; cl_pitchup -89; w 22; weapon_shotgun; cl_pitchup 89; alias sst" // 1+2
 
 alias sst sst1
 alias sstmove
 
-alias sst1 "weapon_gauss; w 50; fps_max 100; +attack2; alias sstmove +forward; alias sst sst2"
-alias sst2 "w 20; alias sstmove +moveleft; alias sst sst3"
-alias sst3 "w 90; -moveleft; w 10; -forward; alias sst sst4"
-alias sst4 "alias sstmove +left; alias sst sst5"
-alias sst5 "w 10; +jump; w 28; -left; -moveleft; w 15; tau; w 10; +attack2; w 40; alias sstmove +moveright; alias sst sst6"
-alias sst6 "alias sstmove +right; alias sst sst7"
-alias sst7 "alias sstmove; w 30; -moveright; -right; tau; w 25; -jump; cl_pitchdown 89; cl_pitchup -89; w 22; weapon_shotgun; cl_pitchup 89; alias sst"
+
+// settings
+alias sstdelay "w 100"
+
+// binds
+bind 2 sst
+bind 1 sstmove
 ```
-
-<details>
-  <summary>📼Video Guide📼</summary>
-
-https://github.com/user-attachments/assets/b7cf65e0-5aaf-4bd0-abe1-d05d5b21822a
-
-  </details>
-
-#### 🟡 Slow CLD Script
-- ❗If you want to change keybinds, pay attention to the order❗
-```
-//valve script
-
-alias tau "cl_pitchup 180;cl_pitchdown -180;-attack2;wait;cl_pitchup 89.999;cl_pitchdown 89.999;force_centerview"
-
-alias stskip st1
-alias stmove +forward
-alias st1 "weapon_gauss;+duck;w 146;-duck;-forward;alias stskip st2;alias stmove +moveright"
-alias st2 "+attack2;w 150;-moveright;+use;w 2;-use;alias stskip st3;alias stmove +forward"
-alias st3 "w 15;+jump;tau;-forward;w 60;alias stskip st4;alias stmove +moveright"
-alias st4 "w 26;-right;-moveright;w 30;-jump;cl_pitchup -89.999;cl_pitchdown 89.999;w 44;cl_pitchup 89.999;cl_pitchdown 89.999;weapon_shotgun;save autosave;alias stskip st1;alias stmove +forward;save autosave"
-
-bind f12 stskip //3
-bind f11 stmove //2
-bind f10 +right //1
-```
-
+</details>
 <details>
   <summary>📋Usage📋</summary>
 
-- Execute script and go between the rocks until you can't move
-- Look at the corner of the rock (if confused, check video guide below)
-- Then press the keys in order:
-- f11 + f12 (3x)
-- f10 + f11 + f12 (hold those a bit otherwise it won't go right)
-
+Switch to the gauss, hold crouch, go into the corner, uncrouch, aim at the edge of the cliff (not really precise). Try to be as fast as possible to avoid getting damage. Also it's *highly* recommended to have some armor so the helicopter shots don't change player's position much (good for consistency)
+- **Keypresses**: `2 12 12 12 12 12 12` (`2` and then `12` six times)
+- **Additional actions**: increase delay in the `sstdelay` alias if you don't have enough time to press the script keys
+  
 </details>
 
-<details>
-  <summary>📼Video Guide📼</summary>
+[Video link](https://youtu.be/86eRINHTYZg)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/st_cld.sav)
 
-https://github.com/user-attachments/assets/c1c5ca51-0e94-4b83-877f-c0bd2be1e947
 
-  </details>
 
-</details>
 
 ### 20. HL21 P2P Scripts
 
