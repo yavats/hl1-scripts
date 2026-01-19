@@ -1037,20 +1037,69 @@ Lower fps to 8 before the changelevel, press the first script key as soon as you
 
 ## **J. Residue Processing**
 
-### 17. Meatgrab Script
+### 14. Meatgrab scripts
+#### 🟢 Simple meatgrab
+```
+alias meatgrab "fps_max 100;+use;w 15;-use"
+```
+Example: `bind key meatgrab`
+<details>
+  <summary>📋Usage📋</summary>
+
+  Start holding `d` and press the script key after you pass the right edge of the meat. Ideally you want to get a 14XX UPS boost, but sometimes 1300 or 1500 will work as well. You should also delay the first jumpp in order to maintain speed and avoid fall damage. To keep the optimal speed, start holding jump key after the first drop in the pipe (when your velocity drops down do ~700)
+</details>
+
+[Video link](https://youtu.be/sa3lghAIK9E)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/meatgrab.sav)
+
+
+#### 🟡 Advanced meatgrab
+```
+alias meatgrab2 "fps_max 100; +use; w 15; -use; -moveright; w 8; +jump; w 3; -jump; fps_max 20; w 10; fps_max 100"
+```
+Example: `bind key meatgrab2`\
+Usage: same setup as [Simple meatgrab](#-simple-meatgrab), but you can start holding `+jump` key instantly\
+[Video link](https://youtu.be/Z9tLJuKtTAY)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/meatgrab.sav)
+
+
+#### 🟠 2-key meatgrab
+*Made by mxpph*
 ```
 alias mg mg1
-alias mg1 "+duck;w 50;alias mg mg2"
-alias mg2 "+use;w 18;-use;fps_max 100;w 30;-duck;w 35; +jump; w 10; -jump; alias mg mg1"
+alias mg1 "fps_max 100;+duck;w 50;alias mg mg2"
+alias mg2 "+use;w 18;-use;w 20;fps_max 20;w 4;fps_max 100;-duck;alias mg mg1"
 ```
-📋Usage📋: `bind key mg` `key + +moveright(hold a bit) + key`
-
+Example: `bind key mg`
 <details>
-  <summary>📼Video Guide📼</summary>
+  <summary>📋Usage📋</summary>
 
-https://github.com/user-attachments/assets/cc3236c9-4a0d-40fb-820f-1047aa5835e2
+1. Move meat like for the regular setup, look perpendicularly (yaw ~`180`)
+2. Press `key d key` in a quick  succession (`key` is the script key)
+3. Hold `+jump` after the script is done  
+</details>
 
-  </details>
+[Video link](https://youtu.be/0LMERpfvifc)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/meatgrab.sav)
+
+
+#### 🔴 2-key meatgrab v2
+Slightly modified [v1](#-2-key-meatgrab). Higher exit speed
+```
+alias mtg mtg1
+alias mtg1 "fps_max 100;+duck;w 50;alias mtg mtg2"
+alias mtg2 "+use;w 18;-use;w 60;-duck;alias mtg mtg1"
+```
+Example: `bind key mtg`
+Usage: same as [v1](#-2-key-meatgrab)\
+[Video link](https://youtu.be/wiJWJ3Cdykc)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/meatgrab.sav)
+
+
+
+
+
+
 
 ### 18. RPClip Script
 ```
