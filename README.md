@@ -1249,7 +1249,7 @@ alias ptpmove1
 
 
 // settings
-alias ptpsens "sensitivity 2.37"
+alias ptpsens "sensitivity 3"
 alias ptpdelay "w 100"
 
 // binds
@@ -1260,7 +1260,29 @@ bind - ptpre
 ```
 </details>
 
+<details>
+  <summary>📋Usage📋</summary>
 
+1. Set the angles (it's recommended to do this before anything else)
+2. Start charging gauss before activating the script (3-4 ammo should be enough). Don't start charging on the previous map, you only waste ammo by doing this!
+3. Go into the left corner and press the first script key, then you can release `+attack2`. Press the remaining keys
+
+- **Angles**:
+  - Pitch: around `-1` (doesn't really matter)
+  - Yaw: `268.70 - 268.90` (`.8x` is recommended)
+- **Keypresses:**
+```
+3
+123
+23 23 23 23 23 23 23 23 (x8)
+123
+123
+```
+- **Additional actions:**
+  - Change sensitivity in the `ptpsens` alias to your default
+  - Increase delay in the `ptpdelay` alias if you don't have enough time to press the script keys (every `w 100` = 1s)
+  - You can reset the script with `ptpre` bind instead of re-executing the whole config
+</details>
 
 
 
