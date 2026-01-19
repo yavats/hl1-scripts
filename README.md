@@ -618,7 +618,7 @@ bind - testchamber_reset
 
 
 
-## **E. Blast Pit**
+## **C. Blast Pit**
 
 
 ### 9. Nade boost scripts
@@ -808,7 +808,7 @@ Uses both parts of the script
 
 
 
-## **F. Power Up**
+## **D. Power Up**
   
 ### 11. Changelevel delay scripts
 
@@ -883,7 +883,7 @@ Usage: Break 2 crates containing tripmines, do an object boost with obbo1600 or 
 
 
 
-## **H. Apprehension**
+## **E. Apprehension**
 
 ### 12. Obboducktap script
 ```
@@ -1035,7 +1035,7 @@ Lower fps to 8 before the changelevel, press the first script key as soon as you
 
 
 
-## **J. Residue Processing**
+## **F. Residue Processing**
 
 ### 14. 🥩 Meatgrab scripts
 #### 🟢 Simple meatgrab
@@ -1125,13 +1125,20 @@ Usage: hold `w` and activate the script after you pass the gray pipe on the floo
 
 
 
+## **G. Surface Tension**
+### 16. CLD scripts
 
-## **K. Surface Tension**
+#### ST CLD v1
+*Made by Wize*
+- More consistent version
 
-### 19. CLD Scripts
+#### ST CLD v2
+*Made by javac_*
+- Faster version
+- Lower chance of taking damage
 
-<details>
-  <summary>📜Click Here To View Scripts📜</summary>
+
+
 
 #### 🟢 Fast CLD Script
 - ❗If you want to change keybinds, pay attention to the order❗
