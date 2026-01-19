@@ -1063,7 +1063,7 @@ Usage: same setup as [Simple meatgrab](#-simple-meatgrab), but you can start hol
 [Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/meatgrab.sav)
 
 
-#### 🟠 2-key meatgrab
+#### 🟠 2-key meatgrab v1
 *Made by mxpph*
 ```
 alias mg mg1
@@ -1084,14 +1084,14 @@ Example: `bind key mg`
 
 
 #### 🔴 2-key meatgrab v2
-Slightly modified [v1](#-2-key-meatgrab). Higher exit speed
+Slightly modified [v1](#-2-key-meatgrab-v1). Higher exit speed
 ```
 alias mtg mtg1
 alias mtg1 "fps_max 100;+duck;w 50;alias mtg mtg2"
 alias mtg2 "+use;w 18;-use;w 60;-duck;alias mtg mtg1"
 ```
-Example: `bind key mtg`
-Usage: same as [v1](#-2-key-meatgrab)\
+Example: `bind key mtg`\
+Usage: same as [v1](#-2-key-meatgrab-v1)\
 [Video link](https://youtu.be/wiJWJ3Cdykc)\
 [Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/meatgrab.sav)
 
