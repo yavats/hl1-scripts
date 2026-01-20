@@ -1560,18 +1560,34 @@ bind - p2pre
 
 
 
-### 22. Nadeboost For New ST Route
+### 18. Pre-IHD nade boost
+*Made by hsci*
 ```
-alias boostx "+duck;w19;cl_pitchup -96;cl_pitchdown -180;wait;+attack2;wait;-attack2;w2;-duck;cl_pitchup 89.999;cl_pitchdown 89.999;force_centerview"
+alias stboost "+duck; w 18; cl_pitchup -96; cl_pitchdown -180; w; +attack2; w; -attack2; w 2; -duck; cl_pitchup 89; cl_pitchdown 89; force_centerview; weapon_gauss"
 ```
-Example: `bind key boostx`
+Example: `bind key stboost`\
+Usage: hold +jump and press the script key on the slope. Having at least 1100 ups is recommended\
+[Video link](https://youtu.be/SCDMUGy1FSA)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/stboost.sav)
 
-<details>
-  <summary>📼Video Guide📼</summary>
-  
-https://github.com/user-attachments/assets/954369ee-eb51-4a2e-82ff-80e47a811c3c
 
-  </details>
+
+
+### 19. Simple IHD forward boost
+
+```
+alias ihd ihd1
+alias ihd1 "w 30; alias ihd ihd2" 
+alias ihd2 "w 8; cl_pitchup 180; cl_pitchdown -180; -attack2; w; cl_pitchup 89; cl_pitchdown 89; force_centerview; w; -forward; alias ihd ihd1" 
+```
+Example: `bind key ihd`\
+Usage: Charge the gauss, press `key w key` (`key` is the script key)\
+[Video link](https://youtu.be/kE_0KCV0J3s)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/ihd.sav)
+
+
+
+
 
 ## **L. Forget About Freeman**
 
