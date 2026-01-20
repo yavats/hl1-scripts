@@ -1607,6 +1607,7 @@ alias deffov "default_fov 110" // your default fov
 alias doorfov "default_fov 30" // low fow
 alias defcross "bxt_cross 0" // your default bxt_cross settings (if you use it)
 
+
 // binds
 bind key +doorsetup
 ```
