@@ -1,5 +1,5 @@
 # hl1-scripts
-\*some description\*
+WIP
 
 # Table of Contents
 - [Basic scripts](#a-basic-scripts)
