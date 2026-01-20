@@ -1284,6 +1284,190 @@ bind - ptpre
   - You can reset the script with `ptpre` bind instead of re-executing the whole config
 </details>
 
+[Video link](https://youtu.be/ZZV663fXqMs)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/p2p.sav)
+
+
+
+
+#### 🟡 Pipe2pipe script v3
+*[P2P script v2](#-pipe2pipe-script-v2) modified and extended by javac_*
+- 600 UPS into the pipe
+- Saves hp
+- As fast as C2P
+<details>
+  <summary>📜Click here to view the script📜</summary>
+
+```
+alias p2ptau "cl_pitchup 180;cl_pitchdown -180;-attack2;w;cl_pitchup 89;cl_pitchdown 89;force_centerview"
+alias p2pre "say reset_script; -forward; -moveleft; -moveright; -back; -right; -left; -duck; -jump; fps_max 100; cl_pitchdown 89; cl_pitchup 89; p2psens; alias p2p p2p1; alias p2pmv2; alias p2pmv1"
+
+alias p2p1 "fps_max 100; -moveleft; -back; cl_pitchup 1.41; cl_pitchdown -1.41; sensitivity 0; p2pdelay; alias p2pmv1 +moveleft; alias p2pmv2 +forward; alias p2p p2p2" // 3 12
+alias p2p2 "+attack2; w 52; cl_pitchup 89; cl_pitchdown 89; -forward; -moveleft; +jump; alias p2pmv1; alias p2pmv2 +moveright; alias p2p p2p3" // 3 2
+alias p2p3 "+duck; w 70; -moveright; alias p2pmv2 +moveleft; alias p2p p2p4" // 3 2
+alias p2p4 "-jump; w 20; -moveleft; -duck; alias p2pmv2 +right; alias p2p p2p5" // 3 2
+alias p2p5 "w 38; -right; w 10; alias p2pmv2 +moveleft; alias p2p p2p6" // 3 2
+alias p2p6 "w 18; -moveleft; w 10; force_centerview; alias p2pmv2 +forward; alias p2p p2p7" // 3 2
+alias p2p7 "w 16; p2ptau; w; -forward; alias p2pmv2 +moveright; alias p2p p2p8" // 3 2
+alias p2p8 "+attack2; w 80; alias p2pmv2 +right; alias p2p p2p9" // 3 2
+alias p2p9 "w 6; -right; -moveright; alias p2pmv2 +back; alias p2p p2p10" // 3 2
+alias p2p10 "w 2; -back; +jump; w 59; alias p2pmv1 +left; alias p2pmv2 +moveleft; alias p2p p2p11" // 3 12
+alias p2p11 "w 10; -left; -moveleft; -jump; w; p2ptau; w; +attack2; w 10; alias p2p p2p12" // 3 12
+alias p2p12 "w 2; -left; w 20; -moveleft; w 6; alias p2pmv1 +moveright; alias p2pmv2 +right; alias p2p p2p13" // 3 12
+alias p2p13 "w 4; -right; w 11; alias p2pmv1; alias p2p p2p14" // 3 2
+alias p2p14 "w 4; -right; w 11; alias p2p p2p15" // 3 2
+alias p2p15 "w 4; -right; w 11; alias p2p p2p16" // 3 2
+alias p2p16 "w 12; -right; +duck; +jump; w; p2ptau; w 30; -jump; -duck; -moveright; fps_max 100; p2psens; alias p2p; alias p2pmv2" // 3
+
+alias p2p p2p1
+alias p2pmv2
+alias p2pmv1
+
+
+
+
+// settings
+alias p2psens "sensitivity 3"
+alias p2pdelay "w 100"
+
+// binds
+bind 3 p2p
+bind 2 p2pmv2
+bind 1 p2pmv1
+bind - p2pre
+```
+</details>
+
+<details>
+  <summary>📋Usage📋</summary>
+
+1. Set the angles (it's recommended to do this before anything else)
+2. Start charging gauss before activating the script (3-4 ammo should be enough). Don't start charging on the previous map, you only waste ammo by doing this!
+3. Go into the left corner and press the first script key, then you can release `+attack2`. Press the remaining keys
+4. Hold `+jump` after the script is done
+
+- **Angles**:
+  - Pitch: around `-1` (doesn't really matter)
+  - Yaw: `268.69 - 268.90` (`.76 - .86` is recommended)
+- **Keypresses:**
+```
+3
+123
+23 23 23 23 23 23 23 23 (x8)
+123 123 123
+23 23 23
+```
+- **Additional actions:**
+  - Change sensitivity in the `p2psens` alias to your default
+  - Increase delay in the `p2pdelay` alias if you don't have enough time to press the script keys (every `w 100` = 1s)
+  - You can reset the script with `p2pre` bind instead of re-executing the whole config
+</details>
+
+[Video link](https://youtu.be/Ox6OqOg4Izs)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/p2p.sav)
+
+
+
+
+#### 🔴 Pipe2pipe script v4
+*Made by javac_*
+- 800 UPS into the pipe
+- Saves hp
+- Uses less gauss ammo
+- Fastest version
+<details>
+  <summary>📜Click here to view the script📜</summary>
+
+```
+alias p2ptau "cl_pitchup 180;cl_pitchdown -180;-attack2;w;cl_pitchup 89;cl_pitchdown 89;force_centerview"
+alias p2pre "say reset_script; p2pbind1; p2pbind2; p2pbind3; -forward; -moveleft; -moveright; -right; -left; -back; -duck; -jump; fps_max 100; cl_pitchdown 89; cl_pitchup 89; p2psens; alias p2p p2p1"
+
+alias p2p1 "fps_max 100; bxt_disable_autosave 1; save autosave; -moveright; -forward; -back; -moveleft; sensitivity 0; p2pdelay; alias p2pmv1 +moveleft; alias p2pmv2 +forward; alias p2p p2p2" // 3 12
+alias p2p2 "+attack2; w 52; -forward; -moveleft; +jump; alias p2pmv1; alias p2pmv2 +moveright; alias p2p p2p3" // 3 2
+alias p2p3 "+duck; w 70; -moveright; alias p2pmv2 +moveleft; alias p2p p2p4" // 3 2
+alias p2p4 "-jump; w 20; -moveleft; -duck; alias p2pmv2 +right; alias p2p p2p5" // 3 2
+alias p2p5 "w 38; -right; w 10; alias p2pmv2 +moveleft; alias p2p p2p6" // 3 2
+alias p2p6 "w 18; -moveleft; w 10; force_centerview; alias p2pmv2 +forward; alias p2p p2p7" // 3 2
+alias p2p7 "w 16; p2ptau; w; -forward; alias p2pmv2 +moveright; alias p2p p2p8" // 3 2
+alias p2p8 "w 6; +attack2; w 62; alias p2pmv2 +moveright; alias p2p p2p9" // 3 2
+alias p2p9 "w 8; alias p2pmv2 +right; alias p2p p2p10" // 3 2
+alias p2p10 "w 3; -right; w 13; alias p2p p2p11" // 3 2
+alias p2p11 "w 3; -right; w 13; alias p2p p2p12" // 3 2
+alias p2p12 "w 3; -right; +jump; w 30; -moveright; alias p2pmv1 +moveleft; alias p2pmv2 +left; alias p2p p2p13" // 3 12
+alias p2p13 "w 3; -left; w 3; alias p2p p2p14" // 3 2
+alias p2p14 "w 3; -left; w 3; alias p2p p2p15" // 3 2
+alias p2p15 "w 8; -left; w 24; p2ptau; w 10; alias p2p p2p16" // 3 2
+alias p2p16 "w 3; -left; -moveleft; w 10; alias p2pmv1 +moveright; alias p2pmv2 +right; alias p2p p2p17" // 3 12
+alias p2p17 "w 8; -right; w 6; alias p2pmv1; alias p2p p2p18" // 3 2
+alias p2p18 "w 6; -right; w 14; alias p2p p2p19" // 3 2
+alias p2p19 "w 5; -right; w 4; alias p2p p2p20" // 3 2
+alias p2p20 "w 8; -right; w; alias p2p p2p21" // 3 2
+alias p2p21 "w 8; +duck; -right; fps_max 20; w 12; -moveright; -duck; -jump; fps_max 100; alias p2p; alias p2pmv2; p2psens; bxt_disable_autosave 0; defbind1; defbind2; defbind3" // 3
+
+alias p2p p2p1
+alias p2pmv2
+alias p2pmv1
+
+
+
+
+// settings
+alias p2pdelay "w 100"
+alias p2psens "sensitivity 3"
+
+
+// script binds
+alias p2pbind1 "bind 1 p2pmv1"
+alias p2pbind2 "bind 2 p2pmv2"
+alias p2pbind3 "bind 3 p2p"
+
+p2pbind1; p2pbind2; p2pbind3
+
+// default binds for the same keys
+alias defbind1 "bind 1 weapon_crowbar"
+alias defbind2 "bind 2 slot2"
+alias defbind3 "bind 3 weapon_9mmAR"
+
+bind - p2pre
+```
+</details>
+
+<details>
+  <summary>📋Usage📋</summary>
+
+0. IT'S HIGHLY RECOMMENDED TO HAVE A SEPARATE CONFIG FOR THIS SCRIPT! Execute it before any attempt with a bind like this: `bind key "exec p2pv4.cfg`
+1. Set the angles (it's recommended to do this before anything else)
+2. Start charging gauss before activating the script (3-4 ammo should be enough). Don't start charging on the previous map, you only waste ammo by doing this!
+3. Go into the left corner and press the first script key, then you can release `+attack2`. Press the remaining keys
+4. Hold `+jump` after the script is done
+
+- **Angles**:
+  - Pitch: around `-1` (doesn't really matter)
+  - Yaw: `268.69 - 268.85` (`.7x` is recommended)
+- **Keypresses:**
+```
+3
+123
+23 23 23 23 23 23 23 23 23 23 (x10)
+123
+23 23 23
+123
+23 23 23 23 23
+```
+- **Additional actions:**
+  - Change sensitivity in the `p2psens` alias to your default
+  - Increase delay in the `p2pdelay` alias if you don't have enough time to press the script keys (every `w 100` = 1s)
+  - You can reset the script with `p2pre` bind instead of re-executing the whole config
+</details>
+
+[Video link](https://youtu.be/ynC9b9_VrNg)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/p2p.sav)
+
+
+
+
+
+
 
 
 
