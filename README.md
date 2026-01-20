@@ -1588,6 +1588,47 @@ Usage: Charge the gauss, press `key w key` (`key` is the script key)\
 
 
 
+### 20. Gauss door setup script
+*Made by javac, [setup](https://youtu.be/WJnYII1Z724?t=64) by MarQ*
+<details>
+  <summary>📜Click here to view the script📜</summary>
+
+```
+alias +doorsetup "fps_max 100; +duck; +use; cl_pitchdown -16.69; cl_pitchup 16.69; doorfov; doorcross; doorsens; alias _doorsetup _doorsetupfunc"
+alias _doorsetup
+alias _doorsetupfunc "-duck; -use; cl_pitchdown 89; cl_pitchup 89; deffov; defcross; defsens; weapon_handgrenade"
+alias -doorsetup "_doorsetup; alias _doorsetup"
+alias doorcross "bxt_cross 1; bxt_cross_top_line 0; bxt_cross_left_line 0; bxt_cross_bottom_line 0; bxt_cross_right_line 1; bxt_cross_size 32"
+
+
+// settings
+alias defsens "sensitivity 3" // your default sens
+alias doorsens "sensitivity 0.5" // low sens
+alias deffov "default_fov 110" // your default fov
+alias doorfov "default_fov 30" // low fow
+alias defcross "bxt_cross 0" // your default bxt_cross settings (if you use it)
+
+// binds
+bind key +doorsetup
+```
+</details>
+
+<details>
+  <summary>📋Usage📋</summary>
+
+0. Change `defsens`, `doorsens`, `deffov`, `doorfov` and `defcross` settings
+1. Charge the gauss, go into the corner, start holding the script key
+2. Aim at the right spot and shoot. The script is configured so that at full HD the crosshair line just barely crosses the vertical line between 3rd and 2nd pixels from the right when you look at the correct spot. Yaw: `34.18 - 34.39`
+</details> 
+
+[Video link](https://youtu.be/G_yYuyRoBFs)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/slowgauss.sav)
+
+
+
+
+
+
 
 ## **L. Forget About Freeman**
 
