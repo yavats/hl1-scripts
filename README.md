@@ -423,7 +423,6 @@ Hold `w` and press the `pre_amel` key (`mouse2` here) to activate the elevator b
 
 
 ### 8. Test Chamber scripts
-\*troubleshooting, some common info\*\
 **📝You need to execute the config with the script (`bind key "exec tc.cfg`, for example) or press the `testchamber_reset` bind (`-` by default) before doing _any_ attempt📝**
 
 #### 🟢 Testchamber B
