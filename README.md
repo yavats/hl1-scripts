@@ -848,7 +848,7 @@ Usage: Throw a nade under the box at 20 fps to nuke everything, walk into the ch
 alias puskip_d "fps_max 100; save autosave;weapon_shotgun;-jump;-moveright;-moveleft;w 300;+use;w 7;-use;+jump;w;-jump;+attack2;w;-attack2;+duck;w 37;-duck;weapon_tripmine"
 ```
 Example: `bind key puskip_d`\
-Usage: Break 2 crates containing tripmines, do an object boost with obbo1600 or obbo2000 script, make sure the box you boost with doesn't get stuck! You want to push it far enough to be able to boost with it again during CLD. Hold `w` and press the script key before touching the changelevel trigger, then use mouse movement to go to the box you left behind and wait until the script ends\
+Usage: Break 2 crates containing tripmines, do an object boost with [obbo1600](#1600-ups) or [obbo2000](#2000-ups) script, make sure the box you boost with doesn't get stuck! You want to push it far enough to be able to boost with it again during CLD. Hold `w` and press the script key before touching the changelevel trigger, then use mouse movement to go to the box you left behind and wait until the script ends\
 [Video link](https://youtu.be/e4KVJcd7h14)\
 [Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/puskip.sav)
 
@@ -863,7 +863,7 @@ Usage: Break 2 crates containing tripmines, do an object boost with obbo1600 or 
 alias puskip_f "fps_max 100; save autosave;weapon_shotgun;-jump;-moveright;-moveleft;w 300;+use;w 7;-use;+jump;w;-jump;+attack2;w;-attack2;+duck;w 37;-duck;weapon_tripmine"
 ```
 Example: `bind key puskip_f`\
-Usage: Break 2 crates containing tripmines, do an object boost with obbo1600 or obbo2000 script, make sure the box you boost with doesn't get stuck! You want to push it far enough to be able to boost with it again during CLD. Hold `w` and press the script key before touching the changelevel trigger, then use mouse movement to go to the box you left behind and wait until the script ends\
+Usage: Break 2 crates containing tripmines, do an object boost with [obbo1600](#1600-ups) or [obbo2000](#2000-ups) script, make sure the box you boost with doesn't get stuck! You want to push it far enough to be able to boost with it again during CLD. Hold `w` and press the script key before touching the changelevel trigger, then use mouse movement to go to the box you left behind and wait until the script ends\
 [Video link](https://youtu.be/5R8_ISE3k3A)\
 [Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/puskip.sav)
 
