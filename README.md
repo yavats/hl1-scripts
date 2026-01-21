@@ -809,7 +809,7 @@ Uses both parts of the script
 
 ## **D. Power Up**
   
-### 11. Changelevel delay scripts
+### 11. PU CLD scripts
 
 #### 🟡 Power Up A
 *Made by [Parklez](https://github.com/parklez)*
@@ -1125,7 +1125,7 @@ Usage: hold `w` and activate the script after you pass the gray pipe on the floo
 
 
 ## **G. Surface Tension**
-### 16. CLD scripts
+### 16. ST CLD scripts
 
 #### 🟢 ST CLD v1
 *Made by Wize*
@@ -1630,58 +1630,124 @@ bind key +doorsetup
 
 
 
-## **L. Forget About Freeman**
+## **H. Forget About Freeman**
+### 21. FAF CLD scripts
 
-### 23. Chairboost Script
-- ❗The "usekey" in here must be your standard +use key❗
-  ```
-  alias fafobbo "obbo1300; wait; bind e +use"
-  ```
-Example: `bind key "bind usekey fafobbo; say fafobbo"`
 
-### 24. CLD Scripts
-
-<details>
-  <summary>📜Click Here To View Scripts📜</summary>
-
-#### 🟢 Smg CLD
+#### Forget About Freeman A
+*Made by [Parklez](https://github.com/parklez)*
+- Crowbar + handgrenade boost version
+- Doesn't scare the vortigaunts off
 ```
-alias "faf_e" "fps_max 100; save autosave; weapon_crowbar; -moveleft; +attack;w 350;-attack;force_centerview;weapon_9mmAR;cl_pitchdown 180;cl_pitchup -179;w 40;cl_pitchup 89;cl_pitchdown 89;w 30;+jump;+duck;w;cl_pitchdown 136;cl_pitchup -135;-forward;+attack2;w 30;-attack2;cl_pitchup 89;cl_pitchdown 89;force_centerview;-jump;-duck;w 10;+duck;w 16;-duck; weapon_hornetgun"
+alias faf_a "fps_max 100;speak fvox/power_level_is.beep._comma.beep._comma.beep._comma.beep;-moveright;-moveleft;-duck;weapon_crowbar;+attack;w 500;weapon_handgrenade;w 40;cl_pitchdown 180;cl_pitchup -179;w 40;cl_pitchup 89.999;cl_pitchdown 89.999;cl_pitchup -40;cl_pitchdown 40.001;w 30;-attack;w 4;+jump;+duck;w;-jump;-duck;cl_pitchup 89;cl_pitchdown 89;w 61"
+```
+Example: `bind key faf_a`
+<details>
+  <summary>📋Usage📋</summary>
+  
+(optional) Kill the vortigaunts or scare them off with and smg nade
+Cook a nade, hold `w` or `w + a` / `w + d` to go down the ladder, activate the script before touching the changelevel trigger. Use mouse movement to control your character, climb up, go into the corner and aim at the vertical line on the wall (yaw ~184).
+If you don't have enough time to do the script, increase waits in the `w 500` command. Every `w 100` = 1s.
+</details>
+
+[Video link](https://youtu.be/E4h4jmzd-gI)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/faf.sav)
+
+
+
+
+#### Forget About Freeman C
+- Crowbar + smg nade + handgrenade boost version
+- Auto nade charge
+- Most consistent version
+```
+alias faf_c "fps_max 100;weapon_handgrenade;w 10;speak fvox/power_level_is.beep._comma.beep._comma.beep._comma.beep;-moveright;-moveleft;-duck;+attack; w 50; weapon_crowbar;w 250;weapon_9mmAR;w 100;smg_c;w;weapon_handgrenade;w 10;+attack;w 50;cl_pitchdown 180;cl_pitchup -179;w 40;cl_pitchup 89.999;cl_pitchdown 89.999;cl_pitchup -40;cl_pitchdown 40.001;w 30;-attack;w 4;+jump;+duck;w;-jump;-duck;cl_pitchup 89;cl_pitchdown 89;w 61;weapon_shotgun"
+alias smg_c "cl_pitchdown 180;cl_pitchup -179;w;+attack2;w;cl_pitchup 89;cl_pitchdown 89;-attack2"
+```
+Example: `bind key faf_c`
+<details>
+  <summary>📋Usage📋</summary>
+
+Hold `w` or `w + a` / `w + d` to go down the ladder, activate the script before touching the changelevel trigger. Use mouse movement to control your character, climb up, go into the corner and aim at the vertical line on the wall (yaw ~184).
+If you don't have enough time to do the script, increase waits in the `w 250` command. Every `w 100` = 1s.
+</details>
+
+[Video link](https://youtu.be/8dKdXEbiIAc)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/faf.sav)
+
+
+
+
+#### Forget About Freeman D
+*Made by Wize*
+- Crowbar + smg nade boost version
+- Faster
+- Less consistent
+```
+alias "faf_d" "fps_max 100;save autosave;weapon_crowbar;-moveleft;-moveright;+attack;w 400;-attack;weapon_9mmAR;cl_pitchdown 180;cl_pitchup -179;w 40;cl_pitchup 89;cl_pitchdown 89;w 30;+jump;+duck;w;cl_pitchdown 136;cl_pitchup -135;-forward;+attack2;w 30;-attack2;cl_pitchup 89;cl_pitchdown 89;force_centerview;-jump;-duck;w 26; weapon_hornetgun"
+```
+Example: `bind key faf_d`
+<details>
+  <summary>📋Usage📋</summary>
+
+Hold `w` or `w + a` / `w + d` to go down the ladder, activate the script before touching the changelevel trigger. Use mouse movement to control your character, climb up, go into the corner and aim at the vertical line on the wall (yaw ~184).
+If you don't have enough time to do the script, increase waits in the `w 400` command. Every `w 100` = 1s.
+Crouching during changelevel seems to lower the chance of getting stuck in the wall
+</details>
+
+[Video link](https://youtu.be/X7T9iaG2V3w)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/faf.sav)
+
+
+
+
+#### Forget About Freeman E
+*[FAF D](#-forget-about-freeman-d) modified by Kisimov*
+- Crowbar + smg nade boost version
+- Even faster
+- More consistent
+```
+alias "faf_e" "fps_max 100;save autosave;-moveleft;-moveright;weapon_crowbar;+attack;w 350;-attack;force_centerview;weapon_9mmAR;cl_pitchdown 180;cl_pitchup -179;w 40;cl_pitchup 89;cl_pitchdown 89;w 30;+jump;+duck;w;cl_pitchdown 136;cl_pitchup -135;-forward;+attack2;w 30;-attack2;cl_pitchup 89;cl_pitchdown 89;force_centerview;-jump;-duck;w 10;+duck;w 16;-duck;weapon_hornetgun"
 ```
 Example: `bind key faf_e`
-
 <details>
-  <summary>📼Video Guide📼</summary>
+  <summary>📋Usage📋</summary>
 
-https://github.com/user-attachments/assets/e3635e60-279f-4404-9e5e-f20b57c2512a
-
-  </details>
-
-#### 🟡 Smg CLD with fast ladder climb
-
-
-#### 🟠 Grenade CLD
-```
-alias faf "save quick;speak fvox/power_level_is.beep._comma.beep._comma.beep._comma.beep;-moveright;-moveleft;-duck;weapon_crowbar;+attack;w 500;weapon_handgrenade;w 40;cl_pitchdown 180;cl_pitchup -179;w 40;cl_pitchup 89.999;cl_pitchdown 89.999;cl_pitchup -40;cl_pitchdown 40.001;w 30;-attack;w 4;+jump;+duck;wait;-jump;-duck;cl_pitchup 89;cl_pitchdown 89;w 61"
-```
-Example: `bind key faf`
-
-<details>
-  <summary>📼Video Guide📼</summary>
-  
- [link](https://www.youtube.com/watch?v=E4h4jmzd-gI)\
-
- </details>
-
-#### 🔴 Grenade CLD + Smg nade to scare vortigaunts
-```
-alias faf "w 400;smg;w 1;weapon_handgrenade;w 10;+attack;w 50;cl_pitchdown 180;cl_pitchup -179;w 40;cl_pitchup 89.999;cl_pitchdown 89.999;cl_pitchup -40;cl_pitchdown 40.001;w 30;-attack;w 4;+jump;+duck;w 1;-jump;-duck;cl_pitchup 89.999;cl_pitchdown 90;w 61"
-alias smg "cl_pitchdown 180;cl_pitchup -179;w 1;+attack2;w 1;cl_pitchup 89;cl_pitchdown 89;-attack2"
-```
-📋Usage📋: `same as grenade cld but cook the grenade and switch to the SMG before activating.`
-Example: `bind key faf`
-
+Hold `w` or `w + a` / `w + d` to go down the ladder, activate the script before touching the changelevel trigger. Use mouse movement to control your character, climb up, go into the corner and aim at the vertical line on the wall (yaw ~184).
+If you don't have enough time to do the script, increase waits in the `w 350` command. Every `w 100` = 1s.
 </details>
+
+[Video link](https://youtu.be/X7T9iaG2V3w)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/faf.sav)
+
+
+
+
+#### Forget About Freeman F
+*[FAF E](-forget-about-freeman-e) ladderstrafe ver.*
+- Crowbar + smg nade boost version
+- Fastest one
+- Consistent[*](https://www.twitch.tv/gratedastroex/clip/EphemeralRamshackleNuggetsDeIlluminati-_-x35L64CdtDHa8d)) if no snarks have spawned
+```
+alias "faf_f" "cl_pitchup 89.999;fps_max 100;save autosave;weapon_crowbar;+attack;w 100;-moveleft;-moveright;w 180;-attack;force_centerview;weapon_9mmAR;cl_pitchdown 180;cl_pitchup -179;w 40;cl_pitchup 89;cl_pitchdown 89;w 30;+jump;+duck;w;cl_pitchdown 136;cl_pitchup -135;-forward;+attack2;w 30;-attack2;cl_pitchup 89;cl_pitchdown 89;force_centerview;-jump;-duck;w 10;+duck;w 16;-duck;weapon_hornetgun"
+```
+Example: `bind key faf_f`
+<details>
+  <summary>📋Usage📋</summary>
+
+Hold `w + a` / `w + d` to go down the ladder, activate the script before touching the changelevel trigger. Use mouse movement to control your character, climb up (note that you'll move really fast the first few moments), go into the corner and aim at the vertical line on the wall (yaw ~184). It's HIGHLY recommended to despawn snarks by saveloading when the hatch crosses the snark mine.
+If you don't have enough time to do the script, increase waits in the `w 100` or `w 180` command (depends on what part of the script you need more time for; `w 100` is for the ladderstrafe part, `w 180` is for the rest). Every `w 100` = 1s.
+</details>
+
+[Video link](https://youtu.be/_r7b_2CwO-I)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/faf.sav)
+
+
+
+
+
+
+
 
 ## **M. Lambda Core**
 
