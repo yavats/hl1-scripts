@@ -1663,7 +1663,7 @@ bind key +doorsetup
 ### 21. FAF CLD scripts
 
 
-#### Forget About Freeman A
+#### 🟢 Forget About Freeman A
 *Made by [Parklez](https://github.com/parklez)*
 - Crowbar + handgrenade boost version
 - Doesn't scare the vortigaunts off
@@ -1685,7 +1685,7 @@ If you don't have enough time to do the script, increase waits in the `w 500` co
 
 
 
-#### Forget About Freeman C
+#### 🟢 Forget About Freeman C
 - Crowbar + smg nade + handgrenade boost version
 - Auto nade charge
 - Most consistent version
@@ -1707,7 +1707,7 @@ If you don't have enough time to do the script, increase waits in the `w 250` co
 
 
 
-#### Forget About Freeman D
+#### 🟡 Forget About Freeman D
 *Made by Wize*
 - Crowbar + smg nade boost version
 - Faster
@@ -1730,7 +1730,7 @@ Crouching during changelevel seems to lower the chance of getting stuck in the w
 
 
 
-#### Forget About Freeman E
+#### 🟠 Forget About Freeman E
 *[FAF D](#-forget-about-freeman-d) modified by Kisimov*
 - Crowbar + smg nade boost version
 - Even faster
@@ -1752,7 +1752,7 @@ If you don't have enough time to do the script, increase waits in the `w 350` co
 
 
 
-#### Forget About Freeman F
+#### 🔴 Forget About Freeman F
 *[FAF E](-forget-about-freeman-e) ladderstrafe ver.*
 - Crowbar + smg nade boost version
 - Fastest one
