@@ -666,8 +666,13 @@ Usage: walk forward and activate the script\
 ```
 alias bp_nade4 "fps_max 100; +jump; cl_pitchdown 89; cl_pitchup -89; -attack; w; cl_pitchup 89; force_centerview; -jump"
 ```
-Example: `bind key bp_nade4`\
-Usage: cook a nade beforehand, gain around 600 ups, land near the slope and press the script key. DON'T JUMP ON YOUR OWN, THE SCRIPT DOES IT FOR YOU! It's highly recommended to do a jumpbug before this boost to save more hp and get a good jump pattern\
+Example: `bind key bp_nade4`
+<details>
+  <summary>📋Usage📋</summary>
+
+Cook a nade beforehand, gain around 600 ups, land near the slope and press the script key. DON'T JUMP ON YOUR OWN, THE SCRIPT DOES IT FOR YOU! It's highly recommended to do a jumpbug (preferably 76 fps one) before this boost to save more hp and get a good jump pattern
+</details>
+
 [Video link](https://youtu.be/pbZzpa-TUfY)\
 [Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/bp_nade4.sav)
 
@@ -819,8 +824,14 @@ Uses both parts of the script
 ```
 alias puskip_a "fps_max 100; -jump;-moveright;-moveleft;speak fvox/power_level_is;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;cl_pitchdown 180;cl_pitchup -179;w 30;cl_pitchup -30;cl_pitchdown 31;w;cl_pitchup 89;cl_pitchdown 89;w 10;+use;w 11;-use;+jump;w;-jump; weapon_tripmine"
 ```
-Example: `bind key puskip_a`\
-Usage: Throw a nade under the box at 20 fps to nuke everything, walk into the changelevel trigger holding `s` and activate the script before touching it. Use mouse movement to control the character, pickup tripmines and get stuck into the corner\
+Example: `bind key puskip_a`
+<details>
+  <summary>📋Usage📋</summary>
+  
+Throw a nade under the box at 20 fps to nuke everything, walk into the changelevel trigger holding `s` and activate the script before touching it. Use mouse movement to control the character, pickup tripmines and get stuck into the corner
+Increase waits in the `w 100` commands if you don't have enough time (every `w 100` = 1s)
+</details>
+
 [Video link](https://youtu.be/IkZ4wWKrLVg)\
 [Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/puskip.sav)
 
@@ -833,8 +844,14 @@ Usage: Throw a nade under the box at 20 fps to nuke everything, walk into the ch
 ```
 alias puskip_b "fps_max 100; speak fvox/power_level_is;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 100;speak fvox/beep;w 50; weapon_tripmine"
 ```
-Example: `bind key puskip_b`\
-Usage: Throw a nade under the box at 20 fps to nuke everything, walk into the changelevel trigger holding `w` and activate the script before touching it. Use mouse movement to control the character and go to the wall, picking up tripmines on the way\
+Example: `bind key puskip_b`
+<details>
+  <summary>📋Usage📋</summary>
+
+Throw a nade under the box at 20 fps to nuke everything, walk into the changelevel trigger holding `w` and activate the script before touching it. Use mouse movement to control the character and go to the wall, picking up tripmines on the way
+Increase waits in the `w 100` commands if you don't have enough time (every `w 100` = 1s)
+</details>
+
 [Video link](https://youtu.be/B4_AL1Mtu4g)\
 [Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/puskip.sav)
 
@@ -847,8 +864,14 @@ Usage: Throw a nade under the box at 20 fps to nuke everything, walk into the ch
 ```
 alias puskip_d "fps_max 100; save autosave;weapon_shotgun;-jump;-moveright;-moveleft;w 300;+use;w 7;-use;+jump;w;-jump;+attack2;w;-attack2;+duck;w 37;-duck;weapon_tripmine"
 ```
-Example: `bind key puskip_d`\
-Usage: Break 2 crates containing tripmines, do an object boost with [obbo1600](#1600-ups) or [obbo2000](#2000-ups) script, make sure the box you boost with doesn't get stuck! You want to push it far enough to be able to boost with it again during CLD. Hold `w` and press the script key before touching the changelevel trigger, then use mouse movement to go to the box you left behind and wait until the script ends\
+Example: `bind key puskip_d`
+<details>
+  <summary>📋Usage📋</summary>
+
+Break 2 crates containing tripmines, do an object boost with [obbo1600](#1600-ups) or [obbo2000](#2000-ups) script, make sure the box you boost with doesn't get stuck! You want to push it far enough to be able to boost with it again during CLD. Hold `w` and press the script key before touching the changelevel trigger, then use mouse movement to go to the box you left behind and wait until the script ends
+Increase waits in the `w 300` command if you don't have enough time (every `w 100` = 1s)
+</details>
+
 [Video link](https://youtu.be/e4KVJcd7h14)\
 [Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/puskip.sav)
 
@@ -862,8 +885,14 @@ Usage: Break 2 crates containing tripmines, do an object boost with [obbo1600](#
 ```
 alias puskip_f "fps_max 100; save autosave;weapon_shotgun;-jump;-moveright;-moveleft;w 300;+use;w 7;-use;+jump;w;-jump;+attack2;w;-attack2;+duck;w 37;-duck;weapon_tripmine"
 ```
-Example: `bind key puskip_f`\
-Usage: Break 2 crates containing tripmines, do an object boost with [obbo1600](#1600-ups) or [obbo2000](#2000-ups) script, make sure the box you boost with doesn't get stuck! You want to push it far enough to be able to boost with it again during CLD. Hold `w` and press the script key before touching the changelevel trigger, then use mouse movement to go to the box you left behind and wait until the script ends\
+Example: `bind key puskip_f`
+<details>
+  <summary>📋Usage📋</summary>
+
+Break 2 crates containing tripmines, do an object boost with [obbo1600](#1600-ups) or [obbo2000](#2000-ups) script, make sure the box you boost with doesn't get stuck! You want to push it far enough to be able to boost with it again during CLD. Hold `w` and press the script key before touching the changelevel trigger, then use mouse movement to go to the box you left behind and wait until the script ends
+Increase waits in the `w 300` command if you don't have enough time (every `w 100` = 1s)
+</details>
+
 [Video link](https://youtu.be/5R8_ISE3k3A)\
 [Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/puskip.sav)
 
