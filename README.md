@@ -1645,8 +1645,8 @@ Example: `bind key faf_a`
 <details>
   <summary>📋Usage📋</summary>
   
-(optional) Kill the vortigaunts or scare them off with and smg nade
-Cook a nade, hold `w` or `w + a` / `w + d` to go down the ladder, activate the script before touching the changelevel trigger. Use mouse movement to control your character, climb up, go into the corner and aim at the vertical line on the wall (yaw ~184).
+(optional) Kill the vortigaunts or scare them off with and smg nade\
+Cook a nade, hold `w` or `w + a` / `w + d` to go down the ladder, activate the script before touching the changelevel trigger. Use mouse movement to control your character, climb up, go into the corner and aim at the vertical line on the wall (yaw ~184).\
 If you don't have enough time to do the script, increase waits in the `w 500` command. Every `w 100` = 1s.
 </details>
 
@@ -1668,7 +1668,7 @@ Example: `bind key faf_c`
 <details>
   <summary>📋Usage📋</summary>
 
-Hold `w` or `w + a` / `w + d` to go down the ladder, activate the script before touching the changelevel trigger. Use mouse movement to control your character, climb up, go into the corner and aim at the vertical line on the wall (yaw ~184).
+Hold `w` or `w + a` / `w + d` to go down the ladder, activate the script before touching the changelevel trigger. Use mouse movement to control your character, climb up, go into the corner and aim at the vertical line on the wall (yaw ~184).\
 If you don't have enough time to do the script, increase waits in the `w 250` command. Every `w 100` = 1s.
 </details>
 
@@ -1690,8 +1690,8 @@ Example: `bind key faf_d`
 <details>
   <summary>📋Usage📋</summary>
 
-Hold `w` or `w + a` / `w + d` to go down the ladder, activate the script before touching the changelevel trigger. Use mouse movement to control your character, climb up, go into the corner and aim at the vertical line on the wall (yaw ~184).
-If you don't have enough time to do the script, increase waits in the `w 400` command. Every `w 100` = 1s.
+Hold `w` or `w + a` / `w + d` to go down the ladder, activate the script before touching the changelevel trigger. Use mouse movement to control your character, climb up, go into the corner and aim at the vertical line on the wall (yaw ~184).\
+If you don't have enough time to do the script, increase waits in the `w 400` command. Every `w 100` = 1s.\
 Crouching during changelevel seems to lower the chance of getting stuck in the wall
 </details>
 
@@ -1713,7 +1713,7 @@ Example: `bind key faf_e`
 <details>
   <summary>📋Usage📋</summary>
 
-Hold `w` or `w + a` / `w + d` to go down the ladder, activate the script before touching the changelevel trigger. Use mouse movement to control your character, climb up, go into the corner and aim at the vertical line on the wall (yaw ~184).
+Hold `w` or `w + a` / `w + d` to go down the ladder, activate the script before touching the changelevel trigger. Use mouse movement to control your character, climb up, go into the corner and aim at the vertical line on the wall (yaw ~184).\
 If you don't have enough time to do the script, increase waits in the `w 350` command. Every `w 100` = 1s.
 </details>
 
@@ -1735,7 +1735,7 @@ Example: `bind key faf_f`
 <details>
   <summary>📋Usage📋</summary>
 
-Hold `w + a` / `w + d` to go down the ladder, activate the script before touching the changelevel trigger. Use mouse movement to control your character, climb up (note that you'll move really fast the first few moments), go into the corner and aim at the vertical line on the wall (yaw ~184). It's HIGHLY recommended to despawn snarks by saveloading when the hatch crosses the snark mine.
+Hold `w + a` / `w + d` to go down the ladder, activate the script before touching the changelevel trigger. Use mouse movement to control your character, climb up (note that you'll move really fast the first few moments), go into the corner and aim at the vertical line on the wall (yaw ~184). It's HIGHLY recommended to despawn snarks by saveloading when the hatch crosses the snark mine.\
 If you don't have enough time to do the script, increase waits in the `w 100` or `w 180` command (depends on what part of the script you need more time for; `w 100` is for the ladderstrafe part, `w 180` is for the rest). Every `w 100` = 1s.
 </details>
 
