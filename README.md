@@ -828,7 +828,7 @@ Example: `bind key puskip_a`
 <details>
   <summary>📋Usage📋</summary>
   
-Throw a nade under the box at 20 fps to nuke everything, walk into the changelevel trigger holding `s` and activate the script before touching it. Use mouse movement to control the character, pickup tripmines and get stuck into the corner
+Throw a nade under the box at 20 fps to nuke everything, walk into the changelevel trigger holding `s` and activate the script before touching it. Use mouse movement to control the character, pickup tripmines and get stuck into the corner\
 Increase waits in the `w 100` commands if you don't have enough time (every `w 100` = 1s)
 </details>
 
@@ -848,7 +848,7 @@ Example: `bind key puskip_b`
 <details>
   <summary>📋Usage📋</summary>
 
-Throw a nade under the box at 20 fps to nuke everything, walk into the changelevel trigger holding `w` and activate the script before touching it. Use mouse movement to control the character and go to the wall, picking up tripmines on the way
+Throw a nade under the box at 20 fps to nuke everything, walk into the changelevel trigger holding `w` and activate the script before touching it. Use mouse movement to control the character and go to the wall, picking up tripmines on the way\
 Increase waits in the `w 100` commands if you don't have enough time (every `w 100` = 1s)
 </details>
 
@@ -868,7 +868,7 @@ Example: `bind key puskip_d`
 <details>
   <summary>📋Usage📋</summary>
 
-Break 2 crates containing tripmines, do an object boost with [obbo1600](#1600-ups) or [obbo2000](#2000-ups) script, make sure the box you boost with doesn't get stuck! You want to push it far enough to be able to boost with it again during CLD. Hold `w` and press the script key before touching the changelevel trigger, then use mouse movement to go to the box you left behind and wait until the script ends
+Break 2 crates containing tripmines, do an object boost with [obbo1600](#1600-ups) or [obbo2000](#2000-ups) script, make sure the box you boost with doesn't get stuck! You want to push it far enough to be able to boost with it again during CLD. Hold `w` and press the script key before touching the changelevel trigger, then use mouse movement to go to the box you left behind and wait until the script ends\
 Increase waits in the `w 300` command if you don't have enough time (every `w 100` = 1s)
 </details>
 
@@ -889,7 +889,7 @@ Example: `bind key puskip_f`
 <details>
   <summary>📋Usage📋</summary>
 
-Break 2 crates containing tripmines, do an object boost with [obbo1600](#1600-ups) or [obbo2000](#2000-ups) script, make sure the box you boost with doesn't get stuck! You want to push it far enough to be able to boost with it again during CLD. Hold `w` and press the script key before touching the changelevel trigger, then use mouse movement to go to the box you left behind and wait until the script ends
+Break 2 crates containing tripmines, do an object boost with [obbo1600](#1600-ups) or [obbo2000](#2000-ups) script, make sure the box you boost with doesn't get stuck! You want to push it far enough to be able to boost with it again during CLD. Hold `w` and press the script key before touching the changelevel trigger, then use mouse movement to go to the box you left behind and wait until the script ends\
 Increase waits in the `w 300` command if you don't have enough time (every `w 100` = 1s)
 </details>
 
