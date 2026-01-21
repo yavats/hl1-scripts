@@ -1727,7 +1727,7 @@ If you don't have enough time to do the script, increase waits in the `w 350` co
 *[FAF E](-forget-about-freeman-e) ladderstrafe ver.*
 - Crowbar + smg nade boost version
 - Fastest one
-- Consistent[*](https://www.twitch.tv/gratedastroex/clip/EphemeralRamshackleNuggetsDeIlluminati-_-x35L64CdtDHa8d)) if no snarks have spawned
+- Consistent[*](https://www.twitch.tv/gratedastroex/clip/EphemeralRamshackleNuggetsDeIlluminati-_-x35L64CdtDHa8d) if no snarks have spawned
 ```
 alias "faf_f" "cl_pitchup 89.999;fps_max 100;save autosave;weapon_crowbar;+attack;w 100;-moveleft;-moveright;w 180;-attack;force_centerview;weapon_9mmAR;cl_pitchdown 180;cl_pitchup -179;w 40;cl_pitchup 89;cl_pitchdown 89;w 30;+jump;+duck;w;cl_pitchdown 136;cl_pitchup -135;-forward;+attack2;w 30;-attack2;cl_pitchup 89;cl_pitchdown 89;force_centerview;-jump;-duck;w 10;+duck;w 16;-duck;weapon_hornetgun"
 ```
