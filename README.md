@@ -1778,7 +1778,47 @@ If you don't have enough time to do the script, increase waits in the `w 100` or
 
 
 
-## **M. Lambda Core**
+
+
+
+
+
+
+
+
+## **I. Lambda Core**
+
+
+### 22. Door frame nade boost
+*Made by hsci & javac_*
+```
+alias lcboost "fps_max 100; cl_pitchdown -20; cl_pitchup 20; +duck; +jump; w 5; -attack; w 15; -jump; cl_pitchup 89; cl_pitchdown 89; w 30; -duck"
+```
+Example: `bind key lcboost`\
+Usage: Cook a nade, open the door, aim slightly to the right and activate the script right before you pass the doorframe\
+[Video link](https://youtu.be/BdP288HnmgA)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/lcboost.sav)
+
+
+
+### 23. Water clipping nade scripts
+
+#### 🟢 Simple nade clipping
+*Made by N4rk0t1k*
+```
+alias lc_pipe_skip "-forward; -moveright; -moveleft; -back; -jump; -duck; cl_pitchup -170; cl_pitchdown 170; fps_max 19.99; +duck; w; -duck; w; +duck; -attack; w 5; -duck; fps_max 100; cl_pitchup -12; cl_pitchdown 12; w; cl_pitchup 89; cl_pitchdown 89" 
+```
+Example: `bind key lc_pipe_skip`\
+Usage: Cook a nade, drop into the water, hold `w`, look perpendicular to the pipe, start holding `ctrl` and activate the script\
+[Video link](https://youtu.be/-IsroM843jU)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/lc_clipping.sav)
+
+
+### 24. Water clipping gauss scripts
+
+
+
+
 
 ### 25. Watergauss Clip Script
 - ❗If you don't have enough time to get into the corner, increase alias "dst" value❗
