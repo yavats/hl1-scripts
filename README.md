@@ -1805,18 +1805,57 @@ Usage: Cook a nade, open the door, aim slightly to the right and activate the sc
 
 #### 🟢 Simple nade clipping
 *Made by N4rk0t1k*
+- Prevents nukes
 ```
 alias lc_pipe_skip "-forward; -moveright; -moveleft; -back; -jump; -duck; cl_pitchup -170; cl_pitchdown 170; fps_max 19.99; +duck; w; -duck; w; +duck; -attack; w 5; -duck; fps_max 100; cl_pitchup -12; cl_pitchdown 12; w; cl_pitchup 89; cl_pitchdown 89" 
 ```
 Example: `bind key lc_pipe_skip`\
-Usage: Cook a nade, drop into the water, hold `w`, look perpendicular to the pipe, start holding `ctrl` and activate the script\
+Usage: Cook a nade, drop into the water, hold `w`, look perpendicular to the pipe, start holding `+duck` and activate the script. Alternatively, you can hold `+duck` and tap `+jump` before pressing the script key\
 [Video link](https://youtu.be/-IsroM843jU)\
 [Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/lc_clipping.sav)
 
 
+#### 🟡 Advanced nade clipping
+*Made by Kisimov*
+- Prevents nukes
+- Automatically switches to nades => no need to hold `+attack`
+- Doesn't require tapping `+duck`/`+jump`
+```
+alias nadeclip "fps_max 100; weapon_handgrenade; w 5; -attack; w 90; -forward; force_centerview; cl_pitchup -190; cl_pitchdown -190; fps_max 19.99; w 4; fps_max 100; cl_pitchup 0;cl_pitchdown 0;w;cl_pitchup 89;cl_pitchdown 89"
+```
+Example: `bind key nadeclip`\
+Usage: cook a nade, switch to any other weapon, drop into the water, hold `w + ctrl`, look perpendicular to the pipe and activate the script\
+[Video link](https://youtu.be/e4rhB1Dycas)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/lc_clipping.sav)
+
+
+
+
 ### 24. Water clipping gauss scripts
 
+#### Waterclip gauss script
+*Made by hsci*
+```
+alias _taubow
+alias _taubofuncw "cl_pitchup -180;cl_pitchdown 180;wait;-attack;wait;cl_pitchup 12;cl_pitchdown -12;w;cl_pitchup 89.999;cl_pitchdown 89.999"
+alias +tauw "+attack; alias _taubow _taubofuncw"
+alias -tauw "_taubow; alias _taubow"
 
+alias fps_20 "fps_max 20"
+alias fps_100 "fps_max 100"
+
+alias +wc "+duck;w;-duck;w 5;+duck;w 30;-duck;w 60;gwc;w 10;wwc"
+alias -wc "-tauw;-attack2"
+alias wwc "fps_20;dst;-forward;-moveright;-wc;w;fps_100;weapon_handgrenade"
+alias gwc "w 5;-attack2;+tauw;w;"
+alias dst "w 8"
+```
+Example: `bind key +wc`\
+<details>
+  <summary>📋Usage📋</summary>
+
+Start charging gauss ~3s before doing the skip, drop into the water by pressing the script key (mouse1 here) and keep holding it during setup. the script clips you as soon as you release the key
+</details>
 
 
 
