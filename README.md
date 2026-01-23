@@ -1854,7 +1854,8 @@ Example: `bind key +wc`\
 <details>
   <summary>📋Usage📋</summary>
 
-Start charging gauss ~3s before doing the skip, drop into the water by pressing the script key (mouse1 here) and keep holding it during setup. the script clips you as soon as you release the key
+Start charging gauss ~3s before doing the skip, hold `w` / `w + d` and drop into the water by pressing the script key. Keep holding it until you clip through the wall.\
+
 </details>
 
 
