@@ -1833,8 +1833,18 @@ Usage: cook a nade, switch to any other weapon, drop into the water, hold `w + c
 
 ### 24. Water clipping gauss scripts
 
-#### Waterclip gauss script
-*Made by hsci*
+
+
+
+
+#### 🟢 Waterclip gauss script 
+*Made by javac_*
+- Manual gauss release
+- Free movement
+- More consistent
+<details>
+  <summary>📜Click here to view the script📜</summary>
+  
 ```
 alias _taubow
 alias _taubofuncw "cl_pitchup -180;cl_pitchdown 180;wait;-attack;wait;cl_pitchup 12;cl_pitchdown -12;w;cl_pitchup 89.999;cl_pitchdown 89.999"
@@ -1849,6 +1859,8 @@ alias gwc "w 5;-attack2;+tauw;w"
 // shooting delay
 alias dst "w 8"
 ```
+</details>
+
 Example: `bind key +wc`\
 <details>
   <summary>📋Usage📋</summary>
@@ -1859,6 +1871,51 @@ If you don't have enough time, increase waits in the `dst` alias (every `w 20` =
 
 [Video link](https://youtu.be/Ag9kcqeEKIY)\
 [Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/lc_clipping.sav)
+
+
+
+
+
+
+
+#### 🟡 Waterclip gauss script
+*Made by hsci*
+- Automatic gauss charge release
+- Slightly faster
+- Riskier
+<details>
+  <summary>📜Click here to view the script📜</summary>
+  
+```
+alias _taubow
+alias _taubofuncw "cl_pitchup -180;cl_pitchdown 180;wait;-attack;wait;cl_pitchup 12;cl_pitchdown -12;w;cl_pitchup 89.999;cl_pitchdown 89.999"
+alias +tauw "+attack; alias _taubow _taubofuncw"
+alias -tauw "_taubow; alias _taubow"
+
+alias +wc "+duck;w;-duck;w 5;+duck;w 30;-duck;w 60;gwc;w 10;wwc"
+alias -wc "-tauw;-attack2"
+alias wwc "fps_max 20;dst;-forward;-moveright;-wc;w;fps_max 100;weapon_handgrenade"
+alias gwc "w 5;-attack2;+tauw;w"
+
+// shooting delay
+alias dst "w 8"
+```
+</details>
+
+Example: `bind key +wc`\
+<details>
+  <summary>📋Usage📋</summary>
+
+Start charging gauss ~3s before doing the skip, hold `w` / `w + d` and drop into the water by pressing the script key. Keep holding it until you clip through the wall, but first turn so that you look perpendicular to the pipe. Note that you'll be able to control your character only by moving the camera!\
+If you don't have enough time, increase waits in the `dst` alias (every `w 20` = 1s)
+</details>
+
+[Video link](https://youtu.be/Ag9kcqeEKIY)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/lc_clipping.sav)
+
+
+
+
 
 
 
