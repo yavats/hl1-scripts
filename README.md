@@ -1837,39 +1837,138 @@ Usage: cook a nade, switch to any other weapon, drop into the water, hold `w + c
 
 
 
-#### 🟢 Waterclip gauss script 
+#### 🟢 Waterclip gauss script v2
 *Made by javac_*
 - Manual gauss release
 - Free movement
 - More consistent
+- Might be slower
 <details>
   <summary>📜Click here to view the script📜</summary>
   
 ```
-alias _taubow
-alias _taubofuncw "cl_pitchup -180;cl_pitchdown 180;wait;-attack;wait;cl_pitchup 12;cl_pitchdown -12;w;cl_pitchup 89.999;cl_pitchdown 89.999"
-alias +tauw "+attack; alias _taubow _taubofuncw"
-alias -tauw "_taubow; alias _taubow"
+alias wlc1 "alias -wlc wlc_cancel; fps_max 100;+duck;w;alias @wlc wlc2;bxt_append _wlc"
+alias wlc2 "-duck;w;alias @wlc wlc3;bxt_append _wlc"
+alias wlc3 "w;alias @wlc wlc4;bxt_append _wlc"
+alias wlc4 "w;alias @wlc wlc5;bxt_append _wlc"
+alias wlc5 "w;alias @wlc wlc6;bxt_append _wlc"
+alias wlc6 "w;alias @wlc wlc7;bxt_append _wlc"
+alias wlc7 "+duck;w;alias @wlc wlc8;bxt_append _wlc"
+alias wlc8 "w;alias @wlc wlc9;bxt_append _wlc"
+alias wlc9 "w;alias @wlc wlc10;bxt_append _wlc"
+alias wlc10 "w;alias @wlc wlc11;bxt_append _wlc"
+alias wlc11 "w;alias @wlc wlc12;bxt_append _wlc"
+alias wlc12 "w;alias @wlc wlc13;bxt_append _wlc"
+alias wlc13 "w;alias @wlc wlc14;bxt_append _wlc"
+alias wlc14 "w;alias @wlc wlc15;bxt_append _wlc"
+alias wlc15 "w;alias @wlc wlc16;bxt_append _wlc"
+alias wlc16 "w;alias @wlc wlc17;bxt_append _wlc"
+alias wlc17 "w;alias @wlc wlc18;bxt_append _wlc"
+alias wlc18 "w;alias @wlc wlc19;bxt_append _wlc"
+alias wlc19 "w;alias @wlc wlc20;bxt_append _wlc"
+alias wlc20 "w;alias @wlc wlc21;bxt_append _wlc"
+alias wlc21 "w;alias @wlc wlc22;bxt_append _wlc"
+alias wlc22 "w;alias @wlc wlc23;bxt_append _wlc"
+alias wlc23 "w;alias @wlc wlc24;bxt_append _wlc"
+alias wlc24 "w;alias @wlc wlc25;bxt_append _wlc"
+alias wlc25 "w;alias @wlc wlc26;bxt_append _wlc"
+alias wlc26 "w;alias @wlc wlc27;bxt_append _wlc"
+alias wlc27 "w;alias @wlc wlc28;bxt_append _wlc"
+alias wlc28 "w;alias @wlc wlc29;bxt_append _wlc"
+alias wlc29 "w;alias @wlc wlc30;bxt_append _wlc"
+alias wlc30 "w;alias @wlc wlc31;bxt_append _wlc"
+alias wlc31 "w;alias @wlc wlc32;bxt_append _wlc"
+alias wlc32 "w;alias @wlc wlc33;bxt_append _wlc"
+alias wlc33 "w;alias @wlc wlc34;bxt_append _wlc"
+alias wlc34 "w;alias @wlc wlc35;bxt_append _wlc"
+alias wlc35 "w;alias @wlc wlc36;bxt_append _wlc"
+alias wlc36 "w;alias @wlc wlc37;bxt_append _wlc"
+alias wlc37 "-duck;w;alias @wlc wlc38;bxt_append _wlc"
+alias wlc38 "w;alias @wlc wlc39;bxt_append _wlc"
+alias wlc39 "w;alias @wlc wlc40;bxt_append _wlc"
+alias wlc40 "w;alias @wlc wlc41;bxt_append _wlc"
+alias wlc41 "w;alias @wlc wlc42;bxt_append _wlc"
+alias wlc42 "w;alias @wlc wlc43;bxt_append _wlc"
+alias wlc43 "w;alias @wlc wlc44;bxt_append _wlc"
+alias wlc44 "w;alias @wlc wlc45;bxt_append _wlc"
+alias wlc45 "w;alias @wlc wlc46;bxt_append _wlc"
+alias wlc46 "w;alias @wlc wlc47;bxt_append _wlc"
+alias wlc47 "w;alias @wlc wlc48;bxt_append _wlc"
+alias wlc48 "w;alias @wlc wlc49;bxt_append _wlc"
+alias wlc49 "w;alias @wlc wlc50;bxt_append _wlc"
+alias wlc50 "w;alias @wlc wlc51;bxt_append _wlc"
+alias wlc51 "w;alias @wlc wlc52;bxt_append _wlc"
+alias wlc52 "w;alias @wlc wlc53;bxt_append _wlc"
+alias wlc53 "w;alias @wlc wlc54;bxt_append _wlc"
+alias wlc54 "w;alias @wlc wlc55;bxt_append _wlc"
+alias wlc55 "w;alias @wlc wlc56;bxt_append _wlc"
+alias wlc56 "w;alias @wlc wlc57;bxt_append _wlc"
+alias wlc57 "w;alias @wlc wlc58;bxt_append _wlc"
+alias wlc58 "w;alias @wlc wlc59;bxt_append _wlc"
+alias wlc59 "w;alias @wlc wlc60;bxt_append _wlc"
+alias wlc60 "w;alias @wlc wlc61;bxt_append _wlc"
+alias wlc61 "w;alias @wlc wlc62;bxt_append _wlc"
+alias wlc62 "w;alias @wlc wlc63;bxt_append _wlc"
+alias wlc63 "w;alias @wlc wlc64;bxt_append _wlc"
+alias wlc64 "w;alias @wlc wlc65;bxt_append _wlc"
+alias wlc65 "w;alias @wlc wlc66;bxt_append _wlc"
+alias wlc66 "w;alias @wlc wlc67;bxt_append _wlc"
+alias wlc67 "w;alias @wlc wlc68;bxt_append _wlc"
+alias wlc68 "w;alias @wlc wlc69;bxt_append _wlc"
+alias wlc69 "w;alias @wlc wlc70;bxt_append _wlc"
+alias wlc70 "w;alias @wlc wlc71;bxt_append _wlc"
+alias wlc71 "w;alias @wlc wlc72;bxt_append _wlc"
+alias wlc72 "w;alias @wlc wlc73;bxt_append _wlc"
+alias wlc73 "w;alias @wlc wlc74;bxt_append _wlc"
+alias wlc74 "w;alias @wlc wlc75;bxt_append _wlc"
+alias wlc75 "w;alias @wlc wlc76;bxt_append _wlc"
+alias wlc76 "w;alias @wlc wlc77;bxt_append _wlc"
+alias wlc77 "w;alias @wlc wlc78;bxt_append _wlc"
+alias wlc78 "w;alias @wlc wlc79;bxt_append _wlc"
+alias wlc79 "w;alias @wlc wlc80;bxt_append _wlc"
+alias wlc80 "w;alias @wlc wlc81;bxt_append _wlc"
+alias wlc81 "w;alias @wlc wlc82;bxt_append _wlc"
+alias wlc82 "w;alias @wlc wlc83;bxt_append _wlc"
+alias wlc83 "w;alias @wlc wlc84;bxt_append _wlc"
+alias wlc84 "w;alias @wlc wlc85;bxt_append _wlc"
+alias wlc85 "w;alias @wlc wlc86;bxt_append _wlc"
+alias wlc86 "w;alias @wlc wlc87;bxt_append _wlc"
+alias wlc87 "w;alias @wlc wlc88;bxt_append _wlc"
+alias wlc88 "w;alias @wlc wlc89;bxt_append _wlc"
+alias wlc89 "w;alias @wlc wlc90;bxt_append _wlc"
+alias wlc90 "w;alias @wlc wlc91;bxt_append _wlc"
+alias wlc91 "w;alias @wlc wlc92;bxt_append _wlc"
+alias wlc92 "w;alias @wlc wlc93;bxt_append _wlc"
+alias wlc93 "w;alias @wlc wlc94;bxt_append _wlc"
+alias wlc94 "w;alias @wlc wlc95;bxt_append _wlc"
+alias wlc95 "w;alias @wlc wlc96;bxt_append _wlc"
+alias wlc96 "w;alias @wlc wlc97;bxt_append _wlc"
+alias wlc97 "w;alias @wlc wlc98;bxt_append _wlc"
+alias wlc98 "w;alias @wlc wlc99;bxt_append _wlc"
+alias wlc99 "w;alias @wlc wlc100;bxt_append _wlc"
+alias wlc100 "w;alias @wlc wlc101;bxt_append _wlc"
+alias wlc101 "w;alias @wlc wlc102;bxt_append _wlc"
+alias wlc102 "-attack2;+attack;fps_max 20;alias @wlc; alias -wlc wlc_release"
 
-alias +wc "+duck;w;-duck;w 5;+duck;w 30;-duck;w 60;gwc;w 10;wwc"
-alias -wc "-tauw;-attack2"
-alias wwc "fps_max 20;dst;-forward;-moveright;-wc;w;fps_max 100;weapon_handgrenade"
-alias gwc "w 5;-attack2;+tauw;w"
+alias wlc_release "-forward; cl_pitchup -180; cl_pitchdown 180; w; -attack; w; cl_pitchup 89; cl_pitchdown 89; force_centerview; w; fps_max 100; weapon_handgrenade; alias -wlc"
+alias wlc_cancel "-attack; -duck"
 
-// shooting delay
-alias dst "w 8"
+alias +wlc "alias _wlc @wlc;wlc1"
+alias -wlc "wlc_cancel"
+
+
+// bind
+bind key +wlc
 ```
 </details>
-
-Example: `bind key +wc`\
 <details>
   <summary>📋Usage📋</summary>
 
-Start charging gauss ~3s before doing the skip, hold `w` / `w + d` and drop into the water by pressing the script key. Keep holding it until you clip through the wall, but first turn so that you look perpendicular to the pipe. Note that you'll be able to control your character only by moving the camera!\
-If you don't have enough time, increase waits in the `dst` alias (every `w 20` = 1s)
+Start charging gauss ~3s before doing the skip, strafe into the water by pressing and holding the script key. Release it to clip through the wall, but first turn so that you look perpendicular to the pipe. Tip: you have full control over your character during the script\
+*It's HIGHLY recommended to use a separate config for this script and execute it before doing the strat!!* 
 </details>
 
-[Video link](https://youtu.be/Ag9kcqeEKIY)\
+[Video link](https://youtu.be/rZb7-2ByrIM)\
 [Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/lc_clipping.sav)
 
 
@@ -1878,7 +1977,7 @@ If you don't have enough time, increase waits in the `dst` alias (every `w 20` =
 
 
 
-#### 🟡 Waterclip gauss script
+#### 🟡 Waterclip gauss script v1
 *Made by hsci*
 - Automatic gauss charge release
 - Slightly faster
@@ -1899,10 +1998,12 @@ alias gwc "w 5;-attack2;+tauw;w"
 
 // shooting delay
 alias dst "w 8"
+
+
+// bind
+bind key +wc
 ```
 </details>
-
-Example: `bind key +wc`\
 <details>
   <summary>📋Usage📋</summary>
 
