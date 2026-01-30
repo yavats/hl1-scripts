@@ -2018,14 +2018,14 @@ Start charging gauss ~3s before doing the skip, strafe into the water by pressin
 ```
 alias labo "+jump; +duck; fps_max 30; cl_pitchup -90; cl_pitchdown 90; weapon_crowbar; w; weapon_handgrenade; +attack; w 20; -attack; w 10; speak scientist/scream20; -jump; cl_pitchup -70; cl_pitchdown 70; weapon_9mmAR; +attack2; w 20; -attack2; -duck; cl_pitchup 89; cl_pitchdown 89; fps_max 100"
 ```
-Example: `bind key labo`\
+Example: `bind key labo`
 <details>
   <summary>📋Usage📋</summary>
 
   Setup 1:\
   Cook a nade, stay around the cross on the floor, look perpendicular to the reactor wall, press the script key, start holding W and release it after the smg boost occurs.\
   Setup 2:\
-  Cook a nade, stay in the shadow area on the floor, look perpendicular to the reactor wall, press the script key, start holding W and release it after the smg boost occurs.\
+  Cook a nade, stay in the shadow area on the floor, look perpendicular to the reactor wall, press the script key, start holding W and release it after the smg boost occurs.
 </details>
 
 [Video link](https://youtu.be/6PkGIk_Napk)\
