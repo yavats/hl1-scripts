@@ -2009,6 +2009,35 @@ Start charging gauss ~3s before doing the skip, strafe into the water by pressin
 
 
 
+### 25. Water boost scripts
+
+#### 🟢 Simple water double boost
+*Made by N4rk0t1k*
+- Consistent
+- Has at least 2 possible setups
+```
+alias labo "+jump; +duck; fps_max 30; cl_pitchup -90; cl_pitchdown 90; weapon_crowbar; w; weapon_handgrenade; +attack; w 20; -attack; w 10; speak scientist/scream20; -jump; cl_pitchup -70; cl_pitchdown 70; weapon_9mmAR; +attack2; w 20; -attack2; -duck; cl_pitchup 89; cl_pitchdown 89; fps_max 100"
+```
+Example: `bind key labo`\
+<details>
+  <summary>📋Usage📋</summary>
+
+  Setup 1:\
+  Cook a nade, stay around the cross on the floor, look perpendicular to the reactor wall, press the script key, start holding W and release it after the smg boost occurs.\
+  Setup 2:\
+  Cook a nade, stay in the shadow area on the floor, look perpendicular to the reactor wall, press the script key, start holding W and release it after the smg boost occurs.\
+</details>
+
+[Video link](https://youtu.be/6PkGIk_Napk)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/labo.sav)
+
+
+#### 🟡 Advanced water double boost
+*Made by javac_*
+- Faster
+- Less consistent
+- Uses slope for redirection
+- 4fpses the door
 
 
 
