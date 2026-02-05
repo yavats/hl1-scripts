@@ -2102,7 +2102,7 @@ bind 1 lcdbmove
   <summary>📋Usage📋</summary>
 
 Make sure the area marked with red on the image below isn't blocked by moving platforms when you boost\
-![](Images/lcdb.png)
+![](Images/lcdb.png)\
 Cook a nade, go into the left door corner, aim between "0" and "1", then press:\
 `2 12 12`\
 Hold crouch and optionally 4fps the door.
@@ -2118,7 +2118,32 @@ Hold crouch and optionally 4fps the door.
 
 
 
-## **N. Xen**
+## **J. Xen**
+
+### 27. Viewsnap scripts
+
+#### 🟢 Semi-manual xen script
+*Made by javac_ & Razzie*
+- Recommended version
+- Manual jumpbug
+- Multiple jumpbug fps values available
+
+
+
+
+#### 🟣 Fully automatic xen script
+*Made by javac & hsci*
+- Inconsistent for most people
+This version is NOT faster, however it's easier to do because of automated jumpbug. **Only use this script if it's consistent for you!**
+
+
+
+
+
+
+
+
+
 
 ### 27. Jumpbugs
 
