@@ -2102,7 +2102,7 @@ bind 1 lcdbmove
   <summary>📋Usage📋</summary>
 
 Make sure the area marked with red on the image below isn't blocked by moving platforms when you boost\
-![]()
+![](Images/lcdb.png)
 Cook a nade, go into the left door corner, aim between "0" and "1", then press:\
 `2 12 12`\
 Hold crouch and optionally 4fps the door.
