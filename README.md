@@ -2189,7 +2189,7 @@ Instruction:
 #### 🟣 Fully automatic xen script
 *Made by javac & hsci*
 - Inconsistent for most people
-This version is NOT faster, however it's easier to do because of automated jumpbug. **Only use this script if it's consistent for you!**
+- This version is NOT faster, however it's easier to do because of automated jumpbug. **Only use this script if it's consistent for you!**
 <details>
   <summary>📜Click here to view the script📜</summary>
 
