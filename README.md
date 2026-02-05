@@ -2128,6 +2128,59 @@ Hold crouch and optionally 4fps the door.
 - Manual jumpbug
 - Multiple jumpbug fps values available
 
+<details>
+  <summary>📜Click here to view the script📜</summary>
+  
+```
+alias xenw xenw1
+alias xenw1 "pausable 1; +attack2; +duck; bxt_autopause 1; fps_max 97; cl_pitchup -35.83; cl_pitchdown 35.83; m_pitch 0; sensitivity 1819.54545; say xen_strat2; alias xenw xenw2"
+alias xenw2 "sensitivity 0; unpause; +attack2; w 10; -attack2; fps_max 97; w 50; -duck; bxt_autopause 0; xenw_sens; cl_pitchup 89; cl_pitchdown 89; m_pitch 0.022; xenw_fps; alias xenw xenw1"
+
+
+
+
+// fps values
+alias xenw_fps1 "fps_max 22.22222"
+alias xenw_fps2 "fps_max 33.33333"
+alias xenw_fps3 "fps_max 55.55555"
+alias xenw_fps4 "fps_max 66.66666"
+alias xenw_fps5 "fps_max 97"
+alias xenw_fps6 "fps_max 100"
+
+
+// settings
+alias xenw_sens "sensitivity 3"
+alias xenw_fps xenw_fps2
+
+
+// binds
+bind f1 xenw
+bind key +bxt_tas_jumpbug
+```
+</details>
+<details>
+  <summary>📋Usage📋</summary>
+
+Before doing the script, change `xenw_sens` and `xenw_fps` to your default sens and to the jumpbug fps you want to use respectively. Available fps values:\
+- `xenw_fps1` (`fps_max 22.22222`) - the most consistent one, but makes it harder to turn;\
+- `xenw_fps2` (`fps_max 33.33333`) - used by default. Probably the most balanced one (easier turn, great consistency);\
+- `xenw_fps3` (`fps_max 55.55555`);\
+- `xenw_fps4` (`fps_max 66.66666`);\
+- `xenw_fps5` (`fps_max 97`) - not recommended, seems to be very inconsistent;\
+- `xenw_fps6` (`fps_max 100`) - the easiest turn, may work better than other values for some people.\
+Also note that most likely you'll need to lower DPI during the strat to make viewsnap more comfortable.\
+
+Instruction:
+1. Start charging gauss right after shooting a hornet
+2. Press the script key any moment BEFORE the changelevel. then release `mouse2`. **DON'T HOLD `+DUCK`!!!**
+3. Lower DPI if needed (optimally to `50-100`), wait for the changelevel and move your mouse to the right by one pixel
+4. Press the script key again
+5. Do the rest manually (turn, do the second gauss boost, land and jumpbug)
+</details>
+
+[Video link](https://youtu.be/9wnG2ATKNvs)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/xen.sav)
+
 
 
 
@@ -2135,7 +2188,12 @@ Hold crouch and optionally 4fps the door.
 *Made by javac & hsci*
 - Inconsistent for most people
 This version is NOT faster, however it's easier to do because of automated jumpbug. **Only use this script if it's consistent for you!**
-
+<details>
+  <summary>📜Click here to view the script📜</summary>
+</details>
+<details>
+  <summary>📋Usage📋</summary>
+</details>
 
 
 
