@@ -2036,9 +2036,37 @@ Example: `bind key labo`
 *Made by javac_*
 - Faster
 - Less consistent
-- Uses slope for redirection
+- Uses slope to redirect player's velocity
 - 4fpses the door
+<details>
+  <summary>📜Click here to view the script📜</summary>
+  
+```
+alias lb1 "fps_max 100; sensitivity 0; cl_pitchdown 86.5; cl_pitchup -86.5; w 50; +attack; alias labo2 lb2; alias labo2mv +back" // 2
+alias lb2 "w 25; -attack; w 4; +duck; w 13; -back; weapon_9mmAR; w 35; cl_pitchdown 127; cl_pitchup -127; alias labo2mv +forward; alias labo2 lb3" // 12
+alias lb3 "w 15; +attack2; w 4; -attack2; alias labo2mv +moveleft; alias labo2 lb4" // 12
+alias lb4 "alias labo2; alias labo2mv; w 40; -moveleft; -forward; -duck; cl_pitchdown 89; cl_pitchup 89; w 20; fps_max 4; w; fps_max 100; labosens" // 12
 
+alias labo2 lb1
+alias labo2mv
+
+
+// settings
+alias labosens "sensitivity 3"
+
+// binds
+bind 2 labo2
+bind 1 labo2mv
+```
+</details>
+<details>
+  <summary>📋Usage📋</summary>
+
+Cook a nade, get next to the dark rectangle between green dots on the reactor side, aim at the right green pixels (yaw ~`290-300`), press: `2 12 12 12`, start holding `+duck` before the script ends.
+</details>
+
+[Video link](https://youtu.be/meCJNgjEubc)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/labo.sav)
 
 
 
