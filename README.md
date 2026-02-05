@@ -2229,11 +2229,11 @@ Before doing the script:
 - (Optional) set `r_norefresh` in the `xenv1` alias to 1 if you experience fps drops
 
 Instruction:
-0. You MUST start charging gauss as soon as possible to get a 999 ups boost right after the changelevel!!
-1. Press the `xenv_pre` key before the changelevel after entering the portal. **DON'T HOLD `+DUCK`, IT'LL BREAK THE SCRIPT!!**
-2. Lower DPI if needed (optimally to `50-100`), wait for the changelevel and move your mouse to the right by one pixel. Yaw should change to `274.976807`
-3. Press: `123 123 1`
-4. Change DPI back to default
+1. You MUST start charging gauss as soon as possible to get a 999 ups boost right after the changelevel!!
+2. Press the `xenv_pre` key before the changelevel after entering the portal. **DON'T HOLD `+DUCK`, IT'LL BREAK THE SCRIPT!!**
+3. Lower DPI if needed (optimally to `50-100`), wait for the changelevel and move your mouse to the right by one pixel. Yaw should change to `274.976807`
+4. Press: `123 123 1`
+5. Change DPI back to default
 </details>
 
 [Video link](https://youtu.be/vcLeRXTN_Sk)\
