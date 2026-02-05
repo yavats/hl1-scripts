@@ -2078,7 +2078,43 @@ Cook a nade, get next to the dark rectangle between green dots on the reactor si
 
 
 
-### 26. Smg Boost Scripts
+### 26. HL AST double boost
+*Made by javac_*
+
+<details>
+  <summary>📜Click here to view the script📜</summary>
+
+```
+alias lcdb1 "+attack; w 50; alias lcdbmove +forward; alias lcdb lcdb2" // 21
+alias lcdb2 "fps_max 100; w 60; cl_pitchdown 60; cl_pitchup -60; -attack; w; +jump; +duck; w 3; -forward; weapon_9mmAR; alias lcdbmove +moveright; alias lcdb lcdb3" // 21
+alias lcdb3 "-jump; w 50; +attack2; w 20; -attack2; cl_pitchup 89; cl_pitchdown 89; w 60; -moveright; -jump; -duck; alias lcdb; alias lcdbmove" // 2
+
+alias lcdb lcdb1
+alias lcdbmove
+
+
+// binds
+bind 2 lcdb
+bind 1 lcdbmove
+```
+</details>
+<details>
+  <summary>📋Usage📋</summary>
+
+Make sure the area marked with red on the image below isn't blocked by moving platforms when you boost\
+![]()
+Cook a nade, go into the left door corner, aim between "0" and "1", then press:\
+`2 12 12`\
+Hold crouch and optionally 4fps the door.
+</details>
+
+[Video link](https://youtu.be/56KFxahiANI)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/lcdb.sav)
+
+
+
+
+
 
 
 
