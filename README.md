@@ -2321,7 +2321,41 @@ Usage: Hold `w` and activate the script\
 
 
 
+### 31. Double nade boosts
 
+#### 🟢 Interloper DB v1
+*Made by [Parklez](https://github.com/parklez)*
+- Handgrenade first
+- Wall setup
+- Slower
+- A bit more consistent
+```
+alias in_dboost "fps_max 100;-forward;cl_pitchdown 89;cl_pitchup -89;-attack;w;+duck;+jump;weapon_9mmAR;w 45;cl_pitchdown 32;cl_pitchup -32;+attack2;w 10;-duck;-jump;-attack2;cl_pitchup 89;cl_pitchdown 89;force_centerview"
+```
+Example: `bind key in_dboost`\
+Usage: Cook a nade, get next to the wall, look perpendicular, boost.\
+[Video link](https://youtu.be/v3zxn_-jyec)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/in_dboost.sav)
+
+
+
+#### 🟡 Interloper DB v2
+*Made by javac_*
+- SMG nade first
+- No setup
+- Faster
+```
+alias in_dboost2 "fps_max 100; +duck; w 4; +jump; cl_pitchup -72; cl_pitchdown 72;w; +attack2; w; weapon_handgrenade; w 5; -jump; -duck; -attack2; cl_pitchdown -45; cl_pitchup 45; w; cl_pitchdown 89; cl_pitchup 89"
+```
+Example: `bind key in_dboost2`
+<details>
+  <summary>📋Usage📋</summary>
+
+Cook a nade, switch to the smg, aim around yaw 65-75 to avoid hitting the bridge above you, hold W for a while and press the script key. You have to be holding +duck when the nade releases, also try to not change the pitch as -45 gives you the best vertical boost.
+</details>
+
+[Video link](https://youtu.be/0623Z5jazVM)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/in_dboost.sav)
 
 
 
