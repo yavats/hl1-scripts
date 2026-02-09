@@ -2242,3 +2242,31 @@ Instruction:
 
 
 
+
+
+## **H. Gonarch's Lair**
+
+### 28. Simple saveload script
+*Made by javac_ & tmob*
+- Fastest saveload as highest allowed fps (100) is used
+- No timing at all
+```
+alias _saveload "alias gon_saveload; w 27; save quick; fps_max 100; load quick"
+```
+Example: `bind key "alias gon_saveload _saveload"`
+<details>
+  <summary>📋Usage📋</summary>
+
+This script utilizes the fact that `game.cfg` config is executed on every map/save load. That is, if you put an initially empty alias into this config file and only change its actual behaviour before the first Gonarch map, you can automatically do a saveload exactly 270 ms after changelevel. Normally it's nearly impossible to nail this timing consistently as its window is around +-5 ms.\
+Instruction:
+1. Create a `game.cfg` file in your game directory (most likely `valve_WON`) and put there an empty alias name (`gon_saveload`)
+2. Make a bind to change what the alias does: `bind key "alias gon_saveload _saveload"`
+3. Press the key from the bind above any moment before gonarch changelevel
+
+</details>
+
+
+### 29. Saveload + chase script
+
+
+
