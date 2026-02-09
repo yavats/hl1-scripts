@@ -2244,7 +2244,7 @@ Instruction:
 
 
 
-## **H. Gonarch's Lair**
+## **K. Gonarch's Lair**
 
 ### 28. 🟢 Simple saveload script
 *Made by javac_ & Tmob*
@@ -2301,3 +2301,27 @@ bind k gonmv
 
 [Video link](https://youtu.be/i7nRXv5z-_w)\
 [Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/gonarch.sav)
+
+
+
+
+
+## **L. Interloper**
+
+### 30. Nade boost (c4a1c)
+*Made by [Parklez](https://github.com/parklez)*
+```
+alias in_nade "fps_max 100;cl_pitchdown -35;cl_pitchup 35;+duck;+jump;w;-attack;w 15;-jump;-duck;cl_pitchup 89;cl_pitchdown 89;force_centerview"
+```
+Example: `bind key in_nade`\
+Usage: Hold `w` and activate the script\
+[Video link](https://youtu.be/kJUeQMNqbjs)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/in_nade.sav)
+
+
+
+
+
+
+
+
