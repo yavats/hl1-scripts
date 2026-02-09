@@ -2246,8 +2246,8 @@ Instruction:
 
 ## **H. Gonarch's Lair**
 
-### 28. Simple saveload script
-*Made by javac_ & tmob*
+### 28. 🟢 Simple saveload script
+*Made by javac_ & Tmob*
 - Fastest saveload as highest allowed fps (100) is used
 - No timing at all
 ```
@@ -2257,19 +2257,47 @@ Example: `bind key "alias gon_saveload _saveload"`
 <details>
   <summary>📋Usage📋</summary>
 
-This script utilizes the fact that `game.cfg` config is executed on every map/save load. That is, if you put an initially empty alias into this config file and only change its actual behaviour before the first Gonarch map, you can automatically do a saveload exactly 270 ms after changelevel. Normally it's nearly impossible to nail this timing consistently as its window is around +-5 ms.\
+This script utilizes the `game.cfg` config being executed on every map/save load. That is, if you put an initially empty alias into this config file and only change its actual behaviour before the first Gonarch map, you can automatically do a saveload exactly 270 ms after changelevel. Normally that would be nearly impossible to nail this timing at 100 fps consistently as its window is around +-5 ms.\
 Instruction:
 1. Create a `game.cfg` file in your game directory (most likely `valve_WON`) and put there an empty alias name (`gon_saveload`)
 2. Make a bind to change what the alias does: `bind key "alias gon_saveload _saveload"`
 3. Press the key from the bind above any moment before gonarch changelevel
-
 </details>
 
 [Video link](https://google.com)\
 [Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/gonarch.sav)
 
 
-### 29. Saveload + chase script
+### 29. 🟡 Saveload + chase script
+*Made by javac_*
+- Uses 11 fps
+- Precise activation timing
+- Triggers Gonarch for chasing strat
 
+<details>
+  <summary>📜Click here to view the script📜</summary>
 
+```
+alias gon1 "fps_max 11; w 15; save quick; fps_max 100; load quick; w 18; alias gonmv +forward; alias gon gon2" // l
+alias gon2 "w 300; weapon_gauss; w 100; alias gonmv +right; alias gon gon3" // k l
+alias gon3 "w 2; -right; w 30; +attack2; w 16; +jump; w 45; cl_pitchup 180; cl_pitchdown -180; -attack2; w; cl_pitchup 89; cl_pitchdown 89; force_centerview; w 48; -jump; w 50; -forward; weapon_9mmAR; save quick; alias gonmv; alias gon" // k l
 
+alias gon gon1
+alias gonmv
+
+// binds
+bind key "fps_max 11"
+bind l gon
+bind k gonmv
+```
+</details>
+<details>
+  <summary>📋Usage📋</summary>
+
+1. Change fps to 11 before the changelevel, set yaw to `185.5x`
+2. Press `l` as soon as you see the "loading..." text, then press `kl kl`
+3. Hold `s`   
+</details>
+
+[Video link](https://youtu.be/i7nRXv5z-_w)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/gonarch.sav)
