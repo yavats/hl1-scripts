@@ -2265,6 +2265,9 @@ Instruction:
 
 </details>
 
+[Video link](https://google.com)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/gonarch.sav)
+
 
 ### 29. Saveload + chase script
 
