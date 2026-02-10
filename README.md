@@ -30,7 +30,24 @@ WIP
     - [Barrel bridge nade](#-barrel-bridge-nade)
     - [Maxam's nade route boost v1](#-maxams-nade-route-boost-v1)
     - [Maxam's nade route boost v1](#-maxams-nade-route-boost-v1)
-
+    - [Slope nade boost](#-slope-nade-boost)
+    - [Fire button room boost v1](#-fire-button-room-boost-v1)
+    - [Fire button room boost v2](#-fire-button-room-boost-v2)
+  - [HL21 box script](#10--hl21-box-script)
+- [Power Up](#d-power-up)
+  - [PU CLD scripts](#11-pu-cld-scripts)
+    - [Power Up A](#-power-up-a)
+    - [Power Up B](#-power-up-b)
+    - [Power Up D](#-power-up-d)
+    - [Power Up F](#-power-up-f)
+- [Apprehension](#e-apprehension)
+  - [Obboducktap script](#12-obboducktap-script)
+  - [Captured scripts](#13--captured-scripts)
+    - [Captured v1](#-captured-v1)
+    - [Captured v1.2](#-captured-v12)
+    - [Captured v2](#-captured-v2)
+   
+    - 
   
 ## A. **Basic scripts**
 ### 1. Usespam script
