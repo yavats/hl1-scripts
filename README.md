@@ -29,7 +29,7 @@ WIP
   - [Nade boost scripts](#9-nade-boost-scripts)
     - [Barrel bridge nade](#-barrel-bridge-nade)
     - [Maxam's nade route boost v1](#-maxams-nade-route-boost-v1)
-    - [Maxam's nade route boost v1](#-maxams-nade-route-boost-v1)
+    - [Maxam's nade route boost v2](#-maxams-nade-route-boost-v2)
     - [Slope nade boost](#-slope-nade-boost)
     - [Fire button room boost v1](#-fire-button-room-boost-v1)
     - [Fire button room boost v2](#-fire-button-room-boost-v2)
