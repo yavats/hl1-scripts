@@ -2358,13 +2358,15 @@ Cook a nade, switch to the smg, aim around yaw 65-75 to avoid hitting the bridge
 [Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/in_dboost.sav)
 
 
+
 ### 32. Satchel boost
 *Made by Kisimov*
+MAKE SURE YOUR SATCHELS ARE UNBUGGED!!!!!!!!
 ```
 alias satch "fps_max 100; cl_pitchup -60.999; +attack; w; -attack; cl_pitchup 89; force_centerview; w 100; +bxt_tas_ducktap; w; -bxt_tas_ducktap; w; +duck; w 33; +attack; w 2; -duck; -attack; -attack2; weapon_gauss; +attack2; w 100; cl_pitchup 180; cl_pitchdown -180; -attack2; w; cl_pitchup 89; cl_pitchdown 89; force_centerview"
 ```
 Example: `bind key satch`\
-Usage: Switch to satchels, start holding `w` during teleportation, press the script key after the changelevel (BUT NOT IMMEDIATELY!)\
+Usage: Switch to satchels, start holding `w` during teleportation, press the script key after the changelevel (but not immediately)\
 [Video link](https://youtu.be/S9d3n2OvbUY)\
 [Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/satch.sav)
 
