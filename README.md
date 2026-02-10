@@ -164,7 +164,7 @@ Example: `bind key tauswitch`\
 Usage: press the script key to change the `mouse2` bind to `+tau`, press again to revert the default bind (`+attack2`) back
 
 
-### 5. Object Boost Scripts
+### 5. Object boost scripts
 #### 2000 UPS
 ```
 alias obbo2000 "+use;w 11;-use;+jump;w;-jump"
