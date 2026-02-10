@@ -68,10 +68,43 @@ WIP
   - [Pre-IHD nade boost](#18-pre-ihd-nade-boost)
   - [Simple IHD forward boost](#19-simple-ihd-forward-boost)
   - [Gauss door setup script](#20-gauss-door-setup-script)
-    
-  
-   
+- [Forget About Freeman](#h-forget-about-freeman)
+  - [FAF CLD scripts](#21-faf-cld-scripts)
+    - [Forget About Freeman A](#-forget-about-freeman-a)
+    - [Forget About Freeman C](#-forget-about-freeman-c)
+    - [Forget About Freeman D](#-forget-about-freeman-d)
+    - [Forget About Freeman E](#-forget-about-freeman-e)
+    - [Forget About Freeman F](#-forget-about-freeman-f)
+- [Lambda Core](#i-lambda-core)
+  - [Door frame nade boost](#22-door-frame-nade-boost)
+  - [Water clipping nade scripts](#23-water-clipping-nade-scripts)
+    - [Simple nade clipping](#-simple-nade-clipping)
+    - [Advanced nade clipping](#-advanced-nade-clipping)
+  - [Water clipping gauss scripts](#24-water-clipping-gauss-scripts)
+    - [Waterclip gauss script v1](#-waterclip-gauss-script-v1)
+    - [Waterclip gauss script v2](#-waterclip-gauss-script-v2)
+  - [Water boost scripts](#25-water-boost-scripts)
+    - [Simple water double boost](#-simple-water-double-boost)
+    - [Advanced water double boost](#-advanced-water-double-boost)
+  - [HL AST double boost](#26-hl-ast-double-boost)
+- [Xen](#j-xen)
+  - [Viewsnap scripts](#27-viewsnap-scripts)
+    - [Semi-manual xen script](#-semi-manual-xen-script)
+    - [Fully automatic xen script](#-fully-automatic-xen-script)
+- [Gonarch's Lair](#k-gonarchs-lair)
+  - [Simple saveload script](#28--simple-saveload-script)
+  - [Saveload + chase script](#29--saveload-chase-script)
+- [Interloper](#l-interloper)
+  - [Nade boost (c4a1c)](#30-nade-boost-c4a1c)
+  - [Double nade boosts](#31-double-nade-boosts)
+    - [Interloper DB v1](#-interloper-db-v1)
+    - [Interloper DB v2](#-interloper-db-v2)
+  - [Satchel boost](#32-satchel-boost)
 
+
+
+
+  
 
 
   
