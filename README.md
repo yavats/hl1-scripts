@@ -46,8 +46,34 @@ WIP
     - [Captured v1](#-captured-v1)
     - [Captured v1.2](#-captured-v12)
     - [Captured v2](#-captured-v2)
+- [Residue Processing](#f-residue-processing)
+    - [Meatgrab scripts](#14--meatgrab-scripts)
+      - [Simple meatgrab](#-simple-meatgrab)
+      - [Advanced meatgrab](#-advanced-meatgrab)
+      - [2-key meatgrab v1](#-2-key-meatgrab-v1)
+      - [2-key meatgrab v2](#-2-key-meatgrab-v2)
+    - [RP clipping scripts](#15--rp-clipping-scripts)
+      - [RP clipping 80 hp ver.](#-rp-clipping-80-hp-ver)
+      - [RP clipping 75 hp ver.](#-rp-clipping-75-hp-ver)
+- [Surface Tension](#g-surface-tension)
+  - [ST CLD scripts](#16-st-cld-scripts)
+    - [ST CLD v1](#-st-cld-v1)
+    - [ST CLD v2](#-st-cld-v2)
+  - [Pipe2pipe scripts](#17-pipe2pipe-scripts)
+    - [Pipe2pipe script v1](#-pipe2pipe-script-v1)
+    - [Pipe2pipe script v2](#-pipe2pipe-script-v2)
+    - [Pipe2pipe script v3](#-pipe2pipe-script-v3)
+    - [Pipe2pipe script v4](#-pipe2pipe-script-v4)
+    - [Pipe2pipe script v4 2 key edition](#-pipe2pipe-script-v4-2-key-edition)
+  - [Pre-IHD nade boost](#18-pre-ihd-nade-boost)
+  - [Simple IHD forward boost](#19-simple-ihd-forward-boost)
+  - [Gauss door setup script](#20-gauss-door-setup-script)
+    
+  
    
-    - 
+
+
+
   
 ## A. **Basic scripts**
 ### 1. Usespam script
