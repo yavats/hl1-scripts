@@ -20,7 +20,7 @@ WIP
   - [Elevator reverse scripts](#7-elevator-reverse-scripts)
     - [Elevator reverse script v1](#-elevator-reverse-script-v1)
     - [Elevator reverse script v2](#-elevator-reverse-script-v2) 
-  - [Test Chamber scripts](#8-testchamber-scripts)
+  - [Test Chamber scripts](#8-test-chamber-scripts)
     - [Testchamber B](#-testchamber-b)
     - [Testchamber N](#-testchamber-n)
     - [Testchamber D](#-testchamber-d)
