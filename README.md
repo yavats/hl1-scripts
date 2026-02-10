@@ -11,46 +11,25 @@ WIP
     - [4 fps script](#4-fps-script)
   - [Gauss scripts](#4-gauss-scripts)
     - [180° Gauss boost](#180-gauss-boost)
+    - [Alternative gauss boost func (c4a1d Interloper selfgausss)](#alternative-gauss-boost-func-c4a1d-interloper-selfgauss)
     - [Slowgauss script](#slowgauss-script)
     - [Gauss script switcher](#gauss-script-switcher)
   - [Object boost scripts](#5-object-boost-scripts)
+  - [Wait table](#6-wait-table)
 - [Anomalous Materials](#b-anomalous-materials)
-  - [Testchamber scripts](#7-testchamber-scripts)
+  - [Elevator reverse scripts](#7-elevator-reverse-scripts)
+    - [Elevator reverse script v1](#-elevator-reverse-script-v1)
+    - [Elevator reverse script v2](#-elevator-reverse-script-v2) 
+  - [Test Chamber scripts](#8-testchamber-scripts)
     - [Testchamber B](#-testchamber-b)
     - [Testchamber N](#-testchamber-n)
     - [Testchamber D](#-testchamber-d)
     - [Testchamber D v2](#-testchamber-d-v2)
-- [Unforeseen Consequences](c-unforeseen-consequences)
-  - [Object Boost Script](#8-object-boost-script)
-- [Office Complex](#d-office-complex)
-  - [Object Boost Script](#9-object-boost-script)
-- [Blast Pit](#e-blast-pit)
-  - [Jumpbug Scripts](#10-jumpbugs)
-  - [Nade Boost Scripts](#11-nade-boost-scripts)
-  - [Hl21 Box Script](#12-hl21-box-script)
-- [Power Up](#f-power-up)
-  - [ChangeLevel Delay Scripts](#13-changelevel-delay-scripts)
-- [On A Rail](#g-on-a-rail)
-  - [Jumpbug Scripts](#14-jumpbugs)
-  - [Object Boost Script](#15-object-boost-script-forward)
-- [Apprehension](#h-apprehension)
-  - [Object Boost Script](#16-object-boost-script-bridge)
-- [Residue Processing](#j-residue-processing)
-  - [Meatgrab Script](#17-meatgrab-script)
-  - [RPClip Script](#18-rpclip-script)
-- [Surface Tension](#k-surface-tension)
-  - [CLD Scripts](#19-cld-scripts)
-  - [P2P Scripts](#20-hl21-p2p-scripts)
-  - [Slowgauss Script](#21-slowgauss-after-ihd-door)
-  - [Nadeboost](#22-nadeboost-for-new-st-route)
-- [Forget About Freeman](#l-forget-about-freeman)
-  - [Chairboost Script](#23-chairboost-script)
-  - [CLD Scripts](#24-cld-scripts)
-- [Lambda Core](#m-lambda-core)
-  - [Watergauss Clip Script](#25-watergauss-clip-script)
-  - [Smg Boost Scripts](#26-smg-boost-scripts)
-- [Xen](#n-xen)
-  - [Jumpbug + Viewangle](#27-jumpbugs)
+- [Blast Pit](#c-blast-pit)
+  - [Nade boost scripts](#9-nade-boost-scripts)
+    - [Barrel bridge nade](#-barrel-bridge-nade)
+    - [Maxam's nade route boost v1](#-maxams-nade-route-boost-v1)
+    - [Maxam's nade route boost v1](#-maxams-nade-route-boost-v1)
 
   
 ## A. **Basic scripts**
@@ -2360,7 +2339,7 @@ Cook a nade, switch to the smg, aim around yaw 65-75 to avoid hitting the bridge
 
 
 ### 32. Satchel boost
-*Made by Kisimov*
+*Made by Kisimov*\
 MAKE SURE YOUR SATCHELS ARE UNBUGGED!!!!!!!!
 ```
 alias satch "fps_max 100; cl_pitchup -60.999; +attack; w; -attack; cl_pitchup 89; force_centerview; w 100; +bxt_tas_ducktap; w; -bxt_tas_ducktap; w; +duck; w 33; +attack; w 2; -duck; -attack; -attack2; weapon_gauss; +attack2; w 100; cl_pitchup 180; cl_pitchdown -180; -attack2; w; cl_pitchup 89; cl_pitchdown 89; force_centerview"
