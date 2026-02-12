@@ -1595,7 +1595,7 @@ bind - p2pre
 alias stboost "+duck; w 18; cl_pitchup -96; cl_pitchdown -180; w; +attack2; w; -attack2; w 2; -duck; cl_pitchup 89; cl_pitchdown 89; force_centerview; weapon_gauss"
 ```
 Example: `bind key stboost`\
-Usage: hold +jump and press the script key on the slope. Having at least 1100 ups is recommended\
+Usage: hold `+jump` and press the script key on the slope. Having at least 1100 ups is recommended\
 [Video link](https://youtu.be/SCDMUGy1FSA)\
 [Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/stboost.sav)
 
@@ -1796,7 +1796,7 @@ If you don't have enough time to do the script, increase waits in the `w 100` or
 alias lcboost "fps_max 100; cl_pitchdown -20; cl_pitchup 20; +duck; +jump; w 5; -attack; w 15; -jump; cl_pitchup 89; cl_pitchdown 89; w 30; -duck"
 ```
 Example: `bind key lcboost`\
-Usage: Cook a nade, open the door, aim slightly to the right and activate the script right before you pass the doorframe\
+Usage: cook a nade, open the door, aim slightly to the right and activate the script right before you pass the doorframe\
 [Video link](https://youtu.be/BdP288HnmgA)\
 [Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/lcboost.sav)
 
@@ -1811,7 +1811,7 @@ Usage: Cook a nade, open the door, aim slightly to the right and activate the sc
 alias lc_pipe_skip "-forward; -moveright; -moveleft; -back; -jump; -duck; cl_pitchup -170; cl_pitchdown 170; fps_max 19.99; +duck; w; -duck; w; +duck; -attack; w 5; -duck; fps_max 100; cl_pitchup -12; cl_pitchdown 12; w; cl_pitchup 89; cl_pitchdown 89" 
 ```
 Example: `bind key lc_pipe_skip`\
-Usage: Cook a nade, drop into the water, hold `w`, look perpendicular to the pipe, start holding `+duck` and activate the script. Alternatively, you can hold `+duck` and tap `+jump` before pressing the script key\
+Usage: cook a nade, drop into the water, hold `w`, look perpendicular to the pipe, start holding `+duck` and activate the script. Alternatively, you can hold `+duck` and tap `+jump` before pressing the script key\
 [Video link](https://youtu.be/-IsroM843jU)\
 [Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/lc_clipping.sav)
 
@@ -2315,7 +2315,7 @@ bind k gonmv
 alias in_nade "fps_max 100;cl_pitchdown -35;cl_pitchup 35;+duck;+jump;w;-attack;w 15;-jump;-duck;cl_pitchup 89;cl_pitchdown 89;force_centerview"
 ```
 Example: `bind key in_nade`\
-Usage: Hold `w` and activate the script\
+Usage: hold `w` and activate the script\
 [Video link](https://youtu.be/kJUeQMNqbjs)\
 [Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/in_nade.sav)
 
@@ -2334,7 +2334,7 @@ Usage: Hold `w` and activate the script\
 alias in_dboost "fps_max 100;-forward;cl_pitchdown 89;cl_pitchup -89;-attack;w;+duck;+jump;weapon_9mmAR;w 45;cl_pitchdown 32;cl_pitchup -32;+attack2;w 10;-duck;-jump;-attack2;cl_pitchup 89;cl_pitchdown 89;force_centerview"
 ```
 Example: `bind key in_dboost`\
-Usage: Cook a nade, get next to the wall, look perpendicular, boost.\
+Usage: cook a nade, get next to the wall, look perpendicular, boost.\
 [Video link](https://youtu.be/v3zxn_-jyec)\
 [Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/in_dboost.sav)
 
@@ -2367,7 +2367,7 @@ MAKE SURE YOUR SATCHELS ARE UNBUGGED!!!!!!!!
 alias satch "fps_max 100; cl_pitchup -60.999; +attack; w; -attack; cl_pitchup 89; force_centerview; w 100; +bxt_tas_ducktap; w; -bxt_tas_ducktap; w; +duck; w 33; +attack; w 2; -duck; -attack; -attack2; weapon_gauss; +attack2; w 100; cl_pitchup 180; cl_pitchdown -180; -attack2; w; cl_pitchup 89; cl_pitchdown 89; force_centerview"
 ```
 Example: `bind key satch`\
-Usage: Switch to satchels, start holding `w` during teleportation, press the script key after the changelevel (but not immediately)\
+Usage: switch to satchels, start holding `w` during teleportation, press the script key after the changelevel (but not immediately)\
 [Video link](https://youtu.be/S9d3n2OvbUY)\
 [Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/satch.sav)
 
