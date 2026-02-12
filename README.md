@@ -649,14 +649,14 @@ Usage: walk forward and activate the script\
 
 #### 💣 Maxam's nade route boost v2
 - Requiremenets: 53 hp, 20 armor
-- More consistent boost than [v1](#maxams-nade-route-boost-v1)
+- More consistent boost than [v1](#-maxams-nade-route-boost-v1)
 - Makes an autosave midair as a backup
 ```
 alias bp_nade3 "fps_max 100; cl_pitchdown 15;cl_pitchup -15;+duck;+jump;w;-attack;w 15;-jump;-duck;cl_pitchup 89;cl_pitchdown 89;force_centerview; save autosave"
 ```
 Example: `bind key bp_nade3`\
 Usage: walk forward and activate the script\
-[Video link](https://youtu.be/DkA5ik4JRn4) (same as [v1](#maxams-nade-route-boost-v1))\
+[Video link](https://youtu.be/DkA5ik4JRn4) (same as [v1](#-maxams-nade-route-boost-v1))\
 [Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/bp_nade2.sav)
 
 
@@ -709,7 +709,7 @@ Usage: cook a nade before the changelevel, start jumping as soon as you touch th
 
 ### 10. 📦 HL21 box script
 *made by javac_*\
-A HL21-like script, which consists of 2 parts. The first one involves a CLD and object boost, the second one makes a turn and blows up the explosive crates. It keeps all your health so you can use it for something else (for example, [this boost](#-maxams-route-nade-boost-v1) ).
+A HL21-like script, which consists of 2 parts. The first one involves a CLD and object boost, the second one makes a turn and blows up the explosive crates. It keeps all your health so you can use it for something else (for example, [this boost](#-maxams-nade-route-boost-v1) ).
 
 <details>
   <summary>📜Click here to view the script📜</summary>
@@ -919,7 +919,7 @@ Increase waits in the `w 300` command if you don't have enough time (every `w 10
 alias app_obbo "+use; w 9; -use; w; +duck; w 8; -duck"
 ```
 Example: `bind key app_obbo`\
-Usage: drop down, hold A, press the script key. Don't stay too close to the box\
+Usage: drop down, hold `a`, press the script key. Don't stay too close to the box\
 [Video link](https://youtu.be/Vu7-yZZ5hr8)\
 [Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/app_obbo.sav)
 
@@ -1754,7 +1754,7 @@ If you don't have enough time to do the script, increase waits in the `w 350` co
 
 
 #### 🔴 Forget About Freeman F
-*[FAF E](-forget-about-freeman-e) ladderstrafe ver.*
+*[FAF E](#-forget-about-freeman-e) ladderstrafe ver.*
 - Crowbar + smg nade boost version
 - Fastest one
 - Consistent[*](https://www.twitch.tv/gratedastroex/clip/EphemeralRamshackleNuggetsDeIlluminati-_-x35L64CdtDHa8d) if no snarks have spawned
