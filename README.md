@@ -1610,7 +1610,7 @@ alias ihd1 "w 30; alias ihd ihd2"
 alias ihd2 "w 8; cl_pitchup 180; cl_pitchdown -180; -attack2; w; cl_pitchup 89; cl_pitchdown 89; force_centerview; w; -forward; alias ihd ihd1" 
 ```
 Example: `bind key ihd`\
-Usage: Charge the gauss, press `key w key` (`key` is the script key)\
+Usage: charge the gauss, press `key w key` (`key` is the script key)\
 [Video link](https://youtu.be/kE_0KCV0J3s)\
 [Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/ihd.sav)
 
