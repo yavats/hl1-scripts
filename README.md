@@ -2205,7 +2205,7 @@ alias xenv3 "w 13; -left; -moveleft; +jump; +bxt_tas_jumpbug; bxt_autopause 0; w
 
 
 // settings
-alias xenv_sens "sensitivity 2.37"
+alias xenv_sens "sensitivity 3"
 
 // binds
 bind f1 xenv_pre
