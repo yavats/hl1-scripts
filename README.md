@@ -884,7 +884,7 @@ Increase waits in the `w 300` command if you don't have enough time (every `w 10
 - With object boost (1800 UPS)
 - Makes an autosave when activated
 ```
-alias puskip_f "fps_max 100; save autosave;weapon_shotgun;-jump;-moveright;-moveleft;w 300;+use;w 7;-use;+jump;w;-jump;+attack2;w;-attack2;+duck;w 37;-duck;weapon_tripmine"
+alias puskip_f "fps_max 100;save autosave;weapon_shotgun;-bxt_tas_ducktap;-jump;-moveright;-moveleft;w 270;+use;fps_max 100;w 8;-use;+jump;wait;-jump;+attack2;wait;-attack2;+duck;w 34;-duck;weapon_tripmine"
 ```
 Example: `bind key puskip_f`
 <details>
