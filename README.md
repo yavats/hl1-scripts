@@ -504,6 +504,7 @@ bind - testchamber_reset
   
 ```
 alias cart preboost1
+alias mcart
 alias pausespam "w; unpause; w; setpause"
 alias longpausespam "pausespam; pausespam; pausespam; pausespam; pausespam; pausespam; pausespam"
 alias testchamber_reset "alias cart preboost1; alias mcart; say tc_script_reset"
@@ -552,7 +553,7 @@ bind - testchamber_reset
   
 ```
 alias testchamber "tc1"
-alias move "+moveright"
+alias move
 alias testchamber_reset "alias testchamber tc1; alias move; say tc_script_reset"
 
 alias tc1 "w 160;alias testchamber tc2;alias move +moveright" //0+9
@@ -598,7 +599,7 @@ bind - testchamber_reset
   
 ```
 alias testchamber "tc1"
-alias move "+moveright"
+alias move
 alias testchamber_reset "alias testchamber tc1; alias move; say tc_script_reset"
 
 alias tc1 "w 160;alias testchamber tc2;alias move +moveright" //0+9
