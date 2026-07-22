@@ -56,14 +56,18 @@ WIP
 
   
 ## X. **Quick Configs**
+
 ### *HIGHLY RECOMMENDED FOR SETTING UP RUNNING FOR ANYONE!*
 
-This part is premade configs by hsci so you do not have to spend long long times to grab each script one by one and creating chapter configs.
+#### This part is premade configs by hsci making it way easier to setup the game ready for scripted runs.
+#### No need to search scripts for long hours and making configs. Simple easy editable & rebindable configs.
+
 
 - Premade configs with almost every script added into it
 - Uses chapter config setup 
 - Configs are categorized, easy customizable/editable
 - Video guide will be added for any information.
+
 
  Link: [quick setup.zip](https://github.com/user-attachments/files/30247734/quick.setup.zip)
 
