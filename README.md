@@ -59,7 +59,7 @@ WIP
 
 ### *HIGHLY RECOMMENDED FOR SETTING UP RUNNING FOR ANYONE!*
 
-#### This part is premade configs by hsci making it way easier to setup the game ready for scripted runs.
+#### This part is premade configs by hsci, making it way easier to set the game up ready for scripted runs.
 #### No need to search scripts for long hours and making configs. Simple easy editable & rebindable configs.
 
 
