@@ -68,7 +68,7 @@ WIP
 - Configs are categorized, easy customizable/editable
 - Video guide will be added for any information.
 
-
+#### ⚠️All the scripts on this config and even more stuff is under this part of the github. You can find every script on this github and on the video guide it will be shown how you can replace or add new scripts to the configs.⚠️
  Link: [quick setup.zip](https://github.com/user-attachments/files/30247734/quick.setup.zip)
 
 
