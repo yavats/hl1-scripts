@@ -2283,9 +2283,10 @@ Example: `bind key "alias gon_saveload _saveload"`
 
 This script utilizes the `game.cfg` config being executed on every map/save load. That is, if you put an initially empty alias into this config file and only change its actual behaviour before the first Gonarch map, you can automatically do a saveload exactly 270 ms after changelevel. Normally that would be nearly impossible to nail this timing at 100 fps consistently as its window is around +-5 ms.\
 Instruction:
-1. Create a `game.cfg` file in your game directory (most likely `valve_WON`) and type `gon_saveload` there
-2. Make a bind to change what the alias does: `bind key "alias gon_saveload _saveload"`
-3. Press the key from the bind above any moment before gonarch changelevel
+1. Add alias _saveload from above to your config
+2. Create a `game.cfg` file in your game directory (most likely `valve_WON`) and type `gon_saveload` there
+3. Make a bind to change what the alias does: `bind key "alias gon_saveload _saveload"`
+4. Press the key from the bind above any moment before gonarch changelevel
 </details>
 
 [Video link](https://google.com)\
