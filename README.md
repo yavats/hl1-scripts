@@ -2008,11 +2008,12 @@ alias wlc100 "w;alias @wlc wlc101;bxt_append _wlc"
 alias wlc101 "w;alias @wlc wlc102;bxt_append _wlc"
 alias wlc102 "-attack2;+attack;fps_max 20;alias @wlc; alias -wlc wlc_release"
 
-alias wlc_release "-forward; cl_pitchup -180; cl_pitchdown 180; w; -attack; w; cl_pitchup 89; cl_pitchdown 89; force_centerview; w; fps_max 100; weapon_handgrenade; alias -wlc"
-alias wlc_cancel "-attack; -duck"
+alias wlc "alias _wlc @wlc; wlc1"
+alias wlc_cancel "-attack; -duck; fps_max 100; alias -wlc; alias +wlc wlc; alias _wlc"
+alias wlc_release "-forward; cl_pitchup -180; cl_pitchdown 180; w; -attack; w; cl_pitchup 89; cl_pitchdown 89; force_centerview; w; fps_max 100; weapon_handgrenade; alias -wlc; alias +wlc wlc; alias _wlc"
 
-alias +wlc "alias _wlc @wlc;wlc1"
-alias -wlc "wlc_cancel"
+alias +wlc "wlc"
+alias -wlc
 
 
 // bind
