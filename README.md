@@ -190,9 +190,9 @@ Example: `bind key obbo1000`
 alias obbo800 "+use;w 7;-use;+jump;w;-jump"
 ```
 Example: `bind key obbo800`
-#### Forward boost (~1300-1400 UPS)
+#### Forward boost (~1500-1700 UPS)
 ```
-alias obboshoot "+use;w 10;-use;+attack2;+jump;w;-attack2;-jump"
+alias obboshoot "+use;w 10;-use;+jump;w;-jump;+attack;w;-attack"
 ```
 Example: `bind key obboshoot`
 
