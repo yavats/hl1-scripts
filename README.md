@@ -1431,7 +1431,7 @@ bind - p2pre
 
 ```
 alias p2ptau "cl_pitchup 180;cl_pitchdown -180;-attack2;w;cl_pitchup 89;cl_pitchdown 89;force_centerview"
-alias p2pre "say reset_script; p2pbind1; p2pbind2; p2pbind3; -forward; -moveleft; -moveright; -right; -left; -back; -duck; -jump; fps_max 100; cl_pitchdown 89; cl_pitchup 89; p2psens; alias p2p p2p1"
+alias p2pre "say reset_script; p2pbind1; p2pbind2; p2pbind3; -forward; -moveleft; -moveright; -right; -left; -back; -duck; -jump; fps_max 100; cl_pitchdown 89; cl_pitchup 89; p2psens; alias p2p p2p1; alias p2pmv1; alias p2pmv2"
 
 alias p2p1 "fps_max 100; bxt_disable_autosave 1; save autosave; -moveright; -forward; -back; -moveleft; sensitivity 0; p2pdelay; alias p2pmv1 +moveleft; alias p2pmv2 +forward; alias p2p p2p2" // 3 12
 alias p2p2 "+attack2; w 52; -forward; -moveleft; +jump; alias p2pmv1; alias p2pmv2 +moveright; alias p2p p2p3" // 3 2
@@ -1529,7 +1529,7 @@ bind - p2pre
 
 ```
 alias p2ptau "cl_pitchup 180;cl_pitchdown -180;-attack2;w;cl_pitchup 89;cl_pitchdown 89;force_centerview"
-alias p2pre "say reset_script; p2pbind1; p2pbind2; -forward; -moveleft; -moveright; -right; -left; -back; -duck; -jump; fps_max 100; cl_pitchdown 89; cl_pitchup 89; p2psens; alias p2p p2p1"
+alias p2pre "say reset_script; p2pbind1; p2pbind2; -forward; -moveleft; -moveright; -right; -left; -back; -duck; -jump; fps_max 100; cl_pitchdown 89; cl_pitchup 89; p2psens; alias p2p p2p1; alias p2pmv"
 
 alias p2p1 "fps_max 100; bxt_disable_autosave 1; save autosave; -moveright; -forward; -back; -moveleft; sensitivity 0; p2pdelay; alias p2pmv +forward; alias p2p p2p2" // 2
 alias p2p2 "alias p2pmv +moveleft; alias p2p p2p3" // 1 2
@@ -1557,7 +1557,7 @@ alias p2p23 "w 8; -right; w; alias p2p p2p24" // 1 2
 alias p2p24 "w 8; +duck; -right; fps_max 20; w 12; -moveright; -duck; -jump; fps_max 100; alias p2p; alias p2pmv; p2psens; bxt_disable_autosave 0; defbind1; defbind2" // 1 2
 
 alias p2p p2p1
-
+alias p2pmv
 
 
 
