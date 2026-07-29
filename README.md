@@ -43,11 +43,12 @@ WIP
   - [Viewsnap scripts](#27-viewsnap-scripts)
 - [Gonarch's Lair](#k-gonarchs-lair)
   - [Simple saveload script](#28--simple-saveload-script)
-  - [Saveload + chase script](#29--saveload-chase-script)
+  - [Saveload + chase script](#29--saveload--chase-script)
+  - [Saveload + chase script v2](#30--saveload--chase-script-v2)
 - [Interloper](#l-interloper)
-  - [Nade boost (c4a1c)](#30-nade-boost-c4a1c)
-  - [Double nade boosts](#31-double-nade-boosts)
-  - [Satchel boost](#32-satchel-boost)
+  - [Nade boost (c4a1c)](#31-nade-boost-c4a1c)
+  - [Double nade boosts](#32-double-nade-boosts)
+  - [Satchel boost](#33-satchel-boost)
 
 
 
@@ -2272,7 +2273,7 @@ Instruction:
 
 ### 28. 🟢 Simple saveload script
 *Made by javac_ & Tmob*
-- Fastest saveload as highest allowed fps (100) is used
+- Fastest saveload as the highest allowed fps (100) is used
 - No timing at all
 ```
 alias _saveload "alias gon_saveload; w 27; save quick; fps_max 100; load quick"
@@ -2289,14 +2290,15 @@ Instruction:
 4. Press the key from the bind above any moment before gonarch changelevel
 </details>
 
-[Video link](https://google.com)\
+[Video link (TODO)](https://google.com)\
 [Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/gonarch.sav)
 
 
-### 29. 🟡 Saveload + chase script
+### 29. 🟣 Saveload + chase script
 *Made by javac_*
+- Not recommended since there is a much better [game.cfg version](https://github.com/yavats/hl1-scripts#30--saveload--chase-script-v2)
 - Uses 11 fps
-- Precise activation timing
+- Extremely precise activation timing
 - Triggers Gonarch for chasing strat
 
 <details>
@@ -2320,7 +2322,7 @@ bind k gonmv
   <summary>📋Usage📋</summary>
 
 1. Change fps to 11 before the changelevel, set yaw to `185.5x`
-2. Press `l` as soon as you see the "loading..." text, then press `kl kl`
+2. Press `l` IMMEDIATELY as you see the "loading..." text, then press `kl kl`
 3. Hold `s`   
 </details>
 
@@ -2328,12 +2330,49 @@ bind k gonmv
 [Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/gonarch.sav)
 
 
+### 30. 🟡 Saveload + chase script v2
+*Made by javac_*
+- A combination of [Simple saveload script](https://github.com/yavats/hl1-scripts#28--simple-saveload-script) and [Saveload + chase script](https://github.com/yavats/hl1-scripts#29--saveload--chase-script)
+- Fastest saveload as the highest allowed fps (100) is used
+- No saveload timing
+- Triggers Gonarch for chasing strat
 
+<details>
+  <summary>📜Click here to view the script📜</summary>
+
+```
+alias _saveload2 "alias gon_saveload; w 27; save quick; fps_max 100; load quick; w 25; speak fvox/beep; say GO; w 85; alias gonch gonch1; alias gonchmv +forward"
+
+alias gonch1 "weapon_gauss; w 30; +attack2; w 80; +jump; w 45; cl_pitchup 180; cl_pitchdown -180; -attack2; w; cl_pitchup 89; cl_pitchdown 89; force_centerview; w 150; -jump; w 80; alias gonchmv +right; alias gonch gonch2"
+alias gonch2 "w 5; -right; w 95; -forward; weapon_9mmAR; save quick; alias gonch; alias gonchmv"
+
+alias gonch
+alias gonchmv
+
+
+// binds
+bind 8 "alias gon_saveload _saveload2"
+bind 9 gonchmv
+bind 0 gonch
+```
+</details>
+<details>
+  <summary>📋Usage📋</summary>
+
+1. Create a `game.cfg` file in your game directory (most likely `valve_WON`) and type `gon_saveload` there
+2. Set yaw to `185.50 - 186.00`
+3. Press `8` any moment before the changelevel. **After that you shouldn't load any save on your own until the script is done!**
+4. There will be a saveload after the changelevel, then you'll hear a "beep" sound. When you hear it, press `90 90` as soon as possible (you have only a second or so to do that)
+5. Hold `s` 
+</details>
+
+[Video link (TODO)](https://google.com)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/gonarch.sav)
 
 
 ## **L. Interloper**
 
-### 30. Nade boost (c4a1c)
+### 31. Nade boost (c4a1c)
 *Made by [Parklez](https://github.com/parklez)*
 ```
 alias in_nade "fps_max 100;cl_pitchdown -35;cl_pitchup 35;+duck;+jump;w;-attack;w 15;-jump;-duck;cl_pitchup 89;cl_pitchdown 89;force_centerview"
@@ -2346,7 +2385,7 @@ Usage: hold `w` and activate the script\
 
 
 
-### 31. Double nade boosts
+### 32. Double nade boosts
 
 #### 🟢 Interloper DB v1
 *Made by [Parklez](https://github.com/parklez)*
@@ -2384,7 +2423,7 @@ Cook a nade, switch to the smg, aim around yaw 65-75 to avoid hitting the bridge
 
 
 
-### 32. Satchel boost
+### 33. Satchel boost
 *Made by Kisimov*\
 MAKE SURE YOUR SATCHELS ARE UNBUGGED!!!!!!!!
 ```
