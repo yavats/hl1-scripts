@@ -2276,17 +2276,17 @@ Instruction:
 - Fastest saveload as the highest allowed fps (100) is used
 - No timing at all
 ```
-alias _saveload "alias gon_saveload; w 27; save quick; fps_max 100; load quick"
+alias _saveload "alias auto_alias; w 27; save quick; fps_max 100; load quick"
 ```
-Example: `bind key "alias gon_saveload _saveload"`
+Example: `bind key "alias auto_alias _saveload"`
 <details>
   <summary>📋Usage📋</summary>
 
 This script utilizes the `game.cfg` config being executed on every map/save load. That is, if you put an initially empty alias into this config file and only change its actual behaviour before the first Gonarch map, you can automatically do a saveload exactly 270 ms after changelevel. Normally that would be nearly impossible to nail this timing at 100 fps consistently as its window is around +-5 ms.\
 Instruction:
 1. Add alias _saveload from above to your config
-2. Create a `game.cfg` file in your game directory (most likely `valve_WON`) and type `gon_saveload` there
-3. Make a bind to change what the alias does: `bind key "alias gon_saveload _saveload"`
+2. Create a `game.cfg` file in your game directory (most likely `valve_WON`) and type `auto_alias` there
+3. Make a bind to change what the alias does: `bind key "alias auto_alias _saveload"`
 4. Press the key from the bind above any moment before gonarch changelevel
 </details>
 
@@ -2341,7 +2341,7 @@ bind k gonmv
   <summary>📜Click here to view the script📜</summary>
 
 ```
-alias _saveload2 "alias gon_saveload; w 27; save quick; fps_max 100; load quick; w 25; speak fvox/beep; say GO; w 85; alias gonch gonch1; alias gonchmv +forward"
+alias _saveload2 "alias auto_alias; w 27; save quick; fps_max 100; load quick; w 25; speak fvox/beep; say GO; w 85; alias gonch gonch1; alias gonchmv +forward"
 
 alias gonch1 "weapon_gauss; w 30; +attack2; w 80; +jump; w 45; cl_pitchup 180; cl_pitchdown -180; -attack2; w; cl_pitchup 89; cl_pitchdown 89; force_centerview; w 150; -jump; w 80; alias gonchmv +right; alias gonch gonch2"
 alias gonch2 "w 5; -right; w 95; -forward; weapon_9mmAR; save quick; alias gonch; alias gonchmv"
@@ -2351,7 +2351,7 @@ alias gonchmv
 
 
 // binds
-bind 8 "alias gon_saveload _saveload2"
+bind 8 "alias auto_alias _saveload2"
 bind 9 gonchmv
 bind 0 gonch
 ```
@@ -2359,7 +2359,7 @@ bind 0 gonch
 <details>
   <summary>📋Usage📋</summary>
 
-1. Create a `game.cfg` file in your game directory (most likely `valve_WON`) and type `gon_saveload` there
+1. Create a `game.cfg` file in your game directory (most likely `valve_WON`) and type `auto_alias` there
 2. Set yaw to `185.50 - 186.00`
 3. Press `8` any moment before the changelevel. **After that you shouldn't load any save on your own until the script is done!**
 4. There will be a saveload after the changelevel, then you'll hear a "beep" sound. When you hear it, press `90 90` as soon as possible (you have only a second or so to do that)
