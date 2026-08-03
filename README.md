@@ -1083,7 +1083,58 @@ Lower fps to 8 before the changelevel, press the first script key as soon as you
 [Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/captured.sav)
 
 
+#### 🔴 Captured v3
+*made by javac_*
+- [Captured v2](https://github.com/yavats/hl1-scripts#-captured-v2) game.cfg edition (starts in the same way as [Simple saveload script](https://github.com/yavats/hl1-scripts#28--simple-saveload-script)) 
+- Uses 100 fps
+- Fastest version
+<details>
+  <summary>📜Click here to view the script📜</summary>
+  
+```
+alias _precapted "alias auto_alias; sensitivity 0; fps_max 100; w 1935; alias capted capted1" // 8
+alias capted1 "w 50; alias captedmv +right; alias capted capted2" // 90
+alias capted2 "w 20; -right; w 20; alias captedmv +back; alias capted capted3" // 90
+alias capted3 "w 100; -back; w 271; alias captedmv +forward; alias capted capted4" // 90
+alias capted4 "w 11; +jump; +duck; w 3; -forward; w 10; alias captedmv +moveright; alias capted capted5" // 90
+alias capted5 "alias captedmv +right; alias capted capted6" // 90
+alias capted6 "w 18; -right; -moveright; w 25; alias captedmv +moveleft; alias capted capted7" // 90
+alias capted7 "alias captedmv +left; alias capted capted8" // 90
+alias capted8 "w 15; -moveleft; -left; -jump; w 35; -duck; w 7; +use; w; -use; alias captedmv +forward; alias capted capted9" // 90
+alias capted9 "w; -forward; w; alias capted capted10" // 90
+alias capted10 "w; -forward; w; alias capted capted11" // 90
+alias capted11 "w; -forward; w; alias capted capted12" // 90
+alias capted12 "alias captedmv; w; -forward; +use; w; -use; alias capted; capted_sens" // 9
+alias capted
+alias captedmv
 
+
+// settings
+alias capted_sens "sensitivity 3"
+
+// binds
+bind 8 "alias auto_alias _precapted"
+bind 9 capted
+bind 0 captedmv
+```
+</details>
+
+<details>
+  <summary>📋Usage📋</summary>
+
+1. Create a `game.cfg` file in your game directory (most likely `valve_WON`) and type `auto_alias` there
+2. Press `8` any moment before the changelevel. **After that you shouldn't load any save on your own until the script is done!**
+3. Wait for the level to change and then press the rest of keys (`9`s and `0`s)
+
+- **Keypresses**:
+  - `8 90 90 90 90 90 90 90 90 90 90 90 90` (`8` before the changelevel and `90` twelve times after)
+- **Additional actions**:
+  - change sensitivity in the `capted_sens` alias to your default
+  
+</details>
+
+[Video link (TODO)](https://google.com)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/captured.sav)
 
 
 
