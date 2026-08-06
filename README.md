@@ -2490,7 +2490,7 @@ Usage: switch to satchels, start holding `w` during teleportation, press the scr
 ### 34. Satchel boost v2
 *[Satchel boost](#33-satchel-boost) modified by Codeboy__ and javac_*
 - No strict activation timing
-- 4fpses the trigger
+- 4fpses the trigger\
 MAKE SURE YOUR SATCHELS ARE UNBUGGED!!!!!!!!
 
 <details>
