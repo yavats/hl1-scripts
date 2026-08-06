@@ -49,6 +49,7 @@ WIP
   - [Nade boost (c4a1c)](#31-nade-boost-c4a1c)
   - [Double nade boosts](#32-double-nade-boosts)
   - [Satchel boost](#33-satchel-boost)
+  - [Satchel boost v2](#34-satchel-boost-v2)
 
 
 
@@ -1085,7 +1086,7 @@ Lower fps to 8 before the changelevel, press the first script key as soon as you
 
 #### 🔴 Captured v3
 *made by javac_*
-- [Captured v2](https://github.com/yavats/hl1-scripts#-captured-v2) game.cfg edition (starts in the same way as [Simple saveload script](https://github.com/yavats/hl1-scripts#28--simple-saveload-script)) 
+- [Captured v2](#-captured-v2) game.cfg edition (starts in the same way as [Simple saveload script](#28--simple-saveload-script)) 
 - Uses 100 fps
 - Fastest version
 <details>
@@ -2347,7 +2348,7 @@ Instruction:
 
 ### 29. 🟣 Saveload + chase script
 *Made by javac_*
-- Not recommended since there is a much better [game.cfg version](https://github.com/yavats/hl1-scripts#30--saveload--chase-script-v2)
+- Not recommended since there is a much better [game.cfg version](#30--saveload--chase-script-v2)
 - Uses 11 fps
 - Extremely precise activation timing
 - Triggers Gonarch for chasing strat
@@ -2383,7 +2384,7 @@ bind k gonmv
 
 ### 30. 🟡 Saveload + chase script v2
 *Made by javac_*
-- A combination of [Simple saveload script](https://github.com/yavats/hl1-scripts#28--simple-saveload-script) and [Saveload + chase script](https://github.com/yavats/hl1-scripts#29--saveload--chase-script)
+- A combination of [Simple saveload script](#28--simple-saveload-script) and [Saveload + chase script](#29--saveload--chase-script)
 - Fastest saveload as the highest allowed fps (100) is used
 - No saveload timing
 - Triggers Gonarch for chasing strat
@@ -2485,3 +2486,36 @@ Usage: switch to satchels, start holding `w` during teleportation, press the scr
 [Video link](https://youtu.be/S9d3n2OvbUY)\
 [Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/satch.sav)
 
+
+### 34. Satchel boost v2
+*[Satchel boost](#33-satchel-boost) modified by Codeboy__ and javac_*
+- No strict activation timing
+- 4fpses the trigger
+MAKE SURE YOUR SATCHELS ARE UNBUGGED!!!!!!!!
+
+<details>
+  <summary>📜Click here to view the script📜</summary>
+
+```
+alias pre_satcher "alias auto_alias; fps_max 100; w 37; cl_pitchup -60.999; +attack; w; -attack; cl_pitchup 89; force_centerview; w 100; +bxt_tas_ducktap; w; -bxt_tas_ducktap; w; +duck; w 33; -forward; +attack; w 2; -duck; -attack; -attack2; weapon_gauss; +tau; w 58; alias satchermv +moveleft; alias satcher satcher1"
+alias satcher1 "alias satchermv +left; alias satcher satcher2"
+alias satcher2 "w 3; -left; w 40; -tau; w 20; alias satcher satcher3"
+alias satcher3 "w 4; -left; -moveleft; +duck; w 15; fps_max 4; w; fps_max 100; w 5; -duck; alias satcher; alias satchermv"
+
+
+// binds
+bind 8 "weapon_satchel; alias auto_alias pre_satcher"
+bind 6 "satchermv"
+bind 7 "satcher"
+```
+</details>
+<details>
+  <summary>📋Usage📋</summary>
+
+1. Create a `game.cfg` file in your game directory (most likely `valve_WON`) and type `auto_alias` there
+2. Press `8` and start holding `w` any moment before the changelevel. **After that you shouldn't load any save on your own until the script is done!**
+3. Press `67 67 67` after the changelevel (you have around a second to do that). Now you can release `w`
+</details>
+
+[Video link (TODO)](https://google.com)\
+[Practice save](https://github.com/yavats/hl1-scripts/raw/refs/heads/main/Practice%20saves/satch.sav)
