@@ -134,9 +134,9 @@ Usage: press the script key once
 #### 180° Gauss boost
 ```
 alias _taubo
-alias _taubofunc "cl_pitchup 180;cl_pitchdown -180;-attack2;wait;cl_pitchup -12;cl_pitchdown 12;wait;cl_pitchup 89;cl_pitchdown 89"
-alias +tau "+attack2; alias _taubo _taubofunc"
-alias -tau "_taubo; alias _taubo"
+alias _taubofunc "cl_pitchup 180;cl_pitchdown -180;-attack2;wait;cl_pitchup 89;cl_pitchdown 89;force_centerview"
+alias +tau "+attack2;alias _taubo _taubofunc"
+alias -tau "_taubo;alias _taubo"
 ```
 Example: `bind key +tau`\
 Usage: hold the script key to charge, release to boost
