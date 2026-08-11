@@ -3,7 +3,7 @@ WIP
 
 
 # Table of Contents
-- [QUICK CONFIG SETUP](#x-quick-configs) [RECOMMENDED FOR EVERYONE!]
+- [Quick start (ready-to-use configs)](#quick-start--ready-to-use-configs-)
 - [Basic scripts](#a-basic-scripts)
   - [Usespam script](#1-usespam-script)
   - [Duckroll/Duckspam](#2-duckroll-aka-duckspam-script)
@@ -57,21 +57,9 @@ WIP
 
 
   
-## X. **Quick Configs**
-
-### *HIGHLY RECOMMENDED FOR SETTING UP RUNNING FOR ANYONE!*
-
-#### This part is premade configs by hsci, making it way easier to set the game up ready for scripted runs.
-#### No need to search scripts for long hours and making configs. Simple easy editable & rebindable configs.
+## **Quick start (ready-to-use configs)**
 
 
-- Premade configs with almost every script added into it
-- Uses chapter config setup 
-- Configs are categorized, easy customizable/editable
-- Video guide will be added for any information.
-
-#### ⚠️All the scripts on this config and even more stuff is under this part of the github. You can find every script on this github and on the video guide it will be shown how you can replace or add new scripts to the configs.⚠️
- Link: [quick setup.zip](https://github.com/user-attachments/files/30247734/quick.setup.zip)
 
 
 
