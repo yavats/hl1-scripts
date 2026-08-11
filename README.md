@@ -3,7 +3,7 @@ WIP
 
 
 # Table of Contents
-- [Quick start (ready-to-use configs)](#quick-start--ready-to-use-configs-)
+- [Quick start (ready-to-use configs)](#quick-start-ready-to-use-configs)
 - [Basic scripts](#a-basic-scripts)
   - [Usespam script](#1-usespam-script)
   - [Duckroll/Duckspam](#2-duckroll-aka-duckspam-script)
