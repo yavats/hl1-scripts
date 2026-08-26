@@ -2490,7 +2490,8 @@ alias pre_satcher "alias auto_alias; fps_max 100; w 37; cl_pitchup -60.999; +att
 alias satcher1 "alias satchermv +left; alias satcher satcher2"
 alias satcher2 "w 3; -left; w 40; -tau; w 20; alias satcher satcher3"
 alias satcher3 "w 4; -left; -moveleft; +duck; w 15; fps_max 4; w; fps_max 100; w 5; -duck; alias satcher; alias satchermv"
-
+alias satcher
+alias satchermv
 
 // binds
 bind 8 "weapon_satchel; alias auto_alias pre_satcher"
