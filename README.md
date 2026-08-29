@@ -2381,7 +2381,7 @@ bind k gonmv
   <summary>📜Click here to view the script📜</summary>
 
 ```
-alias _saveload2 "alias auto_alias; w 27; save quick; fps_max 100; load quick; w 25; speak fvox/beep; say GO; w 85; alias gonch gonch1; alias gonchmv +forward"
+alias _saveload2 "alias auto_alias; w 27; save quick; fps_max 100; load quick; w 25; speak fvox/beep; say GO; w 90; alias gonch gonch1; alias gonchmv +forward"
 
 alias gonch1 "weapon_gauss; w 30; +attack2; w 80; +jump; w 45; cl_pitchup 180; cl_pitchdown -180; -attack2; w; cl_pitchup 89; cl_pitchdown 89; force_centerview; w 150; -jump; w 80; alias gonchmv +right; alias gonch gonch2"
 alias gonch2 "w 5; -right; w 95; -forward; weapon_9mmAR; save quick; alias gonch; alias gonchmv"
