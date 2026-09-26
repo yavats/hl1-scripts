@@ -2401,9 +2401,10 @@ bind 0 gonch
 
 1. Create a `game.cfg` file in your game directory (most likely `valve_WON`) and type `auto_alias` there
 2. Set yaw to `185.50 - 186.00`
-3. Press `8` any moment before the changelevel. **After that you shouldn't load any save on your own until the script is done!**
-4. There will be a saveload after the changelevel, then you'll hear a "beep" sound. When you hear it, press `90 90` as soon as possible (you have only a second or so to do that)
-5. Hold `s` 
+3. Hold any weapon **OTHER THAN GAUSS!!!** If you hold gauss from the start, you'll get too much speed from the boost (600 > 553)!
+4. Press `8` any moment before the changelevel. **After that you shouldn't load any save on your own until the script is done!**
+5. There will be a saveload after the changelevel, then you'll hear a "beep" sound. When you hear it, press `90 90` as soon as possible (you have only a second or so to do that)
+6. Hold `s` 
 </details>
 
 [Video link (TODO)](https://google.com)\
